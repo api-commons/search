@@ -1,7 +1,7 @@
 provider: vespa-ai
 apis_io: https://apis.io/providers/vespa-ai/
 context: search
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   search_query:
     path_segment:

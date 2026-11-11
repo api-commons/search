@@ -1,7 +1,7 @@
 openapi: 3.1.0
 info:
   title: Search (API Commons)
-  version: 0.1.0-draft.20261110
+  version: 0.1.0-draft.20261111
   description: 'The common Search interface, distilled from the harvested OpenAPI of 187 providers in the APIs.io
     catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
     providers, agents and integrators can map to one vocabulary. See profile.yml.'
@@ -11,7 +11,7 @@ info:
 paths:
   /indexes:
     get:
-      operationId: listSearchIndexes
+      operationId: listIndexes
       summary: List indexes
       tags:
       - Search Indexes
@@ -121,7 +121,7 @@ paths:
           application/json:
             schema: *id002
     get:
-      operationId: listSearchQueries
+      operationId: listSearch
       summary: List search
       tags:
       - Search Queries

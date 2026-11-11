@@ -15,7 +15,7 @@ generated. Every number below is a count of providers.
 | search_index | 28 | 21 | name 71%, id 52% | indexes 11, index 11, indices 3, collections 3 |
 | search_query | 106 | 96 |  | search 89, query 26, queries 9, _search 5 |
 
-Cohort: 187 providers with harvested OpenAPI, 112 crosswalks. Of the providers exposing a search_index: 61% create, 86% list, 64% fetch, 32% update, 61% delete. Generated 2026-11-10 by build.py.
+Cohort: 187 providers with harvested OpenAPI, 112 crosswalks. Of the providers exposing a search_index: 61% create, 86% list, 64% fetch, 32% update, 61% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The

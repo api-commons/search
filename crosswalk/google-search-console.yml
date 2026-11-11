@@ -1,7 +1,7 @@
 provider: google-search-console
 apis_io: https://apis.io/providers/google-search-console/
 context: search
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   search_query:
     path_segment:
