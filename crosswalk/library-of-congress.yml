@@ -1,0 +1,14 @@
+provider: library-of-congress
+apis_io: https://apis.io/providers/library-of-congress/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      id: id
+      name: title
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/library-of-congress-loc-gov-json-api-openapi.yml#GET /search/

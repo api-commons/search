@@ -1,0 +1,16 @@
+provider: vectorize-io
+apis_io: https://apis.io/providers/vectorize-io/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - retrieval
+    properties:
+      id: id
+      limit: numResults
+      query: text
+      score: similarity
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/vectorize-io-openapi.yml#POST /org/{organizationId}/pipelines/{pipelineId}/retrieval

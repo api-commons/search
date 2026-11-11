@@ -1,0 +1,19 @@
+provider: mem
+apis_io: https://apis.io/providers/mem/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      id: id
+      limit: limit
+      name: title
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/mem-openapi-original.json#POST /v2/collections/search
+    - openapi/_original/mem-openapi-original.json#POST /v2/mcp/chatgpt/search
+    - openapi/_original/mem-openapi-original.json#POST /v2/mcp/notes/search
+    - openapi/_original/mem-openapi-original.json#POST /v2/notes/search
+    - openapi/_original/mem-openapi-original.json#POST /v2/session-events/search

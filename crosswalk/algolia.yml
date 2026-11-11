@@ -1,0 +1,36 @@
+provider: algolia
+apis_io: https://apis.io/providers/algolia/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - indexes
+    properties:
+      name: name
+      id: objectID
+      created_at: createdAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/algolia-search-openapi.yml#DELETE /1/indexes/{indexName}
+    - openapi/_original/algolia-search-openapi.yml#GET /1/indexes
+    - openapi/_original/algolia-search-openapi.yml#POST /1/indexes/{indexName}
+  search_query:
+    path_segment:
+    - search
+    - query
+    - queries
+    properties:
+      id: objectID
+      limit: hitsPerPage
+      name:
+      - indexName
+      - name
+      filters: filters
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/algolia-algoliasearch-openapi.yml#POST /1/indexes/*/queries
+    - openapi/_original/algolia-composition-openapi.yml#POST /1/compositions/{compositionID}/facets/{facetName}/query
+    - openapi/_original/algolia-composition-openapi.yml#POST /1/compositions/{compositionID}/rules/search
+    - openapi/_original/algolia-ingestion-openapi.yml#POST /1/authentications/search
+    - openapi/_original/algolia-ingestion-openapi.yml#POST /1/destinations/search

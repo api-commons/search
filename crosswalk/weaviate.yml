@@ -1,0 +1,13 @@
+provider: weaviate
+apis_io: https://apis.io/providers/weaviate/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - index
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/weaviate-openapi.yml#DELETE /schema/{className}/properties/{propertyName}/index/{indexName}
+    - openapi/_original/weaviate-openapi.yml#DELETE /schema/{className}/vectors/{vectorIndexName}/index

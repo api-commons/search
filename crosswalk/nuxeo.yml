@@ -1,0 +1,17 @@
+provider: nuxeo
+apis_io: https://apis.io/providers/nuxeo/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    - query
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/nuxeo-rest-api-openapi.yaml#GET /group/search
+    - openapi/_original/nuxeo-rest-api-openapi.yaml#GET /oauth2/token/search
+    - openapi/_original/nuxeo-rest-api-openapi.yaml#GET /query
+    - openapi/_original/nuxeo-rest-api-openapi.yaml#GET /query/{providerName}
+    - openapi/_original/nuxeo-rest-api-openapi.yaml#GET /user/search

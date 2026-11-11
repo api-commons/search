@@ -1,0 +1,32 @@
+provider: vectara
+apis_io: https://apis.io/providers/vectara/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - corpora
+    properties:
+      name: name
+      created_at: created_at
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/vectara-openapi.yml#DELETE /v2/corpora/{corpus_key}
+    - openapi/_original/vectara-openapi.yml#GET /v2/corpora
+    - openapi/_original/vectara-openapi.yml#GET /v2/corpora/{corpus_key}
+    - openapi/_original/vectara-openapi.yml#PATCH /v2/corpora/{corpus_key}
+    - openapi/_original/vectara-openapi.yml#POST /v2/corpora
+  search_query:
+    path_segment:
+    - query
+    - search
+    - queries
+    properties:
+      id: document_id
+      query: text
+      score: score
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/vectara-openapi.yml#POST /v2/corpora/{corpus_key}/queries
+    - openapi/_original/vectara-openapi.yml#POST /v2/corpora/{corpus_key}/query
+    - openapi/_original/vectara-openapi.yml#POST /v2/corpora/{corpus_key}/search

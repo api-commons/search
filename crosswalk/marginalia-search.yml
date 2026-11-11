@@ -1,0 +1,13 @@
+provider: marginalia-search
+apis_io: https://apis.io/providers/marginalia-search/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      name: title
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/marginalia-search-openapi.yml#GET /search

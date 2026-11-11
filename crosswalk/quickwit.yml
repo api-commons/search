@@ -1,0 +1,24 @@
+provider: quickwit
+apis_io: https://apis.io/providers/quickwit/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - indexes
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/openapi.yml#DELETE /indexes/{index_id}
+    - openapi/_original/openapi.yml#GET /indexes
+    - openapi/_original/openapi.yml#GET /indexes/{index_id}
+    - openapi/_original/openapi.yml#POST /indexes
+    - openapi/_original/openapi.yml#PUT /indexes/{index_id}
+  search_query:
+    path_segment:
+    - search
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/openapi.yml#GET /indexes/{index_id}/search
+    - openapi/_original/openapi.yml#POST /indexes/{index_id}/search

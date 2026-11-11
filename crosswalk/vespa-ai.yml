@@ -1,0 +1,15 @@
+provider: vespa-ai
+apis_io: https://apis.io/providers/vespa-ai/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      id: id
+      score: relevance
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/vespa-query-api-openapi.yml#GET /search/
+    - openapi/_original/vespa-query-api-openapi.yml#POST /search/

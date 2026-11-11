@@ -1,0 +1,12 @@
+provider: ondemand
+apis_io: https://apis.io/providers/ondemand/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - query
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/ondemand-openapi.json#POST /chat/v1/sessions/{sessionId}/query

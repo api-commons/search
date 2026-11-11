@@ -1,0 +1,14 @@
+provider: amazon-opensearch
+apis_io: https://apis.io/providers/amazon-opensearch/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      filters: Filters
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/amazon-opensearch-openapi.yml#POST /2015-01-01/es/ccs/inboundConnection/search
+    - openapi/_original/amazon-opensearch-openapi.yml#POST /2015-01-01/es/ccs/outboundConnection/search

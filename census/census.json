@@ -1,0 +1,6780 @@
+{
+ "cohort_size": 187,
+ "unreadable": [
+  {
+   "spec": "duckduckgo/openapi/_original/instant-answer-openapi.yml",
+   "error": "could not determine a constructor for the tag '!w'"
+  }
+ ],
+ "concepts": {
+  "search_index": {
+   "aleph-alpha": {
+    "segments": [
+     "indexes"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/aleph-alpha-pharia-search-openapi.json#GET /indexes/{namespace}"
+    ]
+   },
+   "algolia": {
+    "segments": [
+     "indexes"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST item"
+    ],
+    "properties": {
+     "createdAt": "string",
+     "taskID": "integer",
+     "objectID": "string",
+     "deletedAt": "string",
+     "name": "string",
+     "updatedAt": "string",
+     "entries": "integer",
+     "dataSize": "integer",
+     "fileSize": "integer",
+     "lastBuildTimeS": "integer",
+     "numberOfPendingTasks": "integer",
+     "pendingTask": "boolean",
+     "primary": "string",
+     "replicas": "array",
+     "virtual": "boolean",
+     "abTest": "object",
+     "sourceABTest": "string"
+    },
+    "evidence": [
+     "openapi/_original/algolia-search-openapi.yml#DELETE /1/indexes/{indexName}",
+     "openapi/_original/algolia-search-openapi.yml#GET /1/indexes",
+     "openapi/_original/algolia-search-openapi.yml#POST /1/indexes/{indexName}"
+    ]
+   },
+   "amazon-kendra": {
+    "segments": [
+     "indexes"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "Name": "string",
+     "RoleArn": "string",
+     "Description": "string",
+     "Edition": "string"
+    },
+    "evidence": [
+     "openapi/_original/amazon-kendra-openapi.yml#DELETE /indexes/{IndexId}",
+     "openapi/_original/amazon-kendra-openapi.yml#GET /indexes",
+     "openapi/_original/amazon-kendra-openapi.yml#GET /indexes/{IndexId}",
+     "openapi/_original/amazon-kendra-openapi.yml#POST /indexes",
+     "openapi/_original/amazon-kendra-openapi.yml#PUT /indexes/{IndexId}"
+    ]
+   },
+   "arangodb": {
+    "segments": [
+     "index"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/arangodb-core-openapi-original.json#DELETE /_db/{database-name}/_api/index/{index-id}",
+     "openapi/_original/arangodb-core-openapi-original.json#GET /_db/{database-name}/_api/index",
+     "openapi/_original/arangodb-core-openapi-original.json#GET /_db/{database-name}/_api/index/{index-id}",
+     "openapi/_original/arangodb-core-openapi-original.json#POST /_db/{database-name}/_api/index"
+    ]
+   },
+   "bloomreach": {
+    "segments": [
+     "indexes"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "job_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/bloomreach-discovery-catalog-management-openapi.yml#POST /accounts/{account_name}/catalogs/{catalog_name}/environments/{environment_name}/indexes"
+    ]
+   },
+   "constructorio": {
+    "segments": [
+     "collections"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "display_name": "string",
+     "filter_expression": null,
+     "data": "object",
+     "discoverable": "boolean",
+     "matches": "array",
+     "start_time": "string",
+     "end_time": "string",
+     "overridden_collection_id": "string",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/constructorio-configuration-openapi-original.json#DELETE /v1/collections/{collection_id}",
+     "openapi/_original/constructorio-configuration-openapi-original.json#GET /v1/collections",
+     "openapi/_original/constructorio-configuration-openapi-original.json#GET /v1/collections/{collection_id}",
+     "openapi/_original/constructorio-configuration-openapi-original.json#PATCH /v1/collections/{collection_id}",
+     "openapi/_original/constructorio-configuration-openapi-original.json#POST /v1/collections",
+     "openapi/_original/constructorio-configuration-openapi-original.json#PUT /v1/collections/{collection_id}",
+     "openapi/_original/constructorio-configuration-openapi.yml#DELETE /v1/collections/{collection_id}",
+     "openapi/_original/constructorio-configuration-openapi.yml#GET /v1/collections",
+     "openapi/_original/constructorio-configuration-openapi.yml#GET /v1/collections/{collection_id}",
+     "openapi/_original/constructorio-configuration-openapi.yml#PATCH /v1/collections/{collection_id}",
+     "openapi/_original/constructorio-configuration-openapi.yml#POST /v1/collections",
+     "openapi/_original/constructorio-configuration-openapi.yml#PUT /v1/collections/{collection_id}"
+    ]
+   },
+   "couchbase": {
+    "segments": [
+     "index",
+     "indexes"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "status": "string",
+     "indexDefs": "object",
+     "indexDef": "object",
+     "name": "string",
+     "type": "string",
+     "sourceName": "string",
+     "sourceType": "string",
+     "sourceUUID": "string",
+     "planParams": "object",
+     "params": "object",
+     "uuid": "string",
+     "storageMode": "string",
+     "indexerThreads": "integer",
+     "memorySnapshotInterval": "integer",
+     "stableSnapshotInterval": "integer",
+     "logLevel": "string"
+    },
+    "evidence": [
+     "openapi/_original/couchbase-search-service-rest-api-openapi.yml#DELETE /api/index/{indexName}",
+     "openapi/_original/couchbase-search-service-rest-api-openapi.yml#GET /api/index",
+     "openapi/_original/couchbase-search-service-rest-api-openapi.yml#GET /api/index/{indexName}",
+     "openapi/_original/couchbase-search-service-rest-api-openapi.yml#GET /api/stats/index/{indexName}",
+     "openapi/_original/couchbase-search-service-rest-api-openapi.yml#PUT /api/index/{indexName}",
+     "openapi/_original/couchbase-server-rest-api-openapi.yml#GET /settings/indexes",
+     "openapi/_original/couchbase-server-rest-api-openapi.yml#POST /settings/indexes"
+    ]
+   },
+   "depict": {
+    "segments": [
+     "collections"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "collection_id": "string",
+     "parent_id": null,
+     "collection_type": "string",
+     "externally_owned": "boolean",
+     "title": "string",
+     "uri": "string",
+     "updated_at": "string",
+     "n_main_products": null,
+     "manual_product_count": null,
+     "image_urls": "array",
+     "cover_image_url": null,
+     "chunk_type": null,
+     "metrics": null,
+     "localized_titles": "object",
+     "content_blocks": "array",
+     "ranking_type": null,
+     "show_in_filter": "boolean",
+     "show_in_search_suggestions": "boolean",
+     "appear_in_quicklinks": "boolean",
+     "display_breadcrumb": "boolean",
+     "children": "array",
+     "permissions": "object",
+     "market_context": "object",
+     "market_group_id": null,
+     "market_id": null,
+     "pinned_main_product_ids": null,
+     "hidden_main_product_ids": null,
+     "added_main_product_ids": null,
+     "removed_main_product_ids": null,
+     "pinned_collection_ids": null,
+     "added_filter_rules": null
+    },
+    "evidence": [
+     "openapi/_original/depict-portal-openapi-original.json#GET /api/v1/merchants/{merchant_id}/collections",
+     "openapi/_original/depict-portal-openapi-original.json#GET /api/v1/merchants/{merchant_id}/collections/{collection_id}",
+     "openapi/_original/depict-portal-openapi-original.json#PATCH /api/v1/merchants/{merchant_id}/collections/{collection_id}"
+    ]
+   },
+   "depictai": {
+    "segments": [
+     "collections"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "collection_id": "string",
+     "parent_id": null,
+     "collection_type": "string",
+     "externally_owned": "boolean",
+     "title": "string",
+     "uri": "string",
+     "updated_at": "string",
+     "n_main_products": null,
+     "manual_product_count": null,
+     "image_urls": "array",
+     "cover_image_url": null,
+     "chunk_type": null,
+     "metrics": null,
+     "localized_titles": "object",
+     "content_blocks": "array",
+     "ranking_type": null,
+     "show_in_filter": "boolean",
+     "show_in_search_suggestions": "boolean",
+     "appear_in_quicklinks": "boolean",
+     "display_breadcrumb": "boolean",
+     "children": "array",
+     "permissions": "object",
+     "market_context": "object",
+     "market_group_id": null,
+     "market_id": null,
+     "pinned_main_product_ids": null,
+     "hidden_main_product_ids": null,
+     "added_main_product_ids": null,
+     "removed_main_product_ids": null,
+     "pinned_collection_ids": null,
+     "added_filter_rules": null
+    },
+    "evidence": [
+     "openapi/_original/depictai-portal-openapi.json#GET /api/v1/merchants/{merchant_id}/collections",
+     "openapi/_original/depictai-portal-openapi.json#GET /api/v1/merchants/{merchant_id}/collections/{collection_id}",
+     "openapi/_original/depictai-portal-openapi.json#PATCH /api/v1/merchants/{merchant_id}/collections/{collection_id}"
+    ]
+   },
+   "elastic": {
+    "segments": [
+     "indices",
+     "index"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "health": "string",
+     "status": "string",
+     "index": "string",
+     "uuid": "string",
+     "pri": "string",
+     "rep": "string",
+     "docs.count": null,
+     "docs.deleted": null,
+     "creation.date": "string",
+     "creation.date.string": "string",
+     "store.size": null,
+     "pri.store.size": null,
+     "dataset.size": null,
+     "completion.size": "string",
+     "pri.completion.size": "string",
+     "fielddata.memory_size": "string",
+     "pri.fielddata.memory_size": "string",
+     "fielddata.evictions": "string",
+     "pri.fielddata.evictions": "string",
+     "query_cache.memory_size": "string",
+     "pri.query_cache.memory_size": "string",
+     "query_cache.evictions": "string",
+     "pri.query_cache.evictions": "string",
+     "request_cache.memory_size": "string",
+     "pri.request_cache.memory_size": "string",
+     "request_cache.evictions": "string",
+     "pri.request_cache.evictions": "string",
+     "request_cache.hit_count": "string",
+     "pri.request_cache.hit_count": "string",
+     "request_cache.miss_count": "string",
+     "pri.request_cache.miss_count": "string",
+     "flush.total": "string",
+     "pri.flush.total": "string",
+     "flush.total_time": "string",
+     "pri.flush.total_time": "string",
+     "get.current": "string",
+     "pri.get.current": "string",
+     "get.time": "string",
+     "pri.get.time": "string",
+     "get.total": "string",
+     "pri.get.total": "string",
+     "get.exists_time": "string",
+     "pri.get.exists_time": "string",
+     "get.exists_total": "string",
+     "pri.get.exists_total": "string",
+     "get.missing_time": "string",
+     "pri.get.missing_time": "string",
+     "get.missing_total": "string",
+     "pri.get.missing_total": "string",
+     "indexing.delete_current": "string",
+     "pri.indexing.delete_current": "string",
+     "indexing.delete_time": "string",
+     "pri.indexing.delete_time": "string",
+     "indexing.delete_total": "string",
+     "pri.indexing.delete_total": "string",
+     "indexing.index_current": "string",
+     "pri.indexing.index_current": "string",
+     "indexing.index_time": "string",
+     "pri.indexing.index_time": "string",
+     "indexing.index_total": "string",
+     "pri.indexing.index_total": "string",
+     "indexing.index_failed": "string",
+     "pri.indexing.index_failed": "string",
+     "merges.current": "string",
+     "pri.merges.current": "string",
+     "merges.current_docs": "string",
+     "pri.merges.current_docs": "string",
+     "merges.current_size": "string",
+     "pri.merges.current_size": "string",
+     "merges.total": "string",
+     "pri.merges.total": "string",
+     "merges.total_docs": "string",
+     "pri.merges.total_docs": "string",
+     "merges.total_size": "string",
+     "pri.merges.total_size": "string",
+     "merges.total_time": "string",
+     "pri.merges.total_time": "string",
+     "refresh.total": "string",
+     "pri.refresh.total": "string",
+     "refresh.time": "string",
+     "pri.refresh.time": "string",
+     "refresh.external_total": "string",
+     "pri.refresh.external_total": "string",
+     "refresh.external_time": "string",
+     "pri.refresh.external_time": "string",
+     "refresh.listeners": "string",
+     "pri.refresh.listeners": "string",
+     "search.fetch_current": "string",
+     "pri.search.fetch_current": "string",
+     "search.fetch_time": "string",
+     "pri.search.fetch_time": "string",
+     "search.fetch_total": "string",
+     "pri.search.fetch_total": "string",
+     "search.open_contexts": "string",
+     "pri.search.open_contexts": "string",
+     "search.query_current": "string",
+     "pri.search.query_current": "string",
+     "search.query_time": "string",
+     "pri.search.query_time": "string",
+     "search.query_total": "string",
+     "pri.search.query_total": "string",
+     "search.scroll_current": "string",
+     "pri.search.scroll_current": "string",
+     "search.scroll_time": "string",
+     "pri.search.scroll_time": "string",
+     "search.scroll_total": "string",
+     "pri.search.scroll_total": "string",
+     "segments.count": "string",
+     "pri.segments.count": "string",
+     "segments.memory": "string",
+     "pri.segments.memory": "string",
+     "segments.index_writer_memory": "string",
+     "pri.segments.index_writer_memory": "string",
+     "segments.version_map_memory": "string",
+     "pri.segments.version_map_memory": "string",
+     "segments.fixed_bitset_memory": "string",
+     "pri.segments.fixed_bitset_memory": "string",
+     "warmer.current": "string",
+     "pri.warmer.current": "string",
+     "warmer.total": "string",
+     "pri.warmer.total": "string",
+     "warmer.total_time": "string",
+     "pri.warmer.total_time": "string",
+     "suggest.current": "string",
+     "pri.suggest.current": "string",
+     "suggest.time": "string",
+     "pri.suggest.time": "string",
+     "suggest.total": "string",
+     "pri.suggest.total": "string",
+     "memory.total": "string",
+     "pri.memory.total": "string",
+     "search.throttled": "string",
+     "bulk.total_operations": "string",
+     "pri.bulk.total_operations": "string",
+     "bulk.total_time": "string",
+     "pri.bulk.total_time": "string",
+     "bulk.total_size_in_bytes": "string",
+     "pri.bulk.total_size_in_bytes": "string",
+     "bulk.avg_time": "string",
+     "pri.bulk.avg_time": "string",
+     "bulk.avg_size_in_bytes": "string",
+     "pri.bulk.avg_size_in_bytes": "string",
+     "indices": "array",
+     "aliases": "array",
+     "data_streams": "array"
+    },
+    "evidence": [
+     "openapi/_original/elasticsearch.json#GET /_cat/indices",
+     "openapi/_original/elasticsearch.json#GET /_cat/indices/{index}",
+     "openapi/_original/elasticsearch.json#GET /_resolve/index/{name}",
+     "openapi/_original/elasticsearch.json#POST /_resolve/index/{name}"
+    ]
+   },
+   "elasticsearch": {
+    "segments": [
+     "indices"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/elasticsearch-openapi.yml#GET /_cat/indices"
+    ]
+   },
+   "elk-stack": {
+    "segments": [
+     "index",
+     "indices"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "health": "string",
+     "status": "string",
+     "index": "string",
+     "uuid": "string",
+     "pri": "string",
+     "rep": "string",
+     "docs.count": null,
+     "docs.deleted": null,
+     "creation.date": "string",
+     "creation.date.string": "string",
+     "store.size": null,
+     "pri.store.size": null,
+     "dataset.size": null,
+     "completion.size": "string",
+     "pri.completion.size": "string",
+     "fielddata.memory_size": "string",
+     "pri.fielddata.memory_size": "string",
+     "fielddata.evictions": "string",
+     "pri.fielddata.evictions": "string",
+     "query_cache.memory_size": "string",
+     "pri.query_cache.memory_size": "string",
+     "query_cache.evictions": "string",
+     "pri.query_cache.evictions": "string",
+     "request_cache.memory_size": "string",
+     "pri.request_cache.memory_size": "string",
+     "request_cache.evictions": "string",
+     "pri.request_cache.evictions": "string",
+     "request_cache.hit_count": "string",
+     "pri.request_cache.hit_count": "string",
+     "request_cache.miss_count": "string",
+     "pri.request_cache.miss_count": "string",
+     "flush.total": "string",
+     "pri.flush.total": "string",
+     "flush.total_time": "string",
+     "pri.flush.total_time": "string",
+     "get.current": "string",
+     "pri.get.current": "string",
+     "get.time": "string",
+     "pri.get.time": "string",
+     "get.total": "string",
+     "pri.get.total": "string",
+     "get.exists_time": "string",
+     "pri.get.exists_time": "string",
+     "get.exists_total": "string",
+     "pri.get.exists_total": "string",
+     "get.missing_time": "string",
+     "pri.get.missing_time": "string",
+     "get.missing_total": "string",
+     "pri.get.missing_total": "string",
+     "indexing.delete_current": "string",
+     "pri.indexing.delete_current": "string",
+     "indexing.delete_time": "string",
+     "pri.indexing.delete_time": "string",
+     "indexing.delete_total": "string",
+     "pri.indexing.delete_total": "string",
+     "indexing.index_current": "string",
+     "pri.indexing.index_current": "string",
+     "indexing.index_time": "string",
+     "pri.indexing.index_time": "string",
+     "indexing.index_total": "string",
+     "pri.indexing.index_total": "string",
+     "indexing.index_failed": "string",
+     "pri.indexing.index_failed": "string",
+     "merges.current": "string",
+     "pri.merges.current": "string",
+     "merges.current_docs": "string",
+     "pri.merges.current_docs": "string",
+     "merges.current_size": "string",
+     "pri.merges.current_size": "string",
+     "merges.total": "string",
+     "pri.merges.total": "string",
+     "merges.total_docs": "string",
+     "pri.merges.total_docs": "string",
+     "merges.total_size": "string",
+     "pri.merges.total_size": "string",
+     "merges.total_time": "string",
+     "pri.merges.total_time": "string",
+     "refresh.total": "string",
+     "pri.refresh.total": "string",
+     "refresh.time": "string",
+     "pri.refresh.time": "string",
+     "refresh.external_total": "string",
+     "pri.refresh.external_total": "string",
+     "refresh.external_time": "string",
+     "pri.refresh.external_time": "string",
+     "refresh.listeners": "string",
+     "pri.refresh.listeners": "string",
+     "search.fetch_current": "string",
+     "pri.search.fetch_current": "string",
+     "search.fetch_time": "string",
+     "pri.search.fetch_time": "string",
+     "search.fetch_total": "string",
+     "pri.search.fetch_total": "string",
+     "search.open_contexts": "string",
+     "pri.search.open_contexts": "string",
+     "search.query_current": "string",
+     "pri.search.query_current": "string",
+     "search.query_time": "string",
+     "pri.search.query_time": "string",
+     "search.query_total": "string",
+     "pri.search.query_total": "string",
+     "search.scroll_current": "string",
+     "pri.search.scroll_current": "string",
+     "search.scroll_time": "string",
+     "pri.search.scroll_time": "string",
+     "search.scroll_total": "string",
+     "pri.search.scroll_total": "string",
+     "segments.count": "string",
+     "pri.segments.count": "string",
+     "segments.memory": "string",
+     "pri.segments.memory": "string",
+     "segments.index_writer_memory": "string",
+     "pri.segments.index_writer_memory": "string",
+     "segments.version_map_memory": "string",
+     "pri.segments.version_map_memory": "string",
+     "segments.fixed_bitset_memory": "string",
+     "pri.segments.fixed_bitset_memory": "string",
+     "warmer.current": "string",
+     "pri.warmer.current": "string",
+     "warmer.total": "string",
+     "pri.warmer.total": "string",
+     "warmer.total_time": "string",
+     "pri.warmer.total_time": "string",
+     "suggest.current": "string",
+     "pri.suggest.current": "string",
+     "suggest.time": "string",
+     "pri.suggest.time": "string",
+     "suggest.total": "string",
+     "pri.suggest.total": "string",
+     "memory.total": "string",
+     "pri.memory.total": "string",
+     "search.throttled": "string",
+     "bulk.total_operations": "string",
+     "pri.bulk.total_operations": "string",
+     "bulk.total_time": "string",
+     "pri.bulk.total_time": "string",
+     "bulk.total_size_in_bytes": "string",
+     "pri.bulk.total_size_in_bytes": "string",
+     "bulk.avg_time": "string",
+     "pri.bulk.avg_time": "string",
+     "bulk.avg_size_in_bytes": "string",
+     "pri.bulk.avg_size_in_bytes": "string",
+     "indices": "array",
+     "aliases": "array",
+     "data_streams": "array",
+     "index_mapping_outdated": "boolean",
+     "name": "string",
+     "acknowledged": "boolean",
+     "list_index": "boolean",
+     "list_item_index": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/elk-stack-cat-api-openapi.yml#GET /_cat/indices",
+     "openapi/_original/elk-stack-cat-api-openapi_2.yml#GET /_cat/indices",
+     "openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_cat/indices",
+     "openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_cat/indices/{index}",
+     "openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_resolve/index/{name}",
+     "openapi/_original/elk-stack-elasticsearch-openapi.json#POST /_resolve/index/{name}",
+     "openapi/_original/elk-stack-kibana-openapi.yaml#DELETE /api/detection_engine/index",
+     "openapi/_original/elk-stack-kibana-openapi.yaml#DELETE /api/lists/index",
+     "openapi/_original/elk-stack-kibana-openapi.yaml#GET /api/detection_engine/index",
+     "openapi/_original/elk-stack-kibana-openapi.yaml#GET /api/lists/index",
+     "openapi/_original/elk-stack-kibana-openapi.yaml#POST /api/detection_engine/index",
+     "openapi/_original/elk-stack-kibana-openapi.yaml#POST /api/lists/index"
+    ]
+   },
+   "iconik": {
+    "segments": [
+     "collections"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "parent_id": "string",
+     "date_created": "string"
+    },
+    "evidence": [
+     "openapi/_original/iconik-openapi.yml#DELETE /assets/v1/collections/{collection_id}/",
+     "openapi/_original/iconik-openapi.yml#GET /assets/v1/collections/",
+     "openapi/_original/iconik-openapi.yml#GET /assets/v1/collections/{collection_id}/",
+     "openapi/_original/iconik-openapi.yml#POST /assets/v1/collections/"
+    ]
+   },
+   "macrometa": {
+    "segments": [
+     "index"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "fields": "array",
+     "id": "string",
+     "name": "string",
+     "selectivityEstimate": "number",
+     "sparse": "boolean",
+     "type": "string",
+     "unique": "boolean",
+     "connections": "array",
+     "preprocessor": null,
+     "facet_fields": null,
+     "sort_fields": null,
+     "index_job_interval": "integer",
+     "distance_type": null,
+     "indexed_fields": "array",
+     "model_name": "string",
+     "index_config": null,
+     "quantization_config": null
+    },
+    "evidence": [
+     "openapi/_original/macrometa-gdn-openapi-original.json#GET /_fabric/{fabric}/_api/index",
+     "openapi/_original/macrometa-photoniq-hss-openapi-original.json#DELETE /api/hss/v1/index/{index_name}",
+     "openapi/_original/macrometa-photoniq-hss-openapi-original.json#GET /api/hss/v1/index",
+     "openapi/_original/macrometa-photoniq-hss-openapi-original.json#GET /api/hss/v1/index/{index_name}",
+     "openapi/_original/macrometa-photoniq-hss-openapi-original.json#POST /api/hss/v1/index"
+    ]
+   },
+   "marqo": {
+    "segments": [
+     "indexes"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST item"
+    ],
+    "properties": {
+     "type": "string",
+     "model": "string",
+     "normalizeEmbeddings": "boolean",
+     "textPreprocessing": "object",
+     "imagePreprocessing": "object",
+     "vectorNumericType": "string",
+     "annParameters": "object"
+    },
+    "evidence": [
+     "openapi/_original/marqo-openapi.yml#DELETE /indexes/{index_name}",
+     "openapi/_original/marqo-openapi.yml#GET /indexes",
+     "openapi/_original/marqo-openapi.yml#POST /indexes/{index_name}"
+    ]
+   },
+   "meilisearch": {
+    "segments": [
+     "indexes"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/meilisearch-openapi.yml#DELETE /indexes/{indexUid}",
+     "openapi/_original/meilisearch-openapi.yml#GET /indexes",
+     "openapi/_original/meilisearch-openapi.yml#GET /indexes/{indexUid}",
+     "openapi/_original/meilisearch-openapi.yml#PATCH /indexes/{indexUid}",
+     "openapi/_original/meilisearch-openapi.yml#POST /indexes"
+    ]
+   },
+   "openserp": {
+    "segments": [
+     "engines"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "name": "string",
+     "initialized": "boolean",
+     "circuit_state": "string"
+    },
+    "evidence": [
+     "openapi/_original/openserp-oss-openapi.yml#GET /mega/engines"
+    ]
+   },
+   "parseflow": {
+    "segments": [
+     "index"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/parseflow-openapi.json#POST /v2/index"
+    ]
+   },
+   "pexafy": {
+    "segments": [
+     "collections"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "description": [
+      "string",
+      "null"
+     ],
+     "is_public": "boolean",
+     "cover_photo_id": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "photos_count": "integer",
+     "photo_id": "string",
+     "photo_thumbnail_url": [
+      "string",
+      "null"
+     ],
+     "photo_source": [
+      "string",
+      "null"
+     ],
+     "photo_photographer": [
+      "string",
+      "null"
+     ],
+     "added_at": "string",
+     "deleted": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/pexafy-openapi.json#DELETE /api/v1/collections/{collection_id}",
+     "openapi/_original/pexafy-openapi.json#GET /api/v1/collections",
+     "openapi/_original/pexafy-openapi.json#GET /api/v1/collections/{collection_id}",
+     "openapi/_original/pexafy-openapi.json#POST /api/v1/collections"
+    ]
+   },
+   "pinecone": {
+    "segments": [
+     "indexes"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "dimension": "integer",
+     "metric": "string",
+     "host": "string",
+     "private_host": "string",
+     "deletion_protection": "string",
+     "tags": "object",
+     "embed": "object",
+     "spec": "object",
+     "status": "object",
+     "vector_type": "string"
+    },
+    "evidence": [
+     "openapi/_original/pinecone-db-control-openapi.yaml#DELETE /indexes/{index_name}",
+     "openapi/_original/pinecone-db-control-openapi.yaml#GET /indexes",
+     "openapi/_original/pinecone-db-control-openapi.yaml#GET /indexes/{index_name}",
+     "openapi/_original/pinecone-db-control-openapi.yaml#PATCH /indexes/{index_name}",
+     "openapi/_original/pinecone-db-control-openapi.yaml#POST /indexes"
+    ]
+   },
+   "pryon": {
+    "segments": [
+     "collections"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "collection_id": "string",
+     "active_domain_id": "string",
+     "active_domain_history": "array",
+     "team_ids": "array",
+     "solution_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/pryon-admin-openapi.json#DELETE /api/knowledge/v1/collections/{collection_id}",
+     "openapi/_original/pryon-admin-openapi.json#GET /api/knowledge/v1/collections",
+     "openapi/_original/pryon-admin-openapi.json#GET /api/knowledge/v1/collections/{collection_id}",
+     "openapi/_original/pryon-admin-openapi.json#PATCH /api/knowledge/v1/collections/{data.collection_id}"
+    ]
+   },
+   "quickwit": {
+    "segments": [
+     "indexes"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "version": "string",
+     "source_id": "string",
+     "source_type": "string",
+     "num_pipelines": "integer",
+     "transform": "object",
+     "params": "object",
+     "index_id": "string",
+     "index_uri": "string",
+     "doc_mapping": "object",
+     "indexing_settings": "object",
+     "search_settings": "object",
+     "retention": "object",
+     "split_id": "string",
+     "index_uid": "string",
+     "split_state": "string",
+     "num_docs": "integer",
+     "size_in_bytes": "integer",
+     "create_timestamp": "integer",
+     "time_range": "object"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#DELETE /indexes/{index_id}",
+     "openapi/_original/openapi.yml#GET /indexes",
+     "openapi/_original/openapi.yml#GET /indexes/{index_id}",
+     "openapi/_original/openapi.yml#POST /indexes",
+     "openapi/_original/openapi.yml#PUT /indexes/{index_id}"
+    ]
+   },
+   "searchcraft": {
+    "segments": [
+     "index"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "name": "string",
+     "schema": "object"
+    },
+    "evidence": [
+     "openapi/_original/searchcraft-openapi.yml#DELETE /index/{index}",
+     "openapi/_original/searchcraft-openapi.yml#GET /index",
+     "openapi/_original/searchcraft-openapi.yml#GET /index/{index}",
+     "openapi/_original/searchcraft-openapi.yml#PATCH /index/{index}",
+     "openapi/_original/searchcraft-openapi.yml#POST /index",
+     "openapi/_original/searchcraft-openapi.yml#PUT /index/{index}"
+    ]
+   },
+   "slite": {
+    "segments": [
+     "index"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "explanation": "string",
+     "updatedAt": null,
+     "url": "string",
+     "title": "string",
+     "id": "string",
+     "rootId": "string",
+     "content": "string",
+     "type": "string",
+     "ok": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/openapi.json#DELETE /ask/index",
+     "openapi/_original/openapi.json#GET /ask/index",
+     "openapi/_original/openapi.json#POST /ask/index"
+    ]
+   },
+   "the-index-fyi": {
+    "segments": [
+     "indexes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object",
+     "links": "object"
+    },
+    "evidence": [
+     "openapi/_original/the-index-fyi-openapi.json#GET /indexes",
+     "openapi/_original/the-index-fyi-openapi.json#GET /indexes/{slug}",
+     "openapi/_original/the-index-fyi-openapi.yml#GET /indexes",
+     "openapi/_original/the-index-fyi-openapi.yml#GET /indexes/{slug}"
+    ]
+   },
+   "twelvelabs": {
+    "segments": [
+     "indexes"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "_id": "string",
+     "index_name": "string",
+     "models": "array",
+     "video_count": "integer",
+     "total_duration": "number",
+     "addons": "array",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/twelvelabs-openapi.yml#DELETE /indexes/{index_id}",
+     "openapi/_original/twelvelabs-openapi.yml#GET /indexes",
+     "openapi/_original/twelvelabs-openapi.yml#GET /indexes/{index_id}",
+     "openapi/_original/twelvelabs-openapi.yml#POST /indexes",
+     "openapi/_original/twelvelabs-openapi.yml#PUT /indexes/{index_id}"
+    ]
+   },
+   "upstash": {
+    "segments": [
+     "index"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "region": "string",
+     "dimension_count": "integer",
+     "similarity_function": "string"
+    },
+    "evidence": [
+     "openapi/_original/upstash-openapi.yml#GET /vector/index"
+    ]
+   },
+   "vectara": {
+    "segments": [
+     "corpora"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "key": "string",
+     "name": "string",
+     "description": "string",
+     "queries_are_answers": "boolean",
+     "documents_are_questions": "boolean",
+     "encoder_id": "string",
+     "filter_attributes": "array",
+     "custom_dimensions": "array",
+     "enabled": "boolean",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/vectara-openapi.yml#DELETE /v2/corpora/{corpus_key}",
+     "openapi/_original/vectara-openapi.yml#GET /v2/corpora",
+     "openapi/_original/vectara-openapi.yml#GET /v2/corpora/{corpus_key}",
+     "openapi/_original/vectara-openapi.yml#PATCH /v2/corpora/{corpus_key}",
+     "openapi/_original/vectara-openapi.yml#POST /v2/corpora"
+    ]
+   },
+   "voyant": {
+    "segments": [
+     "engines"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/voyant-openapi-original.json#GET /api/crawl/engines"
+    ]
+   },
+   "weaviate": {
+    "segments": [
+     "index"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/weaviate-openapi.yml#DELETE /schema/{className}/properties/{propertyName}/index/{indexName}",
+     "openapi/_original/weaviate-openapi.yml#DELETE /schema/{className}/vectors/{vectorIndexName}/index"
+    ]
+   },
+   "zincsearch": {
+    "segments": [
+     "index"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "list": "array",
+     "page": "object",
+     "index": "string",
+     "message": "string",
+     "storage_type": "string",
+     "mappings": "object",
+     "name": "string",
+     "settings": "object",
+     "shard_num": "integer"
+    },
+    "evidence": [
+     "openapi/_original/zincsearch-openapi.yml#DELETE /api/index/{index}",
+     "openapi/_original/zincsearch-openapi.yml#GET /api/index",
+     "openapi/_original/zincsearch-openapi.yml#GET /api/index/{index}",
+     "openapi/_original/zincsearch-openapi.yml#POST /api/index",
+     "openapi/_original/zincsearch-swagger.json#DELETE /api/index/{index}",
+     "openapi/_original/zincsearch-swagger.json#GET /api/index",
+     "openapi/_original/zincsearch-swagger.json#GET /api/index/{index}",
+     "openapi/_original/zincsearch-swagger.json#POST /api/index",
+     "openapi/_original/zincsearch-swagger.yaml#DELETE /api/index/{index}",
+     "openapi/_original/zincsearch-swagger.yaml#GET /api/index",
+     "openapi/_original/zincsearch-swagger.yaml#GET /api/index/{index}",
+     "openapi/_original/zincsearch-swagger.yaml#POST /api/index"
+    ]
+   }
+  },
+  "search_query": {
+   "aito-technologies": {
+    "segments": [
+     "_search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "offset": "integer",
+     "total": "integer",
+     "hits": "array",
+     "from": null,
+     "where": "object",
+     "orderBy": null,
+     "select": null,
+     "limit": "integer",
+     "config": "object",
+     "predict": "string",
+     "recommend": "string",
+     "goal": "object",
+     "relate": "array",
+     "search": "object",
+     "basedOn": "array",
+     "having": "object"
+    },
+    "evidence": [
+     "openapi/_original/aito-technologies-openapi.yml#POST /api/v1/_search",
+     "openapi/_original/aito-technologies-openapi.yml#POST /api/v2/_search"
+    ]
+   },
+   "aleph-alpha": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "documentName": "string",
+     "section": "array",
+     "start": null,
+     "end": null,
+     "score": "number",
+     "query": "array",
+     "filters": "array",
+     "minScore": "integer",
+     "maxResults": "integer",
+     "path": "object",
+     "max_results": "integer",
+     "min_score": "number"
+    },
+    "evidence": [
+     "openapi/_original/aleph-alpha-pharia-data-openapi.json#POST /search_stores/{searchStoreID}/search",
+     "openapi/_original/aleph-alpha-pharia-search-openapi.json#POST /collections/{namespace}/{collection}/indexes/{index}/search"
+    ]
+   },
+   "algolia": {
+    "segments": [
+     "search",
+     "query",
+     "queries"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "abTestID": "integer",
+     "abTestVariantID": "integer",
+     "aroundLatLng": "string",
+     "automaticRadius": "string",
+     "exhaustive": "object",
+     "appliedRules": "array",
+     "exhaustiveFacetsCount": "boolean",
+     "exhaustiveNbHits": "boolean",
+     "exhaustiveTypo": "boolean",
+     "facets": "object",
+     "facets_stats": "object",
+     "index": "string",
+     "indexUsed": "string",
+     "message": "string",
+     "nbSortedHits": "integer",
+     "parsedQuery": "string",
+     "processingTimeMS": "integer",
+     "processingTimingsMS": "object",
+     "queryAfterRemoval": "string",
+     "redirect": "object",
+     "renderingContent": "object",
+     "serverTimeMS": "integer",
+     "serverUsed": "string",
+     "userData": null,
+     "queryID": "string",
+     "_automaticInsights": "boolean",
+     "page": "integer",
+     "nbHits": "integer",
+     "nbPages": "integer",
+     "hitsPerPage": "integer",
+     "objectID": "string",
+     "_highlightResult": "object",
+     "_snippetResult": "object",
+     "_rankingInfo": "object",
+     "_distinctSeqID": "integer",
+     "params": "string",
+     "indexName": "string",
+     "type": "string",
+     "extensions": "object",
+     "value": "string",
+     "highlighted": "string",
+     "count": "integer",
+     "query": "string",
+     "maxFacetHits": "integer",
+     "searchQuery": "object",
+     "conditions": "array",
+     "consequence": "object",
+     "description": "string",
+     "enabled": "boolean",
+     "validity": "array",
+     "tags": "array",
+     "anchoring": "string",
+     "context": "string",
+     "authenticationID": "string",
+     "name": "string",
+     "platform": null,
+     "owner": null,
+     "input": null,
+     "createdAt": "string",
+     "updatedAt": "string",
+     "authenticationIDs": "array",
+     "destinationID": "string",
+     "transformationIDs": "array",
+     "destinationIDs": "array",
+     "sourceID": "string",
+     "sourceIDs": "array",
+     "taskID": "string",
+     "cron": "string",
+     "lastRun": "string",
+     "nextRun": "string",
+     "failureThreshold": "integer",
+     "action": "string",
+     "subscriptionAction": "string",
+     "cursor": "string",
+     "notifications": "object",
+     "policies": "object",
+     "taskIDs": "array",
+     "trigger": null,
+     "transformationID": "string",
+     "code": "string",
+     "_metadata": "object",
+     "condition": "object",
+     "filters": "string",
+     "maxValuesPerFacet": "integer",
+     "facetQuery": "string",
+     "synonyms": "array",
+     "word": "string",
+     "corrections": "array",
+     "placeholder": "string",
+     "replacements": "array",
+     "scope": "string",
+     "language": "string",
+     "words": "array",
+     "decomposition": "array",
+     "state": "string",
+     "userID": "string",
+     "clusterName": "string",
+     "nbRecords": "integer",
+     "dataSize": "integer"
+    },
+    "evidence": [
+     "openapi/_original/algolia-algoliasearch-openapi.yml#POST /1/indexes/*/queries",
+     "openapi/_original/algolia-composition-openapi.yml#POST /1/compositions/{compositionID}/facets/{facetName}/query",
+     "openapi/_original/algolia-composition-openapi.yml#POST /1/compositions/{compositionID}/rules/search",
+     "openapi/_original/algolia-ingestion-openapi.yml#POST /1/authentications/search",
+     "openapi/_original/algolia-ingestion-openapi.yml#POST /1/destinations/search",
+     "openapi/_original/algolia-ingestion-openapi.yml#POST /1/sources/search",
+     "openapi/_original/algolia-ingestion-openapi.yml#POST /1/tasks/search",
+     "openapi/_original/algolia-ingestion-openapi.yml#POST /1/transformations/search",
+     "openapi/_original/algolia-ingestion-openapi.yml#POST /2/tasks/search",
+     "openapi/_original/algolia-recommend-openapi.yml#POST /1/indexes/{indexName}/{model}/recommend/rules/search",
+     "openapi/_original/algolia-search-openapi.yml#POST /1/clusters/mapping/search",
+     "openapi/_original/algolia-search-openapi.yml#POST /1/dictionaries/{dictionaryName}/search"
+    ]
+   },
+   "amazon-kendra": {
+    "segments": [
+     "query",
+     "retrieve"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "QueryText": "string",
+     "AttributeFilter": "object",
+     "PageNumber": "integer",
+     "PageSize": "integer"
+    },
+    "evidence": [
+     "openapi/_original/amazon-kendra-openapi.yml#POST /indexes/{IndexId}/query",
+     "openapi/_original/amazon-kendra-openapi.yml#POST /indexes/{IndexId}/retrieve"
+    ]
+   },
+   "amazon-opensearch": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "CrossClusterSearchConnections": null,
+     "NextToken": null,
+     "Filters": "array",
+     "MaxResults": "integer"
+    },
+    "evidence": [
+     "openapi/_original/amazon-opensearch-openapi.yml#POST /2015-01-01/es/ccs/inboundConnection/search",
+     "openapi/_original/amazon-opensearch-openapi.yml#POST /2015-01-01/es/ccs/outboundConnection/search"
+    ]
+   },
+   "anyapi": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "category": "string",
+     "description": "string",
+     "excludesCallerDelay": "boolean",
+     "execution": null,
+     "failover": "boolean",
+     "highlightFields": "array",
+     "method": "string",
+     "name": "string",
+     "path": "string",
+     "platformId": "string",
+     "pricing": null,
+     "provider": "string",
+     "relevance": "number",
+     "slug": "string",
+     "tryMaxItems": "integer"
+    },
+    "evidence": [
+     "openapi/_original/anyapi-gateway-openapi.json#GET /catalog/search",
+     "openapi/_original/anyapi-openapi-original.json#GET /catalog/search"
+    ]
+   },
+   "arangodb": {
+    "segments": [
+     "query"
+    ],
+    "operations": [
+     "DELETE item",
+     "POST collection"
+    ],
+    "properties": {
+     "query": "string"
+    },
+    "evidence": [
+     "openapi/_original/arangodb-core-openapi-original.json#DELETE /_db/{database-name}/_api/query/{query-id}",
+     "openapi/_original/arangodb-core-openapi-original.json#POST /_db/{database-name}/_api/query"
+    ]
+   },
+   "bing-news": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "_type": "string",
+     "id": "string",
+     "readLink": "string",
+     "relatedTopics": "array",
+     "sort": "array",
+     "totalEstimatedMatches": "integer",
+     "value": "array",
+     "webSearchUrl": "string"
+    },
+    "evidence": [
+     "openapi/_original/bing-news-search-openapi.json#GET /news/search"
+    ]
+   },
+   "bloomreach": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/bloomreach-discovery-recommendations-pathways-openapi.yml#GET /visual/search/{widget_id}"
+    ]
+   },
+   "brave-browser": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "query": "object",
+     "web": "object",
+     "mixed": "object",
+     "infobox": "object",
+     "news": "object",
+     "videos": "object",
+     "type": "string"
+    },
+    "evidence": [
+     "openapi/_original/brave-browser-openapi.yml#GET /images/search",
+     "openapi/_original/brave-browser-openapi.yml#GET /news/search",
+     "openapi/_original/brave-browser-openapi.yml#GET /spellcheck/search",
+     "openapi/_original/brave-browser-openapi.yml#GET /suggest/search",
+     "openapi/_original/brave-browser-openapi.yml#GET /summarizer/search",
+     "openapi/_original/brave-browser-openapi.yml#GET /videos/search",
+     "openapi/_original/brave-browser-openapi.yml#GET /web/search"
+    ]
+   },
+   "brightedge-technologies": {
+    "segments": [
+     "query"
+    ],
+    "operations": [
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "count": "integer",
+     "offset": "integer",
+     "total": "integer",
+     "values": "array",
+     "success": "boolean",
+     "message": "string",
+     "dataset": "string",
+     "data": null,
+     "account_id": "integer",
+     "time_range": "array",
+     "time_range_type": "string",
+     "collector_ids": "array",
+     "personality_id_list": "array",
+     "topic_id_list": "array",
+     "use_cache": "boolean",
+     "sort": "array",
+     "filters": "array",
+     "brand_category_id_list": "array",
+     "prompt_type": "integer",
+     "by_domain": "boolean",
+     "output_type": null,
+     "metadata": "object",
+     "dimensions": "array",
+     "dimensionOptions": "object",
+     "measures": "array",
+     "additional_measures": "array"
+    },
+    "evidence": [
+     "openapi/_original/brightedge-technologies-platform-openapi-original.json#POST /3.0/objects/query/{account_id}",
+     "openapi/_original/brightedge-technologies-platform-openapi-original.json#POST /3.0/query/{account_id}",
+     "openapi/_original/brightedge-technologies-platform-openapi-original.json#POST /5.0/objects/aicatalyst/query",
+     "openapi/_original/brightedge-technologies-platform-openapi-original.json#POST /5.0/objects/aicatalyst/v2/query",
+     "openapi/_original/brightedge-technologies-platform-openapi-original.json#POST /5.0/objects/query/{account_id}",
+     "openapi/_original/brightedge-technologies-platform-openapi-original.json#POST /latest3/objects/query/{account_id}",
+     "openapi/_original/brightedge-technologies-platform-openapi-original.json#POST /latest3/query/{account_id}",
+     "openapi/_original/brightedge-technologies-platform-openapi-original.json#POST /latest5/objects/aicatalyst/query",
+     "openapi/_original/brightedge-technologies-platform-openapi-original.json#POST /latest5/objects/aicatalyst/v2/query",
+     "openapi/_original/brightedge-technologies-platform-openapi-original.json#POST /latest5/objects/query/{account_id}"
+    ]
+   },
+   "browserless": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "query": "string",
+     "limit": "number",
+     "lang": "string",
+     "location": "string",
+     "country": "string",
+     "tbs": "string",
+     "categories": "array",
+     "sources": "array",
+     "timeout": "number",
+     "scrapeOptions": "object"
+    },
+    "evidence": [
+     "openapi/_original/browserless-openapi.yml#POST /search"
+    ]
+   },
+   "chroma": {
+    "segments": [
+     "query",
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "distances": [
+      "array",
+      "null"
+     ],
+     "documents": [
+      "array",
+      "null"
+     ],
+     "embeddings": [
+      "array",
+      "null"
+     ],
+     "ids": "array",
+     "include": "array",
+     "metadatas": [
+      "array",
+      "null"
+     ],
+     "uris": [
+      "array",
+      "null"
+     ],
+     "where": null,
+     "where_document": null,
+     "n_results": [
+      "integer",
+      "null"
+     ],
+     "query_embeddings": "array",
+     "scores": "array",
+     "select": "array",
+     "filter": "object",
+     "group_by": "object",
+     "limit": "object",
+     "rank": "object"
+    },
+    "evidence": [
+     "openapi/_original/chroma-openapi.json#POST /api/v2/tenants/{tenant}/databases/{database}/collections/{collection_id}/query",
+     "openapi/_original/chroma-openapi.json#POST /api/v2/tenants/{tenant}/databases/{database}/collections/{collection_id}/search"
+    ]
+   },
+   "coactive": {
+    "segments": [
+     "queries"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "query_id": "string",
+     "query": "string",
+     "type": "string",
+     "status": "string",
+     "results": [
+      "string",
+      "null"
+     ],
+     "start_dt": [
+      "string",
+      "null"
+     ],
+     "end_dt": [
+      "string",
+      "null"
+     ],
+     "dataset_id": "string",
+     "total_row_count": [
+      "integer",
+      "null"
+     ],
+     "parameters": [
+      "object",
+      "null"
+     ],
+     "created_dt": "string",
+     "updated_dt": "string",
+     "created_user_id": "string",
+     "updated_user_id": [
+      "string",
+      "null"
+     ],
+     "query_ids": [
+      "array",
+      "null"
+     ],
+     "user_ids": [
+      "array",
+      "null"
+     ],
+     "exclude_user_ids": [
+      "array",
+      "null"
+     ],
+     "embedding_id": [
+      "string",
+      "null"
+     ],
+     "check_validity": "boolean",
+     "dynamic_tags_version": "string"
+    },
+    "evidence": [
+     "openapi/_original/coactive-openapi-original.json#DELETE /api/v1/queries/{query_id}",
+     "openapi/_original/coactive-openapi-original.json#GET /api/v1/queries",
+     "openapi/_original/coactive-openapi-original.json#GET /api/v1/queries/{query_id}",
+     "openapi/_original/coactive-openapi-original.json#POST /api/v1/queries"
+    ]
+   },
+   "cognee": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "text": "string",
+     "user": "string",
+     "createdAt": "string",
+     "datasetId": null,
+     "search_result": null,
+     "dataset_id": null,
+     "dataset_name": null,
+     "searchType": "string",
+     "datasets": null,
+     "datasetIds": null,
+     "query": "string",
+     "systemPrompt": null,
+     "nodeName": null,
+     "topK": null,
+     "onlyContext": "boolean",
+     "sessionId": null,
+     "verbose": "boolean",
+     "skills": null,
+     "tools": null,
+     "maxIter": null,
+     "includeReferences": "boolean",
+     "codeQuery": null
+    },
+    "evidence": [
+     "openapi/_original/cognee-openapi.json#GET /api/v1/search",
+     "openapi/_original/cognee-openapi.json#POST /api/v1/search"
+    ]
+   },
+   "constructorio": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "request": "object",
+     "result_id": "string",
+     "response": null
+    },
+    "evidence": [
+     "openapi/_original/constructorio-search-openapi-original.json#GET /v1/search/{search_query}",
+     "openapi/_original/constructorio-search-openapi.yml#GET /v1/search/{search_query}"
+    ]
+   },
+   "couchbase": {
+    "segments": [
+     "query"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "index": "string",
+     "id": "string",
+     "score": "number",
+     "fields": "object",
+     "fragments": "object",
+     "sort": "array",
+     "query": "object",
+     "size": "integer",
+     "from": "integer",
+     "highlight": "object",
+     "facets": "object",
+     "explain": "boolean",
+     "ctl": "object"
+    },
+    "evidence": [
+     "openapi/_original/couchbase-search-service-rest-api-openapi.yml#POST /api/index/{indexName}/query"
+    ]
+   },
+   "coveo": {
+    "segments": [
+     "query",
+     "search",
+     "retrieve"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "trackingId": "string",
+     "solutionType": "string",
+     "targets": "array",
+     "isGlobal": "boolean",
+     "configurationModel": "object",
+     "language": "string",
+     "country": "string",
+     "currency": "string",
+     "clientId": "string",
+     "facets": "array",
+     "page": "integer",
+     "perPage": "integer",
+     "sort": null,
+     "debug": "boolean",
+     "query": "string",
+     "context": "object",
+     "legacyFacetOptions": "object",
+     "enableResults": "boolean",
+     "sortBy": "string",
+     "order": "string",
+     "filters": "object",
+     "text": "string",
+     "relevanceScore": "number",
+     "document": "object",
+     "filter": "string",
+     "additionalFields": "array",
+     "maxPassages": "integer",
+     "pipeline": "string",
+     "searchHub": "string",
+     "localization": "object",
+     "analytics": "object",
+     "searchEventUid": "string",
+     "visitId": "string",
+     "visitorId": "string",
+     "userAgent": "string",
+     "customData": "object",
+     "anonymous": "boolean",
+     "username": "string",
+     "userDisplayName": "string",
+     "splitTestRunName": "string",
+     "splitTestRunVersion": "string",
+     "originLevel1": "string",
+     "originLevel2": "string",
+     "originLevel3": "string",
+     "device": "string",
+     "mobile": "boolean",
+     "searchQueryUid": "string",
+     "queryText": "string",
+     "actionCause": "string",
+     "advancedQuery": "string",
+     "numberOfResults": "integer",
+     "contextual": "boolean",
+     "responseTime": "integer",
+     "results": "array",
+     "queryPipeline": "string",
+     "userGroups": "array",
+     "outcome": "integer",
+     "originContext": "string",
+     "indexId": "string",
+     "facetState": "array"
+    },
+    "evidence": [
+     "openapi/_original/coveo-commerce-openapi-original.yml#DELETE /rest/organizations/{organizationId}/commerce/v2/configurations/query",
+     "openapi/_original/coveo-commerce-openapi-original.yml#GET /rest/organizations/{organizationId}/commerce/v2/configurations/query",
+     "openapi/_original/coveo-commerce-openapi-original.yml#POST /rest/organizations/{organizationId}/commerce/v2/configurations/query",
+     "openapi/_original/coveo-commerce-openapi-original.yml#POST /rest/organizations/{organizationId}/commerce/v2/search",
+     "openapi/_original/coveo-commerce-openapi-original.yml#PUT /rest/organizations/{organizationId}/commerce/v2/configurations/query",
+     "openapi/_original/coveo-customer-service-openapi-original.yml#POST /rest/organizations/{organizationId}/insight/v1/configs/{configId}/search",
+     "openapi/_original/coveo-field-openapi-original.yml#POST /rest/organizations/{organizationId}/indexes/fields/search",
+     "openapi/_original/coveo-search-openapi-original.yml#POST /rest/search/v3/passages/retrieve",
+     "openapi/_original/coveo-usage-analytics-read-openapi-original.yml#DELETE /v15/stats/query/{queryId}",
+     "openapi/_original/coveo-usage-analytics-write-openapi-original.yml#POST /v14/analytics/search",
+     "openapi/_original/coveo-usage-analytics-write-openapi-original.yml#POST /v15/analytics/search"
+    ]
+   },
+   "crustapi": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "searchParameters": "object",
+     "organic": "array",
+     "places": "array",
+     "news": "array",
+     "shopping": "array",
+     "images": "array",
+     "videos": "array",
+     "reviews": "array",
+     "suggestions": "array",
+     "text": "string",
+     "markdown": "string",
+     "metadata": "object",
+     "jsonld": null,
+     "nextPageToken": "string",
+     "creditsRemaining": "integer",
+     "tookMs": "integer"
+    },
+    "evidence": [
+     "openapi/_original/crustapi-openapi-original.json#GET /v1/search",
+     "openapi/_original/crustapi-openapi.json#GET /v1/search"
+    ]
+   },
+   "currentsapi": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "title": "string",
+     "urls": "string",
+     "category": "array",
+     "description": "string",
+     "image": "string",
+     "published": "string"
+    },
+    "evidence": [
+     "openapi/_original/currentsapi-openapi.json#GET /search"
+    ]
+   },
+   "depict": {
+    "segments": [
+     "queries"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "markets": "array",
+     "prev_markets": "array"
+    },
+    "evidence": [
+     "openapi/_original/depict-portal-openapi-original.json#GET /api/v1/merchants/{merchant_id}/search/metrics/queries"
+    ]
+   },
+   "depictai": {
+    "segments": [
+     "queries"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "markets": "array",
+     "prev_markets": "array"
+    },
+    "evidence": [
+     "openapi/_original/depictai-portal-openapi.json#GET /api/v1/merchants/{merchant_id}/search/metrics/queries"
+    ]
+   },
+   "dexcare": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "visitTypeId": "string",
+     "visitTypeName": "string",
+     "slots": "array",
+     "npi": "string",
+     "ehrInstance": "string",
+     "departmentId": "string"
+    },
+    "evidence": [
+     "openapi/_original/dexcare-slots-availability-openapi.yml#POST /slots/search",
+     "openapi/_original/forq-availabilityBundled.json#POST /slots/search"
+    ]
+   },
+   "dvids-api": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "description": "string",
+     "keywords": "string",
+     "date": "string",
+     "date_published": "string",
+     "timestamp": "string",
+     "branch": "string",
+     "unit_name": "string",
+     "image": "string",
+     "thumbnail": "string",
+     "url": "string",
+     "credit": "array",
+     "location": "object",
+     "rating": "number",
+     "virin": "string",
+     "duration": "integer",
+     "aspect_ratio": "string",
+     "unit_id": "integer",
+     "unit_abbrev": "string"
+    },
+    "evidence": [
+     "openapi/_original/dvids-api-openapi.yml#GET /search",
+     "openapi/_original/dvids-api-openapi.yml#GET /unit/search"
+    ]
+   },
+   "elastic": {
+    "segments": [
+     "_search",
+     "search",
+     "query",
+     "queries"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "took": "integer",
+     "timed_out": "boolean",
+     "hits": "object",
+     "id": null,
+     "is_partial": "boolean",
+     "is_running": "boolean",
+     "shard_failures": "array",
+     "acknowledged": "boolean",
+     "query": "string",
+     "case_sensitive": "boolean",
+     "event_category_field": null,
+     "tiebreaker_field": null,
+     "timestamp_field": null,
+     "fetch_size": null,
+     "filter": null,
+     "keep_alive": null,
+     "keep_on_completion": "boolean",
+     "wait_for_completion_timeout": null,
+     "allow_partial_search_results": "boolean",
+     "allow_partial_sequence_results": "boolean",
+     "size": null,
+     "fields": null,
+     "result_position": null,
+     "runtime_mappings": null,
+     "max_samples_per_key": "number",
+     "node": null,
+     "start_time_millis": "number",
+     "running_time_nanos": "number",
+     "coordinating_node": null,
+     "data_nodes": "array",
+     "queries": "object",
+     "error": "string",
+     "explanation": "string",
+     "index": null,
+     "valid": "boolean",
+     "bool": null,
+     "boosting": null,
+     "common": "object",
+     "combined_fields": null,
+     "constant_score": null,
+     "dis_max": null,
+     "distance_feature": null,
+     "exists": null,
+     "function_score": null,
+     "fuzzy": "object",
+     "geo_bounding_box": null,
+     "geo_distance": null,
+     "geo_grid": "object",
+     "geo_polygon": null,
+     "geo_shape": null,
+     "has_child": null,
+     "has_parent": null,
+     "ids": null,
+     "intervals": "object",
+     "knn": null,
+     "match": "object",
+     "match_all": null,
+     "match_bool_prefix": "object",
+     "match_none": null,
+     "match_phrase": "object",
+     "match_phrase_prefix": "object",
+     "more_like_this": null,
+     "multi_match": null,
+     "nested": null,
+     "parent_id": null,
+     "percolate": null,
+     "pinned": null,
+     "prefix": "object",
+     "query_string": null,
+     "range": "object",
+     "rank_feature": null,
+     "regexp": "object",
+     "rule": null,
+     "script": null,
+     "script_score": null,
+     "semantic": null,
+     "shape": null,
+     "simple_query_string": null,
+     "span_containing": null,
+     "span_field_masking": null,
+     "span_first": null,
+     "span_multi": null,
+     "span_near": null,
+     "span_not": null,
+     "span_or": null,
+     "span_term": "object",
+     "span_within": null,
+     "sparse_vector": null,
+     "term": "object",
+     "terms": null,
+     "terms_set": "object",
+     "text_expansion": "object",
+     "weighted_tokens": "object",
+     "wildcard": "object",
+     "wrapper": null,
+     "type": null,
+     "_shards": null,
+     "aggregations": "object",
+     "_clusters": null,
+     "max_score": "number",
+     "num_reduce_phases": "number",
+     "profile": null,
+     "pit_id": null,
+     "_scroll_id": null,
+     "suggest": "object",
+     "terminated_early": "boolean",
+     "collapse": null,
+     "explain": "boolean",
+     "ext": "object",
+     "from": "number",
+     "highlight": null,
+     "track_total_hits": null,
+     "indices_boost": "array",
+     "docvalue_fields": "array",
+     "rank": null,
+     "min_score": "number",
+     "post_filter": null,
+     "rescore": null,
+     "retriever": null,
+     "script_fields": "object",
+     "search_after": null,
+     "slice": null,
+     "sort": null,
+     "_source": null,
+     "terminate_after": "number",
+     "timeout": "string",
+     "track_scores": "boolean",
+     "version": "boolean",
+     "seq_no_primary_term": "boolean",
+     "stored_fields": null,
+     "pit": null,
+     "stats": "array",
+     "params": "object"
+    },
+    "evidence": [
+     "openapi/_original/elastic-elasticsearch-openapi.yml#GET /_search",
+     "openapi/_original/elastic-elasticsearch-openapi.yml#GET /{index}/_search",
+     "openapi/_original/elasticsearch.json#DELETE /_eql/search/{id}",
+     "openapi/_original/elasticsearch.json#GET /_application/search_application/{name}/_search",
+     "openapi/_original/elasticsearch.json#GET /_eql/search/{id}",
+     "openapi/_original/elasticsearch.json#GET /_query/queries",
+     "openapi/_original/elasticsearch.json#GET /_query/queries/{id}",
+     "openapi/_original/elasticsearch.json#GET /_search",
+     "openapi/_original/elasticsearch.json#GET /_validate/query",
+     "openapi/_original/elasticsearch.json#GET /{index}/_eql/search",
+     "openapi/_original/elasticsearch.json#GET /{index}/_search",
+     "openapi/_original/elasticsearch.json#GET /{index}/_validate/query"
+    ]
+   },
+   "elasticsearch": {
+    "segments": [
+     "_search"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "query": "object",
+     "aggs": "object",
+     "size": "integer",
+     "from": "integer"
+    },
+    "evidence": [
+     "openapi/_original/elasticsearch-openapi.yml#GET /{index}/_search",
+     "openapi/_original/elasticsearch-openapi.yml#POST /{index}/_search"
+    ]
+   },
+   "elk-stack": {
+    "segments": [
+     "_search",
+     "search",
+     "queries",
+     "query"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": null,
+     "is_partial": "boolean",
+     "is_running": "boolean",
+     "took": null,
+     "timed_out": "boolean",
+     "hits": null,
+     "shard_failures": "array",
+     "acknowledged": "boolean",
+     "query": "string",
+     "case_sensitive": "boolean",
+     "event_category_field": null,
+     "tiebreaker_field": null,
+     "timestamp_field": null,
+     "fetch_size": null,
+     "filter": null,
+     "keep_alive": null,
+     "keep_on_completion": "boolean",
+     "wait_for_completion_timeout": null,
+     "allow_partial_search_results": "boolean",
+     "allow_partial_sequence_results": "boolean",
+     "size": null,
+     "fields": null,
+     "result_position": null,
+     "runtime_mappings": null,
+     "max_samples_per_key": "number",
+     "node": null,
+     "start_time_millis": "number",
+     "running_time_nanos": "number",
+     "coordinating_node": null,
+     "data_nodes": "array",
+     "queries": "object",
+     "error": "string",
+     "explanation": "string",
+     "index": null,
+     "shard": "number",
+     "valid": "boolean",
+     "bool": null,
+     "boosting": null,
+     "common": "object",
+     "combined_fields": null,
+     "constant_score": null,
+     "dis_max": null,
+     "distance_feature": null,
+     "exists": null,
+     "function_score": null,
+     "fuzzy": "object",
+     "geo_bounding_box": null,
+     "geo_distance": null,
+     "geo_grid": "object",
+     "geo_polygon": null,
+     "geo_shape": null,
+     "has_child": null,
+     "has_parent": null,
+     "ids": null,
+     "intervals": "object",
+     "knn": null,
+     "match": "object",
+     "match_all": null,
+     "match_bool_prefix": "object",
+     "match_none": null,
+     "match_phrase": "object",
+     "match_phrase_prefix": "object",
+     "more_like_this": null,
+     "multi_match": null,
+     "nested": null,
+     "parent_id": null,
+     "percolate": null,
+     "pinned": null,
+     "prefix": "object",
+     "query_string": null,
+     "range": "object",
+     "rank_feature": null,
+     "regexp": "object",
+     "rule": null,
+     "script": null,
+     "script_score": null,
+     "semantic": null,
+     "shape": null,
+     "simple_query_string": null,
+     "span_containing": null,
+     "span_field_masking": null,
+     "span_first": null,
+     "span_multi": null,
+     "span_near": null,
+     "span_not": null,
+     "span_or": null,
+     "span_term": "object",
+     "span_within": null,
+     "sparse_vector": null,
+     "term": "object",
+     "terms": null,
+     "terms_set": "object",
+     "text_expansion": "object",
+     "weighted_tokens": "object",
+     "wildcard": "object",
+     "wrapper": null,
+     "type": null,
+     "_shards": null,
+     "aggregations": "object",
+     "_clusters": null,
+     "max_score": "number",
+     "num_reduce_phases": "number",
+     "profile": null,
+     "pit_id": null,
+     "_scroll_id": null,
+     "suggest": "object",
+     "terminated_early": "boolean",
+     "collapse": null,
+     "explain": "boolean",
+     "ext": "object",
+     "from": "number",
+     "highlight": null,
+     "track_total_hits": null,
+     "indices_boost": "array",
+     "docvalue_fields": "array",
+     "rank": null,
+     "min_score": "number",
+     "post_filter": null,
+     "rescore": null,
+     "retriever": null,
+     "script_fields": "object",
+     "search_after": null,
+     "slice": null,
+     "sort": null,
+     "_source": null,
+     "terminate_after": "number",
+     "timeout": "string",
+     "track_scores": "boolean",
+     "version": "boolean",
+     "seq_no_primary_term": "boolean",
+     "stored_fields": null,
+     "pit": null,
+     "stats": "array",
+     "params": "object",
+     "@timestamp": "number",
+     "text": "string",
+     "_id": "string",
+     "_index": "string",
+     "_score": "number",
+     "etag": "string",
+     "mark_as_applied_by_agent": "boolean",
+     "service": "object",
+     "aggs": "object",
+     "description": "string",
+     "esql": "object",
+     "evidence": "array",
+     "expires_at": "string",
+     "severity_score": "number",
+     "title": "string"
+    },
+    "evidence": [
+     "openapi/_original/elk-stack-elasticsearch-openapi.json#DELETE /_eql/search/{id}",
+     "openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_application/search_application/{name}/_search",
+     "openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_eql/search/{id}",
+     "openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_query/queries",
+     "openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_query/queries/{id}",
+     "openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_search",
+     "openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_validate/query",
+     "openapi/_original/elk-stack-elasticsearch-openapi.json#GET /{index}/_eql/search",
+     "openapi/_original/elk-stack-elasticsearch-openapi.json#GET /{index}/_search",
+     "openapi/_original/elk-stack-elasticsearch-openapi.json#GET /{index}/_validate/query",
+     "openapi/_original/elk-stack-elasticsearch-openapi.json#POST /_application/search_application/{name}/_search",
+     "openapi/_original/elk-stack-elasticsearch-openapi.json#POST /_search"
+    ]
+   },
+   "epidemic-sound": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "mainArtists": "array",
+     "featuredArtists": "array",
+     "title": "string",
+     "bpm": "integer",
+     "length": "integer",
+     "moods": "array",
+     "genres": "array",
+     "images": "object",
+     "waveformUrl": "string",
+     "hasVocals": "boolean",
+     "added": "string",
+     "tierOption": "string",
+     "isExplicit": "boolean",
+     "isPreviewOnly": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/epidemic-sound-partner-content-api-openapi.yml#GET /v0/sound-effects/search",
+     "openapi/_original/epidemic-sound-partner-content-api-openapi.yml#GET /v0/tracks/search"
+    ]
+   },
+   "europeana": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "itemsCount": "integer",
+     "totalResults": "integer",
+     "items": "array",
+     "facets": "array"
+    },
+    "evidence": [
+     "openapi/_original/europeana-openapi.yml#GET /search.json"
+    ]
+   },
+   "exa": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "url": "string",
+     "title": "string",
+     "publishedDate": "string",
+     "author": "string",
+     "score": "number",
+     "text": "string",
+     "highlights": "array",
+     "summary": "string",
+     "query": "string",
+     "type": "string",
+     "numResults": "integer",
+     "category": "string",
+     "contents": "object",
+     "additionalQueries": "array",
+     "systemPrompt": "string",
+     "outputSchema": "object",
+     "stream": "boolean",
+     "moderation": "boolean",
+     "includeDomains": "array",
+     "excludeDomains": "array",
+     "startCrawlDate": "string",
+     "endCrawlDate": "string",
+     "startPublishedDate": "string",
+     "endPublishedDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/exa-openapi.yml#POST /search"
+    ]
+   },
+   "exa-ai": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "title": "string",
+     "url": "string",
+     "publishedDate": "string",
+     "author": null,
+     "id": "string",
+     "image": "string",
+     "favicon": "string",
+     "text": "string",
+     "highlights": "array",
+     "highlightScores": "array",
+     "summary": "string",
+     "subpages": "array",
+     "entities": "array",
+     "extras": "object",
+     "includeDomains": null,
+     "excludeDomains": null,
+     "startCrawlDate": null,
+     "endCrawlDate": null,
+     "startPublishedDate": null,
+     "endPublishedDate": null,
+     "numResults": null,
+     "context": null,
+     "moderation": null,
+     "contents": null,
+     "query": "string",
+     "additionalQueries": null,
+     "type": null,
+     "category": null,
+     "userLocation": null,
+     "compliance": null,
+     "outputSchema": null,
+     "systemPrompt": null,
+     "stream": null
+    },
+    "evidence": [
+     "openapi/_original/exa-search-api-openapi.yml#POST /search"
+    ]
+   },
+   "federal-laboratory-consortium-for-technology-transfer": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "answer": "string",
+     "sections": "array",
+     "cacheId": "number",
+     "query": "string",
+     "limit": "number"
+    },
+    "evidence": [
+     "openapi/_original/federal-laboratory-consortium-for-technology-transfer-greenbook-openapi.json#POST /v1/sections/search"
+    ]
+   },
+   "geekflare": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "title": "string",
+     "url": "string",
+     "snippet": "string",
+     "date": "string",
+     "position": "number",
+     "content": "object",
+     "thumbnail": "object",
+     "query": "string",
+     "limit": "number",
+     "time": "string",
+     "location": "string",
+     "source": "string",
+     "category": "string",
+     "includeDomains": "array",
+     "excludeDomains": "array",
+     "format": "string",
+     "scrape": "boolean",
+     "scrapeLimit": "number",
+     "groundedAnswer": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/geekflare-openapi.json#POST /search"
+    ]
+   },
+   "getty-images": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string"
+    },
+    "evidence": [
+     "openapi/_original/getty-images-swagger-v3-openapi.json#GET /v3/image-match/search"
+    ]
+   },
+   "gnews": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "title": "string",
+     "description": "string",
+     "content": "string",
+     "url": "string",
+     "image": "string",
+     "publishedAt": "string",
+     "lang": "string",
+     "source": "object"
+    },
+    "evidence": [
+     "openapi/_original/gnews-openapi.yml#GET /search"
+    ]
+   },
+   "google-search-console": {
+    "segments": [
+     "query"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "keys": "array",
+     "clicks": "number",
+     "impressions": "number",
+     "ctr": "number",
+     "position": "number",
+     "startDate": "string",
+     "endDate": "string",
+     "dimensions": "array",
+     "type": "string",
+     "dimensionFilterGroups": "array",
+     "aggregationType": "string",
+     "rowLimit": "integer",
+     "startRow": "integer",
+     "dataState": "string"
+    },
+    "evidence": [
+     "openapi/_original/google-search-console-api-openapi.yml#POST /webmasters/v3/sites/{siteUrl}/searchAnalytics/query"
+    ]
+   },
+   "google-youtube": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "kind": "string",
+     "etag": "string",
+     "id": "object",
+     "snippet": "object"
+    },
+    "evidence": [
+     "openapi/_original/youtube.yml#GET /search"
+    ]
+   },
+   "guru": {
+    "segments": [
+     "search",
+     "query"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/guru-openapi.yml#GET /folders/search",
+     "openapi/_original/guru-openapi.yml#GET /search/query"
+    ]
+   },
+   "iconik": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "objects": "array",
+     "pages": "integer",
+     "total": "integer",
+     "query": "string",
+     "doc_types": "array",
+     "filter": "object",
+     "sort": "array"
+    },
+    "evidence": [
+     "openapi/_original/iconik-openapi.yml#POST /search/v1/search/"
+    ]
+   },
+   "insider": {
+    "segments": [
+     "search",
+     "query"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/insider-eureka-search-openapi.yml#GET /api/web/search",
+     "openapi/_original/insider-eureka-search-openapi.yml#GET /api/web/suggestions/query"
+    ]
+   },
+   "kagi": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "q": "string"
+    },
+    "evidence": [
+     "openapi/_original/kagi-openapi.yml#GET /search",
+     "openapi/_original/kagi-openapi.yml#POST /search"
+    ]
+   },
+   "kannkidas-de": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "found": "integer",
+     "page": "integer",
+     "perPage": "integer",
+     "mode": null,
+     "tookMs": "integer",
+     "hits": "array",
+     "facets": "object"
+    },
+    "evidence": [
+     "openapi/_original/kannkidas-de-openapi.json#GET /search",
+     "openapi/_original/kannkidas-de-openapi.yml#GET /search"
+    ]
+   },
+   "lancedb": {
+    "segments": [
+     "query"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "identity": "object",
+     "context": "object",
+     "id": "array",
+     "bypass_vector_index": "boolean",
+     "columns": "object",
+     "distance_type": "string",
+     "ef": "integer",
+     "fast_search": "boolean",
+     "filter": "string",
+     "full_text_query": "object",
+     "k": "integer",
+     "lower_bound": "number",
+     "nprobes": "integer",
+     "offset": "integer",
+     "prefilter": "boolean",
+     "refine_factor": "integer",
+     "upper_bound": "number",
+     "vector": "object",
+     "vector_column": "string",
+     "version": "integer",
+     "with_row_id": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/lance-namespace-openapi.yaml#POST /v1/table/{id}/query"
+    ]
+   },
+   "landing": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/landing-public-openapi.json#GET /api/public/search"
+    ]
+   },
+   "library-of-congress": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "date": "string",
+     "url": "string",
+     "description": "array",
+     "subject": "array",
+     "original_format": "array"
+    },
+    "evidence": [
+     "openapi/_original/library-of-congress-loc-gov-json-api-openapi.yml#GET /search/"
+    ]
+   },
+   "lily-ai": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "message": "string",
+     "page": "string",
+     "per_page": "string",
+     "retailer": "string",
+     "total_count": "number",
+     "products": "array"
+    },
+    "evidence": [
+     "openapi/_original/lily-ai-lilyapp-api-openapi.json#GET /search",
+     "openapi/_original/lily-ai-lilyapp-api-openapi.yml#GET /search"
+    ]
+   },
+   "listennotes": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "audio": "string",
+     "audio_length_sec": "integer",
+     "rss": "string",
+     "description_highlighted": "string",
+     "description_original": "string",
+     "title_highlighted": "string",
+     "title_original": "string",
+     "transcripts_highlighted": "array",
+     "image": "string",
+     "thumbnail": "string",
+     "itunes_id": "integer",
+     "pub_date_ms": "integer",
+     "id": "string",
+     "listennotes_url": "string",
+     "explicit_content": "boolean",
+     "link": "string",
+     "podcast": "object"
+    },
+    "evidence": [
+     "openapi/_original/listennotes-openapi.json#GET /search",
+     "openapi/_original/listennotes-openapi.yml#GET /search"
+    ]
+   },
+   "litescrape": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/litescrape-agents-openapi.json#GET /api/bing/search",
+     "openapi/_original/litescrape-agents-openapi.json#GET /api/duckduckgo/search",
+     "openapi/_original/litescrape-agents-openapi.json#GET /api/google/search",
+     "openapi/_original/litescrape-agents-openapi.json#GET /api/tripadvisor/search",
+     "openapi/_original/litescrape-agents-openapi.json#GET /api/yelp/search",
+     "openapi/_original/litescrape-openapi.yml#GET /api/bing/search",
+     "openapi/_original/litescrape-openapi.yml#GET /api/duckduckgo/search",
+     "openapi/_original/litescrape-openapi.yml#GET /api/google/search",
+     "openapi/_original/litescrape-openapi.yml#GET /api/tripadvisor/search",
+     "openapi/_original/litescrape-openapi.yml#GET /api/yelp/search"
+    ]
+   },
+   "lucidworks": {
+    "segments": [
+     "query"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "userId": "string",
+     "sessionId": "string",
+     "timestamp": "string",
+     "params": "object"
+    },
+    "evidence": [
+     "openapi/_original/lucidworks-signals-openapi.yml#GET /signals/query",
+     "openapi/_original/lucidworks-signals-openapi.yml#POST /signals/query"
+    ]
+   },
+   "machinelibrary-ai": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "candidate_ranking": null,
+     "corrected_query": [
+      "string",
+      "null"
+     ],
+     "embed_ms": [
+      "integer",
+      "null"
+     ],
+     "has_next": "boolean",
+     "hits": "array",
+     "ranking_mode": "string",
+     "retrieval_traces": "array",
+     "timings": null,
+     "total_hits": "integer",
+     "trajectory": null,
+     "binary_pool": "boolean",
+     "combiner": "string",
+     "combiner_decay": "number",
+     "combiner_temperature": "number",
+     "combiner_top_k": "integer",
+     "cross_rerank": "boolean",
+     "cross_rerank_candidates": "integer",
+     "deduplicate": "boolean",
+     "document_discovery": [
+      "boolean",
+      "null"
+     ],
+     "filter_issns": [
+      "array",
+      "null"
+     ],
+     "filter_issued_after": [
+      "integer",
+      "null"
+     ],
+     "filter_issued_before": [
+      "integer",
+      "null"
+     ],
+     "filter_languages": [
+      "array",
+      "null"
+     ],
+     "filter_publisher": [
+      "string",
+      "null"
+     ],
+     "filter_types": [
+      "array",
+      "null"
+     ],
+     "filter_uri_prefixes": [
+      "array",
+      "null"
+     ],
+     "fulltext_phrase_boost": [
+      "number",
+      "null"
+     ],
+     "fulltext_weight": [
+      "number",
+      "null"
+     ],
+     "heap_factor": [
+      "number",
+      "null"
+     ],
+     "include_candidate_scores": "boolean",
+     "include_rrf_scores": "boolean",
+     "index_names": "array",
+     "l1": null,
+     "l2_rerank": "string",
+     "limit": "integer",
+     "max_query_dims": "integer",
+     "mode": null,
+     "offset": "integer",
+     "possible_languages": [
+      "array",
+      "null"
+     ],
+     "pruning": [
+      "number",
+      "null"
+     ],
+     "query": "string",
+     "referenced_by_uri": null,
+     "return_documents": "boolean",
+     "rrf_k": [
+      "number",
+      "null"
+     ],
+     "sparse_nomination": [
+      "boolean",
+      "null"
+     ],
+     "tracing": "boolean",
+     "weight_threshold": "number"
+    },
+    "evidence": [
+     "openapi/_original/machinelibrary-ai-openapi.json#POST /v2/search/"
+    ]
+   },
+   "macrometa": {
+    "segments": [
+     "query",
+     "search"
+    ],
+    "operations": [
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "query": "string",
+     "records": "array",
+     "code": "integer",
+     "error": "boolean",
+     "hasMore": "boolean",
+     "count": "number",
+     "cached": "boolean",
+     "result": "array",
+     "collection": "string",
+     "search": "string",
+     "bindVars": "object",
+     "ttl": "integer",
+     "GeoFabric": "string",
+     "limit": "integer",
+     "metrics": "array",
+     "querytype": "string",
+     "since": "integer",
+     "boost": "string",
+     "bury": "string",
+     "language": "string",
+     "filters": null,
+     "projection": "array",
+     "distinct_results": null,
+     "offset": null
+    },
+    "evidence": [
+     "openapi/_original/macrometa-gdn-openapi-original.json#POST /_fabric/{fabric}/_api/function/generate/query",
+     "openapi/_original/macrometa-gdn-openapi-original.json#POST /_fabric/{fabric}/_api/metrics/query",
+     "openapi/_original/macrometa-gdn-openapi-original.json#POST /_fabric/{fabric}/_api/query",
+     "openapi/_original/macrometa-gdn-openapi-original.json#POST /_fabric/{fabric}/_api/search",
+     "openapi/_original/macrometa-gdn-openapi-original.json#POST /_fabric/{fabric}/_api/streamapps/query/{appName}",
+     "openapi/_original/macrometa-photoniq-hss-openapi-original.json#POST /api/hss/v1/index/{index_name}/search"
+    ]
+   },
+   "manticore": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "took": "integer",
+     "timed_out": "boolean",
+     "aggregations": "object",
+     "hits": "object",
+     "profile": "object",
+     "scroll": "string",
+     "warning": "object",
+     "table": "string",
+     "query": null,
+     "join": "array",
+     "highlight": null,
+     "limit": "integer",
+     "knn": "object",
+     "aggs": "object",
+     "expressions": "object",
+     "max_matches": "integer",
+     "offset": "integer",
+     "options": "object",
+     "sort": null,
+     "_source": null,
+     "track_scores": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/manticore-openapi.json#POST /pq/{table}/search",
+     "openapi/_original/manticore-openapi.json#POST /search",
+     "openapi/_original/manticore-openapi.yaml#POST /pq/{table}/search",
+     "openapi/_original/manticore-openapi.yaml#POST /search"
+    ]
+   },
+   "marginalia-search": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "url": "string",
+     "title": "string",
+     "description": "string"
+    },
+    "evidence": [
+     "openapi/_original/marginalia-search-openapi.yml#GET /search"
+    ]
+   },
+   "marqo": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "q": null,
+     "searchMethod": "string",
+     "limit": "integer",
+     "offset": "integer",
+     "filter": "string",
+     "showHighlights": "boolean",
+     "attributesToRetrieve": "array",
+     "searchableAttributes": "array",
+     "rerankDepth": "integer",
+     "hybridParameters": "object"
+    },
+    "evidence": [
+     "openapi/_original/marqo-openapi.yml#POST /indexes/{index_name}/search"
+    ]
+   },
+   "mastodon-instances": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/mastodon-instances-openapi.yml#GET /instances/search"
+    ]
+   },
+   "mcp360": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "data": "object",
+     "metadata": "object",
+     "query": "string",
+     "limit": "integer"
+    },
+    "evidence": [
+     "openapi/_original/mcp360-mcp360-openapi.json#POST /api/v1/mcp360/search"
+    ]
+   },
+   "meilisearch": {
+    "segments": [
+     "search",
+     "multi-search"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/meilisearch-openapi.yml#GET /indexes/{indexUid}/search",
+     "openapi/_original/meilisearch-openapi.yml#POST /indexes/{indexUid}/search",
+     "openapi/_original/meilisearch-openapi.yml#POST /multi-search"
+    ]
+   },
+   "mem": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "created_at": "string",
+     "description": null,
+     "id": "string",
+     "note_count": "integer",
+     "title": "string",
+     "updated_at": "string",
+     "filter_by_created_after": null,
+     "filter_by_created_before": null,
+     "filter_by_updated_after": null,
+     "filter_by_updated_before": null,
+     "query": null,
+     "kind": "string",
+     "primary_label": "string",
+     "secondary_label": null,
+     "snippet": null,
+     "kinds": "array",
+     "limit": "integer",
+     "offset": "integer",
+     "has_next_page": "boolean",
+     "request_id": "string",
+     "results": "array",
+     "snapshot_id": "string",
+     "total": "integer",
+     "config": null,
+     "filter_by_collection_ids": null,
+     "filter_by_contains_files": "boolean",
+     "filter_by_contains_images": "boolean",
+     "filter_by_contains_open_tasks": "boolean",
+     "filter_by_contains_tasks": "boolean",
+     "associated_session_agent_run_id": null,
+     "data": null,
+     "internal_created_at": "string",
+     "internal_updated_at": "string",
+     "locally_created_at": "string",
+     "reply_to_session_event_id": null,
+     "root_session_event_id": null,
+     "session_id": "string",
+     "session_thread_id": null
+    },
+    "evidence": [
+     "openapi/_original/mem-openapi-original.json#POST /v2/collections/search",
+     "openapi/_original/mem-openapi-original.json#POST /v2/mcp/chatgpt/search",
+     "openapi/_original/mem-openapi-original.json#POST /v2/mcp/notes/search",
+     "openapi/_original/mem-openapi-original.json#POST /v2/notes/search",
+     "openapi/_original/mem-openapi-original.json#POST /v2/session-events/search"
+    ]
+   },
+   "midpage": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "opinion_id": "string",
+     "score": "number",
+     "case_name": "string",
+     "court_id": "string",
+     "court_name": "string",
+     "court_abbreviation": "string",
+     "jurisdiction": "string",
+     "state": "string",
+     "publish_status": "string",
+     "date_filed": "string",
+     "docket_number": "string",
+     "snippet": "string",
+     "source": "string",
+     "query": "string",
+     "mode": "string",
+     "page": "integer",
+     "page_size": "integer",
+     "filters": "object",
+     "include_facets": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/midpage-openapi.yml#POST /search"
+    ]
+   },
+   "milvus": {
+    "segments": [
+     "query",
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "collectionName": "string",
+     "filter": "string",
+     "outputFields": "array",
+     "limit": "integer",
+     "offset": "integer",
+     "data": "array",
+     "annsField": "string",
+     "searchParams": "object"
+    },
+    "evidence": [
+     "openapi/_original/milvus-openapi.yml#POST /v2/vectordb/entities/query",
+     "openapi/_original/milvus-openapi.yml#POST /v2/vectordb/entities/search"
+    ]
+   },
+   "misoai": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "took": "integer",
+     "miso_id": "string",
+     "products": "array",
+     "total": "integer",
+     "start": "integer",
+     "spellcheck": null,
+     "product_existence": "object",
+     "partially_matched_products": "array",
+     "facet_counts": null,
+     "custom_assets": "array",
+     "boosting_rules": "array",
+     "filtering_rule": "string",
+     "engine_id": "string",
+     "user_id": "string",
+     "anonymous_id": "string",
+     "user_hash": "string",
+     "user_cohort": "object",
+     "rows": "integer",
+     "type": "string",
+     "dedupe_product_group_id": "boolean",
+     "additional_interactions": "array",
+     "fl": "array",
+     "exclude": "array",
+     "custom_context": "object",
+     "q": "string",
+     "advanced_q": "string",
+     "boosting_tags": "array",
+     "enable_boosting_campaigns": "boolean",
+     "include": "array",
+     "language": "string",
+     "like": "string",
+     "category": "array",
+     "order_by": "array",
+     "facets": "array",
+     "facet_filters": "object",
+     "anchoring_settings": "array",
+     "exclude_fields_from_search": "array",
+     "enable_partial_match": "boolean",
+     "partial_match_mode": null,
+     "enable_partial_match_threshold": "integer",
+     "enable_semantic_search": "boolean",
+     "semantic_search_threshold": "number",
+     "enable_matched_fields": "boolean",
+     "query_product_existence": null,
+     "personalization_weight": "integer",
+     "fq": "string",
+     "boost_fq": "string",
+     "boost_positions": "array",
+     "boost_rule_name": "string",
+     "boost_rules": "array",
+     "geo": null,
+     "diversification": "object"
+    },
+    "evidence": [
+     "openapi/_original/misoai-openapi-original.json#POST /v1/search/search"
+    ]
+   },
+   "mixedbread-ai": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "chunk_index": "integer",
+     "mime_type": "string",
+     "generated_metadata": null,
+     "model": null,
+     "score": "number",
+     "file_id": "string",
+     "filename": "string",
+     "store_id": "string",
+     "external_id": null,
+     "metadata": null,
+     "type": "string",
+     "offset": "integer",
+     "text": null,
+     "context": null,
+     "summary": null,
+     "store_identifiers": "array",
+     "top_k": "integer",
+     "filters": null,
+     "file_ids": null,
+     "query": null,
+     "search_options": "object",
+     "vector_store_id": "string",
+     "vector_store_identifiers": "array"
+    },
+    "evidence": [
+     "openapi/_original/mixedbread-stores-api-openapi.yml#POST /v1/stores/search",
+     "openapi/_original/mixedbread-stores-api-openapi.yml#POST /v1/vector_stores/search"
+    ]
+   },
+   "new-york-times-company": {
+    "segments": [
+     "search",
+     "query"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "event_id": "integer",
+     "event_schedule_id": "integer",
+     "last_modified": "string",
+     "event_name": "string",
+     "event_detail_url": "string",
+     "web_description": "string",
+     "city": "string",
+     "state": "string",
+     "film_rating": "boolean",
+     "critic_name": "string",
+     "times_pick": "boolean",
+     "free": "boolean",
+     "kid_friendly": "boolean",
+     "last_chance": "boolean",
+     "festival": "boolean",
+     "long_running_show": "boolean",
+     "previews_and_openings": "boolean",
+     "recurring_start_date": "string",
+     "recur_days": "array",
+     "display_title": "string",
+     "mpaa_rating": "string",
+     "critics_pick": "integer",
+     "byline": "string",
+     "headline": "string",
+     "summary_short": "string",
+     "publication_date": "string",
+     "opening_date": "string",
+     "date_updated": "string",
+     "link": "object",
+     "multimedia": "object",
+     "concept_id": "integer",
+     "concept_name": "string",
+     "is_times_tag": "integer",
+     "concept_status": "string",
+     "vernacular": "string",
+     "concept_type": "string",
+     "concept_created": "string",
+     "concept_updated": "string"
+    },
+    "evidence": [
+     "openapi/_original/geo-api-v2-openapi.yml#GET /query.json",
+     "openapi/_original/movie-reviews-v2-openapi.yml#GET /reviews/search.json",
+     "openapi/_original/semantic-api-openapi.yml#GET /search.json"
+    ]
+   },
+   "newscatcher": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "status": "string",
+     "total_hits": "integer",
+     "page": "integer",
+     "total_pages": "integer",
+     "page_size": "integer",
+     "id": "string",
+     "score": "number",
+     "title": "string",
+     "author": "string",
+     "link": "string",
+     "description": "string",
+     "media": "string",
+     "content": "string",
+     "authors": "array",
+     "published_date": "string",
+     "published_date_precision": "string",
+     "updated_date": "string",
+     "updated_date_precision": "string",
+     "is_opinion": "boolean",
+     "twitter_account": "string",
+     "domain_url": "string",
+     "parent_url": "string",
+     "word_count": "integer",
+     "rank": "integer",
+     "country": "string",
+     "rights": "string",
+     "language": "string",
+     "nlp": "object",
+     "paid_content": "boolean",
+     "title_translated_en": "string",
+     "content_translated_en": "string",
+     "locations": "array",
+     "q": "string",
+     "from_": null,
+     "to_": null,
+     "search_in": "string",
+     "sort_by": "string",
+     "detection_methods": "array",
+     "lang": null,
+     "countries": null,
+     "sources": null,
+     "not_sources": null,
+     "is_paid_content": "boolean",
+     "word_count_min": "integer",
+     "word_count_max": "integer",
+     "clustering": "boolean",
+     "theme": null,
+     "PER_entity_name": "string",
+     "LOC_entity_name": "string",
+     "MISC_entity_name": "string",
+     "ORG_entity_name": "string",
+     "title_sentiment_min": "number",
+     "title_sentiment_max": "number",
+     "content_sentiment_min": "number",
+     "content_sentiment_max": "number",
+     "include_translation_fields": "boolean",
+     "journalists": null,
+     "parse_date": [
+      "string",
+      "null"
+     ],
+     "full_domain_url": "string",
+     "name_source": "string",
+     "is_headline": "boolean",
+     "all_links": null,
+     "all_domain_links": null,
+     "all_links_data": "array",
+     "robots_compliant": "boolean",
+     "custom_tags": "object",
+     "additional_domain_info": "object",
+     "predefined_sources": null,
+     "source_name": null,
+     "not_lang": null,
+     "not_countries": null,
+     "not_author_name": null,
+     "by_parse_date": "boolean",
+     "ranked_only": "boolean",
+     "from_rank": "integer",
+     "to_rank": "integer",
+     "all_links_text": null,
+     "is_news_domain": "boolean",
+     "news_domain_type": "string",
+     "news_type": null,
+     "clustering_enabled": "boolean",
+     "clustering_variable": "string",
+     "clustering_threshold": "number",
+     "include_nlp_data": "boolean",
+     "has_nlp": "boolean",
+     "not_theme": "string",
+     "iptc_tags": null,
+     "not_iptc_tags": null,
+     "iab_tags": null,
+     "not_iab_tags": null,
+     "exclude_duplicates": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/newscatcher-local-news-api-openapi.yml#POST /api/search",
+     "openapi/_original/newscatcher-news-api-openapi.yml#GET /api/search",
+     "openapi/_original/newscatcher-news-api-openapi.yml#POST /api/search"
+    ]
+   },
+   "nuclia": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "resources": "object",
+     "sentences": "object",
+     "paragraphs": "object",
+     "relations": "object",
+     "next_page": "boolean",
+     "query": "string",
+     "features": "array",
+     "filters": "array",
+     "page_number": "integer",
+     "page_size": "integer",
+     "min_score": "number",
+     "rephrase": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/nuclia-openapi.yml#POST /v1/kb/{kbid}/search"
+    ]
+   },
+   "nuxeo": {
+    "segments": [
+     "search",
+     "query"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "currentPageIndex": "integer",
+     "currentPageOffset": "integer",
+     "currentPageSize": "integer",
+     "entity-type": "string",
+     "entries": "array",
+     "erroMessage": "string",
+     "hasError": "boolean",
+     "isLastPageAvailable": "boolean",
+     "isNext": "boolean",
+     "isPaginable": "boolean",
+     "isPreviousPageAvailable": "boolean",
+     "isSortable": "boolean",
+     "maxPageSize": "integer",
+     "numberOfPages": "integer",
+     "pageCount": "integer",
+     "pageIndex": "integer",
+     "pageSize": "integer",
+     "resultCount": "integer",
+     "totalSize": "integer"
+    },
+    "evidence": [
+     "openapi/_original/nuxeo-rest-api-openapi.yaml#GET /group/search",
+     "openapi/_original/nuxeo-rest-api-openapi.yaml#GET /oauth2/token/search",
+     "openapi/_original/nuxeo-rest-api-openapi.yaml#GET /query",
+     "openapi/_original/nuxeo-rest-api-openapi.yaml#GET /query/{providerName}",
+     "openapi/_original/nuxeo-rest-api-openapi.yaml#GET /user/search"
+    ]
+   },
+   "octen-ai": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "title": "string",
+     "url": "string",
+     "highlight": "string",
+     "full_content": "string",
+     "authors": "string",
+     "time_published": "string",
+     "time_last_crawled": "string",
+     "favicon": "string",
+     "cover_image": "object",
+     "images": "array",
+     "count": "integer",
+     "include_domains": "array",
+     "exclude_domains": "array",
+     "include_text": "array",
+     "exclude_text": "array",
+     "time_basis": "string",
+     "time_range": "string",
+     "start_time": "string",
+     "end_time": "string",
+     "language": "array",
+     "format": "string",
+     "safesearch": "string",
+     "include_images": "boolean",
+     "query": "string"
+    },
+    "evidence": [
+     "openapi/_original/octen-ai-openapi.json#POST /search",
+     "openapi/_original/octen-ai-openapi.yml#POST /search"
+    ]
+   },
+   "ondemand": {
+    "segments": [
+     "query"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "sessionId": "string",
+     "messageId": "string",
+     "answer": "string",
+     "status": "string",
+     "query": "string",
+     "endpointId": "string",
+     "responseMode": "string",
+     "pluginIds": "array",
+     "fulfillmentOnly": "boolean",
+     "modelConfigs": "object"
+    },
+    "evidence": [
+     "openapi/_original/ondemand-openapi.json#POST /chat/v1/sessions/{sessionId}/query"
+    ]
+   },
+   "open-food-facts": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "product_type": "string",
+     "product_name": "string",
+     "abbreviated_product_name": "string",
+     "code": "string",
+     "codes_tags": "array",
+     "generic_name": "string",
+     "id": "string",
+     "lc": "string",
+     "lang": "string",
+     "nova_group": "integer",
+     "nova_groups": "string",
+     "obsolete": "string",
+     "obsolete_since_date": "string",
+     "product_quantity": "string",
+     "product_quantity_unit": "string",
+     "quantity": "string",
+     "schema_version": "integer",
+     "additives_n": "integer",
+     "checked": "string",
+     "complete": "integer",
+     "completeness": "number",
+     "ecoscore_grade": "string",
+     "ecoscore_score": "integer",
+     "food_groups": "string",
+     "food_groups_tags": "array",
+     "nutrient_levels": "object",
+     "packaging_text": "string",
+     "packagings": "array",
+     "packagings_complete": "integer",
+     "pnns_groups_1": "string",
+     "pnns_groups_1_tags": "array",
+     "pnns_groups_2": "string",
+     "pnns_groups_2_tags": "array",
+     "popularity_key": "integer",
+     "popularity_tags": "array",
+     "scans_n": "integer",
+     "unique_scans_n": "integer",
+     "serving_quantity": "string",
+     "serving_quantity_unit": "string",
+     "serving_size": "string",
+     "brands": "string",
+     "brands_tags": "array",
+     "categories": "string",
+     "categories_tags": "array",
+     "checkers_tags": "array",
+     "cities": "string",
+     "cities_tags": "array",
+     "correctors_tags": "array",
+     "countries": "string",
+     "countries_tags": "array",
+     "ecoscore_tags": "array",
+     "emb_codes": "string",
+     "emb_codes_tags": "array",
+     "labels": "string",
+     "labels_tags": "array",
+     "entry_dates_tags": "array",
+     "manufacturing_places": "string",
+     "manufacturing_places_tags": "array",
+     "nova_groups_tags": "array",
+     "nutrient_levels_tags": "array",
+     "brands_hierarchy": "array",
+     "brands_lc": "string",
+     "categories_hierarchy": "array",
+     "categories_lc": "string",
+     "countries_hierarchy": "array",
+     "countries_lc": "string",
+     "emb_codes_orig": "string",
+     "labels_hierarchy": "array",
+     "labels_lc": "string",
+     "images": "object",
+     "last_image_dates_tags": "array",
+     "last_image_t": "integer",
+     "selected_images": "object",
+     "image_small_url": "string",
+     "image_thumb_url": "string",
+     "image_url": "string",
+     "ecoscore_data": "object",
+     "ecoscore_extended_data_version": "string",
+     "environment_impact_level": "string",
+     "environment_impact_level_tags": "array",
+     "additives_tags": "array",
+     "allergens": "string",
+     "allergens_lc": "string",
+     "allergens_hierarchy": "array",
+     "allergens_tags": "array",
+     "ingredients": "array",
+     "ingredients_analysis": "object",
+     "ingredients_analysis_tags": "array",
+     "ingredients_from_or_that_may_be_from_palm_oil_n": "integer",
+     "ingredients_from_palm_oil_n": "integer",
+     "ingredients_from_palm_oil_tags": "array",
+     "ingredients_hierarchy": "array",
+     "ingredients_n": "integer",
+     "ingredients_n_tags": "array",
+     "ingredients_original_tags": "array",
+     "ingredients_percent_analysis": "integer",
+     "ingredients_sweeteners_n": "integer",
+     "ingredients_non_nutritive_sweeteners_n": "integer",
+     "ingredients_tags": "array",
+     "ingredients_lc": "string",
+     "ingredients_text": "string",
+     "ingredients_text_with_allergens": "string",
+     "ingredients_that_may_be_from_palm_oil_n": "integer",
+     "ingredients_that_may_be_from_palm_oil_tags": "array",
+     "ingredients_with_specified_percent_n": "integer",
+     "ingredients_with_specified_percent_sum": "integer",
+     "ingredients_with_unspecified_percent_n": "integer",
+     "ingredients_with_unspecified_percent_sum": "integer",
+     "known_ingredients_n": "integer",
+     "origins": "string",
+     "origins_hierarchy": "array",
+     "origins_lc": "string",
+     "origins_tags": "array",
+     "traces": "string",
+     "traces_hierarchy": "array",
+     "traces_lc": "string",
+     "traces_tags": "array",
+     "unknown_ingredients_n": "integer",
+     "no_nutrition_data": "string",
+     "nutrition_data_per": "string",
+     "nutrition_data_prepared_per": "string",
+     "nutriments": "object",
+     "nutriscore_data": null,
+     "nutrition_grade_fr": "string",
+     "nutrition_grades": "string",
+     "nutrition_grades_tags": "array",
+     "nutrition_score_beverage": "integer",
+     "nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients": "integer",
+     "nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients_value": "integer",
+     "nutrition_score_warning_no_fiber": "integer",
+     "other_nutritional_substances_tags": "array",
+     "unknown_nutrients_tags": "array",
+     "vitamins_tags": "array",
+     "nutriscore": null,
+     "nutriscore_2021_tags": null,
+     "nutriscore_2023_tags": null,
+     "nutriscore_grade": null,
+     "nutriscore_score": "integer",
+     "nutriscore_score_opposite": "integer",
+     "nutriscore_tags": null,
+     "nutriscore_version": "string",
+     "data_quality_bugs_tags": "array",
+     "data_quality_errors_tags": "array",
+     "data_quality_info_tags": "array",
+     "data_quality_tags": "array",
+     "data_quality_warnings_tags": "array",
+     "data_sources": "string",
+     "data_sources_tags": "array",
+     "last_check_dates_tags": "array",
+     "last_checked_t": "integer",
+     "last_checker": "string",
+     "states": "string",
+     "states_hierarchy": "array",
+     "states_tags": "array",
+     "misc_tags": "array",
+     "additives_original_tags": "array",
+     "additives_prev_original_tags": "array",
+     "added_countries_tags": "array",
+     "allergens_from_ingredients": "string",
+     "allergens_from_user": "string",
+     "amino_acids_prev_tags": "array",
+     "amino_acids_tags": "array",
+     "carbon_footprint_percent_of_known_ingredients": "integer",
+     "categories_properties": "object",
+     "categories_properties_tags": "array",
+     "category_properties": "object",
+     "ciqual_food_name_tags": "array",
+     "compared_to_category": "string",
+     "forest_footprint_2026": "object",
+     "conservation_conditions": "string",
+     "customer_service": "string",
+     "expiration_date": "string",
+     "link": "string",
+     "main_countries_tags": "array",
+     "minerals_prev_tags": "array",
+     "minerals_tags": "array",
+     "owner_fields": "object",
+     "nova_groups_markers": "object",
+     "nucleotides_tags": "array",
+     "origin": "string",
+     "purchase_places": "string",
+     "purchase_places_tags": "array",
+     "stores": "string",
+     "stores_tags": "array",
+     "traces_from_ingredients": "string",
+     "traces_from_user": "string",
+     "created_t": "integer",
+     "creator": "string",
+     "editors_tags": "array",
+     "informers_tags": "array",
+     "interface_version_created": "string",
+     "interface_version_modified": "string",
+     "languages": "object",
+     "languages_codes": "object",
+     "languages_hierarchy": "array",
+     "languages_tags": "array",
+     "last_edit_dates_tags": "array",
+     "last_editor": "string",
+     "last_modified_by": "string",
+     "last_modified_t": "integer",
+     "last_updated_t": "integer",
+     "owner": "string",
+     "owners_tags": "string",
+     "photographers_tags": "array",
+     "rev": "integer",
+     "sources": "array",
+     "sources_fields": "object",
+     "teams": "string",
+     "teams_tags": "array",
+     "update_key": "string",
+     "knowledge_panels": "object",
+     "status": "string",
+     "title": "string",
+     "match": "number",
+     "grade": "string",
+     "name": "string",
+     "icon_url": "string",
+     "description": "string",
+     "description_short": "string",
+     "debug": "object",
+     "errors": "array",
+     "q": null,
+     "langs": "array",
+     "page_size": "integer",
+     "page": "integer",
+     "fields": null,
+     "sort_by": null,
+     "facets": null,
+     "charts": null,
+     "sort_params": null,
+     "index_id": null
+    },
+    "evidence": [
+     "openapi/_original/open-food-facts-api-v2-openapi.yml#GET /api/v2/search",
+     "openapi/_original/open-food-facts-openapi.yml#GET /api/v2/search",
+     "openapi/_original/open-food-facts-search-a-licious-openapi.json#GET /search",
+     "openapi/_original/open-food-facts-search-a-licious-openapi.json#POST /search"
+    ]
+   },
+   "open-library": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "start": "integer",
+     "num_found": "integer",
+     "docs": "array"
+    },
+    "evidence": [
+     "openapi/_original/open-library-openapi.yml#GET /search.json"
+    ]
+   },
+   "openlaws": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "jurisdiction_key": "string",
+     "law_key": "string",
+     "label": "string",
+     "path": "string",
+     "division_type": "string",
+     "identifier": [
+      "string",
+      "null"
+     ],
+     "range_end_identifier": [
+      "string",
+      "null"
+     ],
+     "name": [
+      "string",
+      "null"
+     ],
+     "display_name": "string",
+     "openlaws_web_url": "string",
+     "effective_date": "string",
+     "effective_date_start": null,
+     "effective_date_end": null,
+     "aliases": [
+      "string",
+      "null"
+     ],
+     "plaintext_content": "string",
+     "markdown_content": "string",
+     "html_content": "string",
+     "annotations": [
+      "string",
+      "null"
+     ],
+     "display_ancestors": "array",
+     "display_children": "array",
+     "source_url": "string",
+     "current_as_of": [
+      "string",
+      "null"
+     ],
+     "updated_at": [
+      "string",
+      "null"
+     ],
+     "is_repealed": [
+      "boolean",
+      "null"
+     ],
+     "is_reserved": [
+      "boolean",
+      "null"
+     ],
+     "renumbered": [
+      "string",
+      "null"
+     ],
+     "case_name": "string",
+     "court": "object",
+     "docket_number": "string",
+     "date_filed": "string",
+     "judges": "string",
+     "attorneys": "string",
+     "first_party": "string",
+     "second_party": "string",
+     "precedential_status": "string",
+     "headmatter": "string",
+     "extracted_by_ocr": "boolean",
+     "citations": "array"
+    },
+    "evidence": [
+     "openapi/_original/openlaws-openapi.json#GET /api/v1/jurisdictions/{jurisdiction_key}/laws/search",
+     "openapi/_original/openlaws-openapi.json#GET /api/v1/jurisdictions/{jurisdiction_key}/laws/{law_key}/search",
+     "openapi/_original/openlaws-openapi.json#GET /api/v1/jurisdictions/{jurisdiction_key}/opinions/search",
+     "openapi/_original/openlaws-openapi.yml#GET /api/v1/jurisdictions/{jurisdiction_key}/laws/search",
+     "openapi/_original/openlaws-openapi.yml#GET /api/v1/jurisdictions/{jurisdiction_key}/laws/{law_key}/search",
+     "openapi/_original/openlaws-openapi.yml#GET /api/v1/jurisdictions/{jurisdiction_key}/opinions/search"
+    ]
+   },
+   "openserp": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "rank": "integer",
+     "type": "string",
+     "title": "string",
+     "url": "string",
+     "display_url": "string",
+     "snippet": "string",
+     "domain": "string",
+     "favicon": "string",
+     "position": "object",
+     "engine": "string",
+     "domain_info": "object",
+     "classification": "object",
+     "extracted": "object",
+     "canonical_url": "string",
+     "occurrences": "array",
+     "engines_count": "integer",
+     "best_rank": "integer",
+     "score": "number"
+    },
+    "evidence": [
+     "openapi/_original/openserp-oss-openapi.yml#GET /mega/search",
+     "openapi/_original/openserp-oss-openapi.yml#GET /{engine}/search"
+    ]
+   },
+   "opoint": {
+    "segments": [
+     "queries",
+     "search"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "url": "string",
+     "id_item": "integer",
+     "max_age": "integer",
+     "rate": "number",
+     "rate_last_updated": "integer",
+     "max_rate": "integer",
+     "last_set": "integer",
+     "topic_name": "string",
+     "items": "array",
+     "id": null,
+     "name": "string",
+     "is_user": "boolean",
+     "email": "string",
+     "is_active": "boolean",
+     "role": "string",
+     "last_login": "string",
+     "partner": "integer",
+     "id_user": "integer",
+     "external_id": "string",
+     "username": "string",
+     "owner": "integer",
+     "customer": "string",
+     "user_type": null,
+     "display_name": [
+      "string",
+      "null"
+     ],
+     "value": "string",
+     "searchval": "string",
+     "type_field": "string",
+     "documents": "integer",
+     "document": "array",
+     "debug": "object",
+     "first_timestamp": "integer",
+     "last_timestamp": "integer",
+     "context": "string",
+     "search_start": "integer",
+     "range_count": "integer",
+     "range_start": "integer",
+     "range_end": "integer",
+     "count": "integer",
+     "cacheage": "integer",
+     "cputime": "integer",
+     "host": "string",
+     "compiledate": "string",
+     "branch": "string",
+     "notimeout": "boolean",
+     "wikinames": "object",
+     "wikidescriptions": "object",
+     "search_matches": "array",
+     "matches_table": "object",
+     "watch_id": "integer",
+     "sort_groups": "object",
+     "covered": "integer",
+     "next_from": "integer",
+     "searchline": "object",
+     "linemode": "string",
+     "searchmode": "string",
+     "id_site": "integer",
+     "id_article": "integer",
+     "partner_article_id": "string",
+     "tracking": "object",
+     "partner_article_ids": "array",
+     "phrase": "object",
+     "significance": "number",
+     "interval": "object",
+     "articles": "array",
+     "epochs": "array",
+     "timestamp": "integer",
+     "burstiness": "number"
+    },
+    "evidence": [
+     "openapi/_original/opoint-openapi-original.yml#DELETE /analytics/topics/{id}/queries/{id_item}/",
+     "openapi/_original/opoint-openapi-original.yml#DELETE /analytics/variable-values/{id}/queries/{id_item}/",
+     "openapi/_original/opoint-openapi-original.yml#GET /analytics/topics/{id}/queries/",
+     "openapi/_original/opoint-openapi-original.yml#GET /analytics/topics/{id}/queries/{id_item}/",
+     "openapi/_original/opoint-openapi-original.yml#GET /analytics/variable-values/{id}/queries/{id_item}/",
+     "openapi/_original/opoint-openapi-original.yml#GET /analytics/variable-values/{value_id}/queries/",
+     "openapi/_original/opoint-openapi-original.yml#GET /auth/invite/search/",
+     "openapi/_original/opoint-openapi-original.yml#GET /customers/search/",
+     "openapi/_original/opoint-openapi-original.yml#GET /folders/shares/targets/search/",
+     "openapi/_original/opoint-openapi-original.yml#GET /mailstatus/search/{search_string}/",
+     "openapi/_original/opoint-openapi-original.yml#GET /sites/search/",
+     "openapi/_original/opoint-openapi-original.yml#GET /trends/search/"
+    ]
+   },
+   "orama": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "score": "number",
+     "document": "object",
+     "term": "string",
+     "mode": "string",
+     "where": "object",
+     "limit": "integer",
+     "offset": "integer",
+     "threshold": "number",
+     "sortBy": "object"
+    },
+    "evidence": [
+     "openapi/_original/orama-openapi.yml#POST /v1/indexes/{indexId}/search"
+    ]
+   },
+   "parseflow": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/parseflow-openapi.json#GET /v2/search"
+    ]
+   },
+   "perplexity": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "title": "string",
+     "url": "string",
+     "snippet": "string",
+     "date": null,
+     "last_updated": null,
+     "country": "string",
+     "max_results": "integer",
+     "search_type": "string",
+     "max_tokens": "integer",
+     "max_tokens_per_page": "integer",
+     "query": null,
+     "search_language_filter": "array",
+     "search_domain_filter": "array",
+     "last_updated_after_filter": "string",
+     "last_updated_before_filter": "string",
+     "search_after_date_filter": "string",
+     "search_before_date_filter": "string",
+     "search_recency_filter": "string"
+    },
+    "evidence": [
+     "openapi/_original/perplexity-openapi.json#POST /search"
+    ]
+   },
+   "phraseanet": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "meta": "object",
+     "response": "object",
+     "query": "string",
+     "bases": "array",
+     "offset_start": "integer",
+     "per_page": "integer",
+     "search_type": "integer",
+     "record_type": "string",
+     "status": "object"
+    },
+    "evidence": [
+     "openapi/_original/phraseanet-openapi.yml#POST /search"
+    ]
+   },
+   "pinecone": {
+    "segments": [
+     "query",
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "score": "number",
+     "values": "array",
+     "sparseValues": "object",
+     "metadata": "object",
+     "namespace": "string",
+     "topK": "integer",
+     "filter": "object",
+     "includeValues": "boolean",
+     "includeMetadata": "boolean",
+     "queries": "array",
+     "vector": "array",
+     "sparseVector": "object",
+     "scanFactor": "number",
+     "maxCandidates": "integer",
+     "_id": "string",
+     "_score": "number",
+     "fields": "object",
+     "query": "object",
+     "rerank": "object"
+    },
+    "evidence": [
+     "openapi/_original/pinecone-db-data-openapi.yaml#POST /query",
+     "openapi/_original/pinecone-db-data-openapi.yaml#POST /records/namespaces/{namespace}/search"
+    ]
+   },
+   "pipeshub": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "_id": "string",
+     "userId": "string",
+     "orgId": "string",
+     "title": "string",
+     "initiator": "string",
+     "status": "string",
+     "failReason": "string",
+     "modelInfo": "object",
+     "isShared": "boolean",
+     "shareLink": "string",
+     "sharedWith": "array",
+     "isArchived": "boolean",
+     "archivedBy": "string",
+     "isDeleted": "boolean",
+     "deletedBy": "string",
+     "conversationErrors": "array",
+     "metadata": "object",
+     "lastActivityAt": "integer",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "isOwner": "boolean",
+     "accessLevel": "string",
+     "projectId": "string",
+     "projectVisibility": "string",
+     "sharedBy": "object",
+     "source": "string",
+     "agentKey": "string",
+     "archivedAt": "string",
+     "__v": "integer",
+     "query": "string",
+     "limit": "integer",
+     "citationIds": "array",
+     "records": "object",
+     "searchId": "string",
+     "searchResponse": "object",
+     "filters": "object",
+     "message": "string",
+     "skill": "object",
+     "relevance": "number",
+     "matchReason": "string"
+    },
+    "evidence": [
+     "openapi/_original/pipeshub-openapi.yaml#DELETE /search",
+     "openapi/_original/pipeshub-openapi.yaml#DELETE /search/{searchId}",
+     "openapi/_original/pipeshub-openapi.yaml#GET /conversations/show/archives/search",
+     "openapi/_original/pipeshub-openapi.yaml#GET /search",
+     "openapi/_original/pipeshub-openapi.yaml#GET /search/{searchId}",
+     "openapi/_original/pipeshub-openapi.yaml#GET /skills/search",
+     "openapi/_original/pipeshub-openapi.yaml#POST /search",
+     "openapi/_original/pipeshub-openapi.yml#DELETE /search",
+     "openapi/_original/pipeshub-openapi.yml#DELETE /search/{searchId}",
+     "openapi/_original/pipeshub-openapi.yml#GET /conversations/show/archives/search",
+     "openapi/_original/pipeshub-openapi.yml#GET /search",
+     "openapi/_original/pipeshub-openapi.yml#GET /search/{searchId}"
+    ]
+   },
+   "qdrant": {
+    "segments": [
+     "search",
+     "query"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": null,
+     "version": "integer",
+     "score": "number",
+     "payload": null,
+     "vector": null,
+     "shard_key": null,
+     "order_value": null,
+     "filter": null,
+     "params": null,
+     "limit": "integer",
+     "offset": "integer",
+     "with_payload": null,
+     "with_vector": null,
+     "score_threshold": "number",
+     "prefetch": null,
+     "query": null,
+     "using": "string",
+     "lookup_from": null
+    },
+    "evidence": [
+     "openapi/_original/qdrant-openapi-original.json#POST /collections/{collection_name}/points/query",
+     "openapi/_original/qdrant-openapi-original.json#POST /collections/{collection_name}/points/query/batch",
+     "openapi/_original/qdrant-openapi-original.json#POST /collections/{collection_name}/points/search",
+     "openapi/_original/qdrant-openapi-original.json#POST /collections/{collection_name}/points/search/batch"
+    ]
+   },
+   "quickwit": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "hits": "array",
+     "num_hits": "integer",
+     "elapsed_time_micros": "integer",
+     "errors": "array",
+     "aggregations": "object",
+     "query": "string",
+     "start_timestamp": "integer",
+     "end_timestamp": "integer",
+     "start_offset": "integer",
+     "max_hits": "integer",
+     "search_field": "array",
+     "snippet_fields": "array",
+     "sort_by": "array",
+     "aggs": "object",
+     "format": "string"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#GET /indexes/{index_id}/search",
+     "openapi/_original/openapi.yml#POST /indexes/{index_id}/search"
+    ]
+   },
+   "rentberry": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "bounds": "object",
+     "zoom": "integer"
+    },
+    "evidence": [
+     "openapi/_original/rentberry-openapi.json#POST /v{version}/polygon/search",
+     "openapi/_original/rentberry-openapi.yml#POST /v{version}/polygon/search"
+    ]
+   },
+   "rettfrabonden-com": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "query": "string",
+     "count": "integer",
+     "geoFiltered": "boolean",
+     "geoSource": "string",
+     "geoRadiusKm": "number",
+     "relaxed_filters": "array",
+     "needs_location": "boolean",
+     "note": "string",
+     "results": "array"
+    },
+    "evidence": [
+     "openapi/_original/rettfrabonden-com-agent-surface-openapi.json#GET /api/marketplace/search",
+     "openapi/_original/rettfrabonden-com-openapi.yml#GET /api/marketplace/search"
+    ]
+   },
+   "rsperformance-online": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "query": "string",
+     "total": "integer",
+     "best_score": "number",
+     "exact_match": "boolean",
+     "query_interpretation": "string",
+     "matched_dtc_codes": "array",
+     "vehicle_context": [
+      "object",
+      "null"
+     ],
+     "diagnostic_profile": [
+      "object",
+      "null"
+     ],
+     "assistant_answer": "string",
+     "confidence": [
+      "number",
+      "null"
+     ],
+     "recommended_next_steps": "array",
+     "ask_back": "array",
+     "display_mode": [
+      "string",
+      "null"
+     ],
+     "hits": "array",
+     "limit": "integer"
+    },
+    "evidence": [
+     "openapi/_original/rsperformance-online-ai-gateway-openapi-canonical-host-v1.2.2.json#POST /api/search",
+     "openapi/_original/rsperformance-online-ai-gateway-openapi.json#POST /api/search",
+     "openapi/_original/rsperformance-online-ai-gateway-openapi.yml#POST /api/search"
+    ]
+   },
+   "s1-dev": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "title": "string",
+     "link": "string",
+     "snippet": "string",
+     "content": "string",
+     "published_date": "string",
+     "kind": "string",
+     "stars": "integer",
+     "language": "string",
+     "num_comments": "integer",
+     "story_url": "string",
+     "points": "integer",
+     "query": "string",
+     "search_service": "string",
+     "max_results": "integer",
+     "page": "integer",
+     "crawl_results": "integer",
+     "image": "boolean",
+     "include_sites": "array",
+     "exclude_sites": "array",
+     "time_range": "string"
+    },
+    "evidence": [
+     "openapi/_original/s1-dev-openapi.yml#POST /search",
+     "openapi/_original/search1api-openapi.json#POST /search"
+    ]
+   },
+   "scribe": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "actions": "array",
+     "created_at": "string",
+     "description": "string",
+     "id": "string",
+     "link": "string",
+     "name": "string",
+     "team": null,
+     "type": null,
+     "updated_at": "string",
+     "user_owner": null,
+     "created_at__gte": "string",
+     "created_at__lte": "string",
+     "limit": "integer",
+     "search": "string",
+     "sort_by": null,
+     "team_ids": "array",
+     "updated_at__gte": "string",
+     "updated_at__lte": "string"
+    },
+    "evidence": [
+     "openapi/_original/scribe-search-retrieval-openapi.yml#POST /v1/search/"
+    ]
+   },
+   "searchcraft": {
+    "segments": [
+     "search",
+     "query"
+    ],
+    "operations": [
+     "DELETE collection",
+     "POST collection"
+    ],
+    "properties": {
+     "query": null,
+     "limit": "integer",
+     "offset": "integer",
+     "order_by": "string",
+     "sort": "string",
+     "occur": "string",
+     "minimum_number_should_match": "integer",
+     "doc": "object",
+     "document_id": "string",
+     "score": "number",
+     "source_index": "string"
+    },
+    "evidence": [
+     "openapi/_original/searchcraft-openapi.yml#DELETE /index/{index}/documents/query",
+     "openapi/_original/searchcraft-openapi.yml#POST /federation/{federation_name}/search",
+     "openapi/_original/searchcraft-openapi.yml#POST /index/{index}/search"
+    ]
+   },
+   "serper": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "searchParameters": "object",
+     "knowledgeGraph": "object",
+     "answerBox": "object",
+     "organic": "array",
+     "peopleAlsoAsk": "array",
+     "relatedSearches": "array",
+     "q": "string",
+     "gl": "string",
+     "hl": "string",
+     "num": "integer",
+     "page": "integer",
+     "tbs": "string",
+     "autocorrect": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/serper-google-search-api-openapi.yml#POST /search"
+    ]
+   },
+   "serpwow": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/serpwow-openapi.yml#GET /search"
+    ]
+   },
+   "shodan": {
+    "segments": [
+     "search",
+     "query"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "port": "integer",
+     "transport": "string",
+     "product": "string",
+     "version": "string",
+     "data": "string",
+     "timestamp": "string",
+     "hash": "integer",
+     "ip_str": "string",
+     "org": "string",
+     "isp": "string",
+     "asn": "string",
+     "hostnames": "array",
+     "domains": "array",
+     "location": "object",
+     "ssl": "object",
+     "http": "object",
+     "cpe23": "array",
+     "vulns": "object",
+     "total": "integer",
+     "matches": "array",
+     "facets": "object"
+    },
+    "evidence": [
+     "openapi/_original/shodan-rest-openapi.yml#GET /shodan/host/search",
+     "openapi/_original/shodan-rest-openapi.yml#GET /shodan/query",
+     "openapi/_original/shodan-rest-openapi.yml#GET /shodan/query/search",
+     "openapi/_original/shodan-trends-openapi.yml#GET /api/v1/search"
+    ]
+   },
+   "sociallisteningapi": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "platform": "string",
+     "endpoint": "string",
+     "data": "object",
+     "pagination": "object",
+     "raw": null,
+     "request_id": "string",
+     "credits_used": "integer",
+     "credits_remaining": [
+      "integer",
+      "null"
+     ],
+     "query": "string",
+     "exact": "boolean",
+     "cursor": "string",
+     "url": "string"
+    },
+    "evidence": [
+     "openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/discourse/search",
+     "openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/facebook/search",
+     "openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/google/search",
+     "openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/hackernews/search",
+     "openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/instagram/search",
+     "openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/linkedin/search",
+     "openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/pinterest/search",
+     "openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/tiktok/search",
+     "openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/x/search",
+     "openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/youtube/search",
+     "openapi/_original/sociallisteningapi-openapi.json#POST /api/v1/discourse/search",
+     "openapi/_original/sociallisteningapi-openapi.json#POST /api/v1/facebook/search"
+    ]
+   },
+   "sourcebot": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "stats": "object",
+     "files": "array",
+     "repositoryInfo": "array",
+     "isSearchExhaustive": "boolean",
+     "query": "string",
+     "matches": "number",
+     "contextLines": "number",
+     "whole": "boolean",
+     "isRegexEnabled": "boolean",
+     "isCaseSensitivityEnabled": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/sourcebot-public-openapi-original.json#POST /api/search"
+    ]
+   },
+   "superlinked": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST item"
+    ],
+    "properties": {
+     "entries": "array",
+     "natural_query": "string",
+     "limit": "integer"
+    },
+    "evidence": [
+     "openapi/_original/superlinked-openapi.yml#POST /api/v1/search/{query_name}"
+    ]
+   },
+   "sylvia-api": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "data": "array",
+     "cursor": "string",
+     "has_more": "boolean",
+     "total": "integer",
+     "success": "boolean",
+     "message": "string",
+     "error": "string",
+     "request_id": "string",
+     "id": "string",
+     "title": "string",
+     "selftext": "string",
+     "author": "string",
+     "subreddit": "string",
+     "score": "integer",
+     "upvote_ratio": "number",
+     "num_comments": "integer",
+     "created_utc": "integer",
+     "permalink": "string",
+     "url": "string",
+     "is_self": "boolean",
+     "over_18": "boolean",
+     "stickied": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/sylvia-api-openapi-2026-08-04.json#GET /comments/search",
+     "openapi/_original/sylvia-api-openapi-2026-08-04.json#GET /posts/search",
+     "openapi/_original/sylvia-api-openapi-2026-08-18.json#GET /reddit/search",
+     "openapi/_original/sylvia-api-openapi-2026-08-18.json#GET /reddit/subreddits/search",
+     "openapi/_original/sylvia-api-openapi-2026-08-20.json#GET /reddit/search",
+     "openapi/_original/sylvia-api-openapi-2026-08-20.json#GET /reddit/subreddits/search"
+    ]
+   },
+   "tako": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "cards": "array",
+     "web_results": "array",
+     "request_id": "string",
+     "usage": null,
+     "query": "string",
+     "effort": "string",
+     "sources": "object",
+     "country_code": "string",
+     "locale": "string",
+     "timezone": null,
+     "output_settings": null,
+     "id": "string",
+     "type": "string",
+     "name": "string",
+     "aliases": "array",
+     "description": null,
+     "subtype": null,
+     "label": null
+    },
+    "evidence": [
+     "openapi/_original/tako-openapi-original.yml#GET /beta/graph/search",
+     "openapi/_original/tako-openapi-original.yml#POST /v3/search"
+    ]
+   },
+   "tavily": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/tavily-openapi.yml#POST /search"
+    ]
+   },
+   "tenor": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "media_formats": "object",
+     "created": "string",
+     "content_description": "string",
+     "itemurl": "string",
+     "hasaudio": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#GET /search"
+    ]
+   },
+   "turbopuffer": {
+    "segments": [
+     "query"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "aggregations": "object",
+     "aggregation_groups": "array",
+     "rows": "array",
+     "performance": "object",
+     "billing": "object",
+     "vector_encoding": null,
+     "consistency": "object",
+     "rank_by": null,
+     "top_k": "integer",
+     "filters": null,
+     "include_attributes": null,
+     "exclude_attributes": "array",
+     "aggregate_by": "object",
+     "group_by": "array",
+     "distance_metric": null,
+     "limit": null
+    },
+    "evidence": [
+     "openapi/_original/turbopuffer-openapi.yml#POST /v2/namespaces/{namespace}/query"
+    ]
+   },
+   "tvu-networks": {
+    "segments": [
+     "query"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "errorCode": "string",
+     "errorInfo": "string",
+     "groups": "array",
+     "fileShimNo": "string",
+     "playlistStr": "string",
+     "data": "string",
+     "clipNum": "integer",
+     "updateTime": "integer",
+     "sort": "integer",
+     "userId": "string",
+     "deleteFlag": "boolean",
+     "isCurrent": "boolean",
+     "playlist": "object",
+     "createTime": "integer",
+     "deleteTime": "integer",
+     "name": "string",
+     "clipDuration": "integer",
+     "id": "integer",
+     "programId": "integer",
+     "fileId": "string",
+     "updateTimeFrom": "integer",
+     "pageSize": "integer",
+     "idList": "array",
+     "returnFields": "string",
+     "programIdList": "array",
+     "fileIdList": "array",
+     "fileShimNoList": "array",
+     "sortList": "array",
+     "createTimeFrom": "integer",
+     "sortFields": "array",
+     "updateTimeTo": "integer",
+     "userIdLike": "string",
+     "createTimeTo": "integer",
+     "userIdList": "array",
+     "paging": "boolean",
+     "deleteTimeFrom": "integer",
+     "fileIdLike": "string",
+     "pageIndex": "integer",
+     "deleteTimeTo": "integer",
+     "error_code": "integer",
+     "error_message": "string",
+     "end_time": "integer",
+     "group_id": "string",
+     "operator": "string",
+     "project": "string",
+     "start_time": "integer",
+     "users": "array",
+     "bucket": "string",
+     "clear_path": "string",
+     "created_time": "integer",
+     "data_create_time": "integer",
+     "is_success": "integer",
+     "message": "string",
+     "object_id": "string",
+     "operation": "string",
+     "operation_type": "integer",
+     "region": "string",
+     "retry_num": "integer",
+     "rule_id": "integer",
+     "task_id": "string",
+     "updated_time": "integer",
+     "page_num": "integer",
+     "page_size": "integer"
+    },
+    "evidence": [
+     "openapi/_original/tvu-networks-object-api-openapi.yml#POST /api/objectd/v1/query",
+     "openapi/_original/tvu-networks-producer-api-openapi.yml#POST /program/playlist/query",
+     "openapi/_original/tvu-networks-public-openapi.yml#POST /data/query",
+     "openapi/_original/tvu-networks-public-openapi.yml#POST /log/query"
+    ]
+   },
+   "twelvelabs": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "score": "number",
+     "start": "number",
+     "end": "number",
+     "video_id": "string",
+     "confidence": "string",
+     "thumbnail_url": "string",
+     "clips": "array"
+    },
+    "evidence": [
+     "openapi/_original/twelvelabs-openapi.yml#GET /search/{page_token}",
+     "openapi/_original/twelvelabs-openapi.yml#POST /search"
+    ]
+   },
+   "vectara": {
+    "segments": [
+     "query",
+     "search",
+     "queries"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "text": "string",
+     "score": "number",
+     "document_id": "string",
+     "part_metadata": "object",
+     "document_metadata": "object",
+     "query": "string",
+     "search": "object",
+     "generation": "object",
+     "stream_response": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/vectara-openapi.yml#POST /v2/corpora/{corpus_key}/queries",
+     "openapi/_original/vectara-openapi.yml#POST /v2/corpora/{corpus_key}/query",
+     "openapi/_original/vectara-openapi.yml#POST /v2/corpora/{corpus_key}/search"
+    ]
+   },
+   "vectorize-io": {
+    "segments": [
+     "retrieval"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "relevancy": "number",
+     "id": "string",
+     "text": "string",
+     "chunk_id": "string",
+     "total_chunks": "string",
+     "origin": "string",
+     "origin_id": "string",
+     "similarity": "number",
+     "source": "string",
+     "unique_source": "string",
+     "source_display_name": "string",
+     "pipeline_id": "string",
+     "org_id": "string",
+     "question": "string",
+     "numResults": "number",
+     "rerank": "boolean",
+     "metadata-filters": "array",
+     "context": "object",
+     "advanced-query": "object"
+    },
+    "evidence": [
+     "openapi/_original/vectorize-io-openapi.yml#POST /org/{organizationId}/pipelines/{pipelineId}/retrieval"
+    ]
+   },
+   "vespa-ai": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "relevance": "number",
+     "source": "string",
+     "fields": "object",
+     "yql": "string",
+     "query": "string",
+     "hits": "integer",
+     "offset": "integer",
+     "ranking": "object",
+     "presentation": "object",
+     "model": "object",
+     "select": "string",
+     "timeout": "string",
+     "trace": "object"
+    },
+    "evidence": [
+     "openapi/_original/vespa-query-api-openapi.yml#GET /search/",
+     "openapi/_original/vespa-query-api-openapi.yml#POST /search/"
+    ]
+   },
+   "voyant": {
+    "segments": [
+     "search",
+     "queries"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "query": null,
+     "domain": null,
+     "content_type": null,
+     "limit": "integer",
+     "offset": "integer",
+     "id": "string",
+     "name": "string",
+     "description": null,
+     "template_text": "string",
+     "platform": "string",
+     "tone": "string",
+     "purpose": "string",
+     "parameters": "array",
+     "created_at": "string",
+     "created_by": null,
+     "results": "array",
+     "retrieval_stats": "object",
+     "timestamp": "string",
+     "strategy_used": "string",
+     "strategy": "string",
+     "top_k": "integer",
+     "context_type": null,
+     "site_url": "string",
+     "queries": "array",
+     "total_queries": "integer",
+     "total_clicks": "integer",
+     "total_impressions": "integer",
+     "avg_ctr": "number",
+     "period": "object",
+     "content_id": "string",
+     "chunk_index": "integer",
+     "text": "string",
+     "start_char": "integer",
+     "end_char": "integer",
+     "metadata": "object",
+     "similarity": null
+    },
+    "evidence": [
+     "openapi/_original/voyant-openapi-original.json#GET /api/companies/search",
+     "openapi/_original/voyant-openapi-original.json#GET /api/competitors/github/search",
+     "openapi/_original/voyant-openapi-original.json#GET /api/competitors/{competitor_id}/g2/search",
+     "openapi/_original/voyant-openapi-original.json#GET /api/g2/search",
+     "openapi/_original/voyant-openapi-original.json#GET /api/geo-aeo/airops/search",
+     "openapi/_original/voyant-openapi-original.json#GET /api/gsc/queries",
+     "openapi/_original/voyant-openapi-original.json#GET /api/signals/search",
+     "openapi/_original/voyant-openapi-original.json#POST /api/airops/search",
+     "openapi/_original/voyant-openapi-original.json#POST /api/content/search",
+     "openapi/_original/voyant-openapi-original.json#POST /api/rag/debug/search",
+     "openapi/_original/voyant-openapi-original.json#POST /api/rag/search",
+     "openapi/_original/voyant-openapi-original.json#POST /rag/chunks/search"
+    ]
+   },
+   "youtube": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "kind": "string",
+     "etag": "string",
+     "nextPageToken": "string",
+     "prevPageToken": "string",
+     "regionCode": "string",
+     "pageInfo": "object",
+     "items": "array"
+    },
+    "evidence": [
+     "openapi/_original/youtube-data-api-openapi.yml#GET /search",
+     "openapi/_original/youtube-data-openapi-original.yml#GET /search"
+    ]
+   },
+   "zeroentropy": {
+    "segments": [
+     "queries"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "window_start": "integer",
+     "organization_id": "string",
+     "collection_id": "string",
+     "query_type": "string",
+     "event_count": "integer",
+     "total_query_bytes": "integer",
+     "total_queried_bytes": "integer",
+     "total_query_tokens": "integer",
+     "total_results_returned": "integer",
+     "total_time_taken_ms": "number",
+     "start_time": "integer",
+     "end_time": "integer",
+     "aggregation_window": null,
+     "collection_names": null
+    },
+    "evidence": [
+     "openapi/_original/zeroentropy-openapi.json#POST /usage/queries"
+    ]
+   },
+   "zincsearch": {
+    "segments": [
+     "_search"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "_shards": "object",
+     "aggregations": "object",
+     "error": "string",
+     "hits": "object",
+     "timed_out": "boolean",
+     "took": "integer",
+     "_source": "array",
+     "aggs": "object",
+     "explain": "boolean",
+     "from": "integer",
+     "highlight": "object",
+     "max_results": "integer",
+     "query": "object",
+     "search_type": "string",
+     "sort_fields": "array",
+     "fields": "array",
+     "size": "integer",
+     "sort": "array",
+     "timeout": "integer",
+     "track_total_hits": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/zincsearch-openapi.yml#POST /api/{index}/_search",
+     "openapi/_original/zincsearch-openapi.yml#POST /es/{index}/_search",
+     "openapi/_original/zincsearch-swagger.json#POST /api/{index}/_search",
+     "openapi/_original/zincsearch-swagger.json#POST /es/{index}/_search",
+     "openapi/_original/zincsearch-swagger.yaml#POST /api/{index}/_search",
+     "openapi/_original/zincsearch-swagger.yaml#POST /es/{index}/_search"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "aerospike",
+    "ahrefs",
+    "airweave",
+    "aito-technologies",
+    "aleph-alpha",
+    "algolia",
+    "alphasense",
+    "amazon-cloudsearch",
+    "amazon-kendra",
+    "amazon-opensearch",
+    "amazon-opensearch-service",
+    "anyapi",
+    "arangodb",
+    "artlist",
+    "azure-cosmos-db",
+    "bing-news",
+    "bloomreach",
+    "brave-browser",
+    "brightedge",
+    "brightedge-technologies",
+    "browserless",
+    "chroma",
+    "chroniclingamerica",
+    "cloro-dev",
+    "coactive",
+    "cognee",
+    "constructorio",
+    "couchbase",
+    "coveo",
+    "coworkingview-api",
+    "crawl4ai",
+    "cribl",
+    "crustapi",
+    "currentsapi",
+    "databricks",
+    "datamuse",
+    "datastax",
+    "demo-openapi",
+    "depict",
+    "depictai",
+    "dexcare",
+    "dvids-api",
+    "dynamic-yield",
+    "elastic",
+    "elasticsearch",
+    "elk-stack",
+    "epicdirectories",
+    "epidemic-sound",
+    "europeana",
+    "exa",
+    "exa-ai",
+    "federal-laboratory-consortium-for-technology-transfer",
+    "finn-tannlege-com",
+    "geekflare",
+    "getty-images",
+    "gist",
+    "gnews",
+    "golden",
+    "google",
+    "google-books",
+    "google-cloud-talent-solution",
+    "google-custom-search",
+    "google-indexing",
+    "google-search-console",
+    "google-youtube",
+    "guru",
+    "iconik",
+    "insider",
+    "janus-machine-market",
+    "jina-ai",
+    "kagi",
+    "kakao",
+    "kannkidas-de",
+    "lancedb",
+    "landing",
+    "library-of-congress",
+    "lily-ai",
+    "listennotes",
+    "litescrape",
+    "lucidworks",
+    "machinelibrary-ai",
+    "macrometa",
+    "manticore",
+    "marginalia-search",
+    "marqo",
+    "mastodon-instances",
+    "mcp360",
+    "meilisearch",
+    "mem",
+    "midpage",
+    "milvus",
+    "misoai",
+    "mixedbread-ai",
+    "mongodb-atlas",
+    "moveworks",
+    "mrscraper",
+    "mytomorrows",
+    "new-york-times-company",
+    "news-api",
+    "newsapi",
+    "newscatcher",
+    "nuclia",
+    "nutrientsdb",
+    "nuxeo",
+    "octen-ai",
+    "ondemand",
+    "open-food-facts",
+    "open-library",
+    "openlaws",
+    "opensearch",
+    "openserp",
+    "openverse",
+    "opoint",
+    "orama",
+    "outdoorsy",
+    "parseflow",
+    "perigon",
+    "perplexity",
+    "pexafy",
+    "phraseanet",
+    "physna",
+    "pinecone",
+    "pingcap",
+    "pipeshub",
+    "preply",
+    "prorataai",
+    "pryon",
+    "qdrant",
+    "quickwit",
+    "radar-cnpj",
+    "ragie-ai",
+    "rentberry",
+    "rettfrabonden-com",
+    "rsperformance-online",
+    "s1-dev",
+    "samaya-ai",
+    "scribe",
+    "scylladb",
+    "searchcraft",
+    "searchstax",
+    "serper",
+    "serpwow",
+    "shodan",
+    "slite",
+    "sociallisteningapi",
+    "solr",
+    "songtradr",
+    "sourcebot",
+    "superlinked",
+    "sylvia-api",
+    "tako",
+    "tavily",
+    "tenor",
+    "the-index-fyi",
+    "the-news-api",
+    "tidb",
+    "tiledb",
+    "timescale",
+    "tinyfish",
+    "tmdb",
+    "trieve",
+    "trove",
+    "turbopuffer",
+    "tvu-networks",
+    "twelvelabs",
+    "typesense",
+    "unblocked",
+    "upstash",
+    "vectara",
+    "vectorize-io",
+    "vespa-ai",
+    "voyage-ai",
+    "voyant",
+    "weaviate",
+    "wego",
+    "wikimedia",
+    "youtube",
+    "zeroentropy",
+    "zilliz",
+    "zincsearch"
+   ],
+   "kebab-case": [
+    "aerospike",
+    "ahrefs",
+    "airweave",
+    "aleph-alpha",
+    "algolia",
+    "alphasense",
+    "amazon-cloudsearch",
+    "amazon-kendra",
+    "amazon-opensearch",
+    "amazon-opensearch-service",
+    "arangodb",
+    "bloomreach",
+    "brightedge",
+    "brightedge-technologies",
+    "browserless",
+    "chroma",
+    "coactive",
+    "cognee",
+    "constructorio",
+    "coveo",
+    "cribl",
+    "currentsapi",
+    "databricks",
+    "datastax",
+    "depict",
+    "depictai",
+    "dexcare",
+    "elastic",
+    "elk-stack",
+    "epicdirectories",
+    "epidemic-sound",
+    "exa-ai",
+    "finn-tannlege-com",
+    "getty-images",
+    "gnews",
+    "guru",
+    "insider",
+    "kakao",
+    "lancedb",
+    "landing",
+    "library-of-congress",
+    "lily-ai",
+    "litescrape",
+    "lucidworks",
+    "machinelibrary-ai",
+    "macrometa",
+    "mcp360",
+    "meilisearch",
+    "mem",
+    "milvus",
+    "mixedbread-ai",
+    "moveworks",
+    "mrscraper",
+    "new-york-times-company",
+    "news-api",
+    "newsapi",
+    "newscatcher",
+    "octen-ai",
+    "open-food-facts",
+    "opoint",
+    "orama",
+    "outdoorsy",
+    "parseflow",
+    "perplexity",
+    "pexafy",
+    "physna",
+    "pinecone",
+    "pingcap",
+    "pipeshub",
+    "pryon",
+    "quickwit",
+    "radar-cnpj",
+    "ragie-ai",
+    "rentberry",
+    "rettfrabonden-com",
+    "rsperformance-online",
+    "scylladb",
+    "searchstax",
+    "shodan",
+    "slite",
+    "sociallisteningapi",
+    "songtradr",
+    "superlinked",
+    "sylvia-api",
+    "tidb",
+    "timescale",
+    "tinyfish",
+    "tvu-networks",
+    "typesense",
+    "upstash",
+    "vectara",
+    "vectorize-io",
+    "voyant",
+    "weaviate",
+    "wego",
+    "wikimedia",
+    "worldnewsapi",
+    "zeroentropy"
+   ],
+   "other": [
+    "aerospike",
+    "aito-technologies",
+    "aleph-alpha",
+    "algolia",
+    "amazon-opensearch",
+    "amazon-opensearch-service",
+    "anyapi",
+    "arangodb",
+    "artlist",
+    "brightedge",
+    "brightedge-technologies",
+    "browserless",
+    "chroniclingamerica",
+    "coactive",
+    "couchbase",
+    "databricks",
+    "dynamic-yield",
+    "elastic",
+    "elasticsearch",
+    "elk-stack",
+    "finn-tannlege-com",
+    "google",
+    "google-cloud-talent-solution",
+    "google-indexing",
+    "google-knowledge-graph",
+    "google-search-console",
+    "janus-machine-market",
+    "kakao",
+    "library-of-congress",
+    "lily-ai",
+    "lucidworks",
+    "macrometa",
+    "manticore",
+    "mem",
+    "misoai",
+    "nuxeo",
+    "open-food-facts",
+    "openmenu",
+    "opensearch",
+    "openserp",
+    "outdoorsy",
+    "pingcap",
+    "pipeshub",
+    "pryon",
+    "radar-cnpj",
+    "rentberry",
+    "rettfrabonden-com",
+    "rsperformance-online",
+    "tidb",
+    "tiledb",
+    "tmdb",
+    "turbopuffer",
+    "tvu-networks",
+    "voyant",
+    "weaviate",
+    "worldnewsapi",
+    "zincsearch"
+   ],
+   "snake_case": [
+    "aleph-alpha",
+    "algolia",
+    "brightedge-technologies",
+    "chroma",
+    "coactive",
+    "cognee",
+    "constructorio",
+    "couchbase",
+    "coveo",
+    "depict",
+    "depictai",
+    "elastic",
+    "elk-stack",
+    "insider",
+    "kakao",
+    "lancedb",
+    "listennotes",
+    "lucidworks",
+    "mcp360",
+    "milvus",
+    "misoai",
+    "mixedbread-ai",
+    "mytomorrows",
+    "newscatcher",
+    "ondemand",
+    "open-food-facts",
+    "openverse",
+    "opoint",
+    "outdoorsy",
+    "pinecone",
+    "pingcap",
+    "preply",
+    "ragie-ai",
+    "rentberry",
+    "serpwow",
+    "sourcebot",
+    "sylvia-api",
+    "tako",
+    "tenor",
+    "tidb",
+    "tiledb",
+    "timescale",
+    "tmdb",
+    "turbopuffer",
+    "vectara",
+    "zincsearch"
+   ],
+   "camelCase": [
+    "algolia",
+    "amazon-cloudsearch",
+    "amazon-opensearch",
+    "arangodb",
+    "brightedge-technologies",
+    "couchbase",
+    "coveo",
+    "datastax",
+    "dexcare",
+    "exa",
+    "golden",
+    "google",
+    "google-books",
+    "google-indexing",
+    "google-search-console",
+    "google-youtube",
+    "insider",
+    "lily-ai",
+    "lucidworks",
+    "mendable",
+    "mongodb-atlas",
+    "newscatcher",
+    "nuxeo",
+    "ondemand",
+    "perigon",
+    "phraseanet",
+    "pingcap",
+    "pipeshub",
+    "songtradr",
+    "sylvia-api",
+    "tidb",
+    "timescale",
+    "tvu-networks",
+    "voyant",
+    "youtube",
+    "zilliz"
+   ],
+   "PascalCase": [
+    "bloomreach",
+    "coveo",
+    "datastax",
+    "dexcare",
+    "tvu-networks"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "ahrefs",
+    "airweave",
+    "aito-technologies",
+    "aleph-alpha",
+    "algolia",
+    "amazon-opensearch",
+    "anyapi",
+    "arangodb",
+    "artlist",
+    "bing-news",
+    "bloomreach",
+    "brave-browser",
+    "brightedge",
+    "brightedge-technologies",
+    "browserless",
+    "chroma",
+    "chroniclingamerica",
+    "cloro-dev",
+    "coactive",
+    "cognee",
+    "constructorio",
+    "couchbase",
+    "coveo",
+    "coworkingview-api",
+    "cribl",
+    "crustapi",
+    "currentsapi",
+    "databricks",
+    "datamuse",
+    "datastax",
+    "demo-openapi",
+    "depict",
+    "depictai",
+    "dexcare",
+    "dvids-api",
+    "elastic",
+    "elasticsearch",
+    "elk-stack",
+    "epicdirectories",
+    "epidemic-sound",
+    "europeana",
+    "exa-ai",
+    "finn-tannlege-com",
+    "getty-images",
+    "gist",
+    "gnews",
+    "golden",
+    "google",
+    "google-books",
+    "google-custom-search",
+    "google-indexing",
+    "google-knowledge-graph",
+    "google-search-console",
+    "google-youtube",
+    "iconik",
+    "insider",
+    "kagi",
+    "kakao",
+    "kannkidas-de",
+    "lancedb",
+    "landing",
+    "library-of-congress",
+    "lily-ai",
+    "listennotes",
+    "litescrape",
+    "lucidworks",
+    "machinelibrary-ai",
+    "macrometa",
+    "marginalia-search",
+    "mastodon-instances",
+    "mcp360",
+    "mem",
+    "mixedbread-ai",
+    "moveworks",
+    "mrscraper",
+    "myscale",
+    "new-york-times-company",
+    "news-api",
+    "newsapi",
+    "newscatcher",
+    "nuclia",
+    "nutrientsdb",
+    "nuxeo",
+    "ondemand",
+    "open-food-facts",
+    "open-library",
+    "openlaws",
+    "openmenu",
+    "openserp",
+    "openverse",
+    "opoint",
+    "outdoorsy",
+    "parseflow",
+    "perigon",
+    "perplexity",
+    "pexafy",
+    "physna",
+    "pinecone",
+    "pingcap",
+    "pipeshub",
+    "preply",
+    "prorataai",
+    "pryon",
+    "qdrant",
+    "quickwit",
+    "radar-cnpj",
+    "ragie-ai",
+    "rentberry",
+    "rettfrabonden-com",
+    "s1-dev",
+    "samaya-ai",
+    "scribe",
+    "scylladb",
+    "searchstax",
+    "serpwow",
+    "shodan",
+    "slite",
+    "sociallisteningapi",
+    "solr",
+    "songtradr",
+    "sourcebot",
+    "sylvia-api",
+    "tako",
+    "tenor",
+    "the-news-api",
+    "tidb",
+    "tiledb",
+    "timescale",
+    "tinyfish",
+    "tmdb",
+    "trove",
+    "turbopuffer",
+    "tvu-networks",
+    "twelvelabs",
+    "typesense",
+    "unblocked",
+    "vectara",
+    "vespa-ai",
+    "voyant",
+    "weaviate",
+    "wego",
+    "wikimedia",
+    "worldnewsapi",
+    "youtube",
+    "zeroentropy",
+    "zilliz",
+    "zincsearch"
+   ],
+   "snake_case": [
+    "ahrefs",
+    "airweave",
+    "aleph-alpha",
+    "anyapi",
+    "bloomreach",
+    "brave-browser",
+    "brightedge",
+    "brightedge-technologies",
+    "chroma",
+    "chroniclingamerica",
+    "coactive",
+    "cognee",
+    "constructorio",
+    "couchbase",
+    "coveo",
+    "currentsapi",
+    "databricks",
+    "datastax",
+    "depict",
+    "depictai",
+    "dexcare",
+    "dvids-api",
+    "elastic",
+    "elk-stack",
+    "exa-ai",
+    "finn-tannlege-com",
+    "getty-images",
+    "google",
+    "iconik",
+    "kakao",
+    "lancedb",
+    "landing",
+    "lily-ai",
+    "listennotes",
+    "litescrape",
+    "machinelibrary-ai",
+    "macrometa",
+    "manticore",
+    "marqo",
+    "mastodon-instances",
+    "mcp360",
+    "mem",
+    "mixedbread-ai",
+    "moveworks",
+    "myscale",
+    "new-york-times-company",
+    "newscatcher",
+    "open-food-facts",
+    "openlaws",
+    "openmenu",
+    "openserp",
+    "openverse",
+    "opoint",
+    "outdoorsy",
+    "perplexity",
+    "pexafy",
+    "phraseanet",
+    "pinecone",
+    "pingcap",
+    "pipeshub",
+    "pryon",
+    "qdrant",
+    "quickwit",
+    "ragie-ai",
+    "rettfrabonden-com",
+    "scribe",
+    "searchstax",
+    "serpwow",
+    "shodan",
+    "sociallisteningapi",
+    "sylvia-api",
+    "tako",
+    "tenor",
+    "the-news-api",
+    "tidb",
+    "tiledb",
+    "tinyfish",
+    "tmdb",
+    "turbopuffer",
+    "twelvelabs",
+    "typesense",
+    "vectara",
+    "voyant",
+    "weaviate",
+    "wikimedia",
+    "youtube",
+    "zincsearch"
+   ],
+   "camelCase": [
+    "aleph-alpha",
+    "algolia",
+    "amazon-cloudsearch",
+    "amazon-opensearch",
+    "arangodb",
+    "artlist",
+    "bing-news",
+    "browserless",
+    "chroniclingamerica",
+    "couchbase",
+    "coveo",
+    "coworkingview-api",
+    "crustapi",
+    "datastax",
+    "depict",
+    "depictai",
+    "dexcare",
+    "elk-stack",
+    "epicdirectories",
+    "epidemic-sound",
+    "exa-ai",
+    "getty-images",
+    "gist",
+    "golden",
+    "google",
+    "google-books",
+    "google-custom-search",
+    "google-search-console",
+    "google-youtube",
+    "insider",
+    "kannkidas-de",
+    "library-of-congress",
+    "lily-ai",
+    "litescrape",
+    "lucidworks",
+    "macrometa",
+    "mcp360",
+    "milvus",
+    "misoai",
+    "moveworks",
+    "mrscraper",
+    "new-york-times-company",
+    "news-api",
+    "newsapi",
+    "nuxeo",
+    "ondemand",
+    "opoint",
+    "perigon",
+    "physna",
+    "pinecone",
+    "pingcap",
+    "pipeshub",
+    "preply",
+    "prorataai",
+    "radar-cnpj",
+    "rentberry",
+    "rettfrabonden-com",
+    "scylladb",
+    "slite",
+    "songtradr",
+    "sourcebot",
+    "tidb",
+    "trove",
+    "tvu-networks",
+    "vespa-ai",
+    "weaviate",
+    "wego",
+    "youtube",
+    "zilliz"
+   ],
+   "other": [
+    "aleph-alpha",
+    "bloomreach",
+    "constructorio",
+    "datastax",
+    "dexcare",
+    "elastic",
+    "elk-stack",
+    "google",
+    "lucidworks",
+    "moveworks",
+    "newscatcher",
+    "open-food-facts",
+    "openverse",
+    "opoint",
+    "outdoorsy",
+    "pryon",
+    "scribe",
+    "the-index-fyi",
+    "tmdb",
+    "trove",
+    "vespa-ai"
+   ],
+   "kebab-case": [
+    "datastax",
+    "macrometa",
+    "new-york-times-company",
+    "orama",
+    "outdoorsy",
+    "trove",
+    "wego",
+    "worldnewsapi"
+   ],
+   "PascalCase": [
+    "amazon-opensearch",
+    "arangodb",
+    "coveo",
+    "insider",
+    "outdoorsy",
+    "songtradr",
+    "tvu-networks"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "ahrefs",
+    "airweave",
+    "aleph-alpha",
+    "algolia",
+    "anyapi",
+    "bloomreach",
+    "brightedge-technologies",
+    "browserless",
+    "chroma",
+    "coactive",
+    "cognee",
+    "couchbase",
+    "coveo",
+    "coworkingview-api",
+    "cribl",
+    "crustapi",
+    "databricks",
+    "datamuse",
+    "datastax",
+    "demo-openapi",
+    "depict",
+    "depictai",
+    "epicdirectories",
+    "epidemic-sound",
+    "exa-ai",
+    "finn-tannlege-com",
+    "google-knowledge-graph",
+    "lancedb",
+    "library-of-congress",
+    "lily-ai",
+    "litescrape",
+    "lucidworks",
+    "machinelibrary-ai",
+    "macrometa",
+    "mem",
+    "mixedbread-ai",
+    "moveworks",
+    "new-york-times-company",
+    "nutrientsdb",
+    "ondemand",
+    "open-food-facts",
+    "open-library",
+    "openlaws",
+    "openserp",
+    "opoint",
+    "outdoorsy",
+    "parseflow",
+    "perplexity",
+    "pexafy",
+    "pinecone",
+    "pingcap",
+    "pipeshub",
+    "quickwit",
+    "radar-cnpj",
+    "rentberry",
+    "rettfrabonden-com",
+    "samaya-ai",
+    "scribe",
+    "shodan",
+    "sylvia-api",
+    "tako",
+    "tenor",
+    "the-news-api",
+    "tidb",
+    "tinyfish",
+    "trove",
+    "unblocked",
+    "vectara",
+    "voyant",
+    "weaviate",
+    "wikimedia"
+   ],
+   "page": [
+    "aleph-alpha",
+    "algolia",
+    "artlist",
+    "bloomreach",
+    "chroniclingamerica",
+    "coactive",
+    "constructorio",
+    "couchbase",
+    "coveo",
+    "coworkingview-api",
+    "crustapi",
+    "demo-openapi",
+    "depict",
+    "depictai",
+    "dvids-api",
+    "elk-stack",
+    "epicdirectories",
+    "epidemic-sound",
+    "getty-images",
+    "gnews",
+    "iconik",
+    "insider",
+    "kannkidas-de",
+    "library-of-congress",
+    "lily-ai",
+    "listennotes",
+    "marginalia-search",
+    "mem",
+    "mrscraper",
+    "new-york-times-company",
+    "news-api",
+    "newsapi",
+    "newscatcher",
+    "nuclia",
+    "ondemand",
+    "open-food-facts",
+    "open-library",
+    "openlaws",
+    "openverse",
+    "opoint",
+    "perigon",
+    "perplexity",
+    "physna",
+    "pingcap",
+    "pipeshub",
+    "preply",
+    "pryon",
+    "radar-cnpj",
+    "rentberry",
+    "searchstax",
+    "serpwow",
+    "shodan",
+    "slite",
+    "songtradr",
+    "sourcebot",
+    "the-news-api",
+    "tidb",
+    "tiledb",
+    "timescale",
+    "tinyfish",
+    "tmdb",
+    "twelvelabs",
+    "voyant",
+    "wego"
+   ],
+   "offset": [
+    "ahrefs",
+    "aleph-alpha",
+    "algolia",
+    "arangodb",
+    "bing-news",
+    "brave-browser",
+    "brightedge-technologies",
+    "browserless",
+    "chroma",
+    "coactive",
+    "cognee",
+    "constructorio",
+    "couchbase",
+    "coveo",
+    "cribl",
+    "databricks",
+    "depict",
+    "depictai",
+    "elastic",
+    "elk-stack",
+    "epicdirectories",
+    "epidemic-sound",
+    "finn-tannlege-com",
+    "library-of-congress",
+    "lily-ai",
+    "listennotes",
+    "macrometa",
+    "mem",
+    "mixedbread-ai",
+    "moveworks",
+    "new-york-times-company",
+    "nuxeo",
+    "open-library",
+    "openmenu",
+    "opoint",
+    "outdoorsy",
+    "parseflow",
+    "quickwit",
+    "rettfrabonden-com",
+    "scribe",
+    "trove",
+    "tvu-networks",
+    "vespa-ai",
+    "voyant",
+    "weaviate",
+    "worldnewsapi"
+   ],
+   "page_size": [
+    "coveo",
+    "coworkingview-api",
+    "depict",
+    "depictai",
+    "elk-stack",
+    "epidemic-sound",
+    "getty-images",
+    "golden",
+    "google",
+    "lily-ai",
+    "listennotes",
+    "moveworks",
+    "mrscraper",
+    "news-api",
+    "newsapi",
+    "newscatcher",
+    "nuxeo",
+    "open-food-facts",
+    "openverse",
+    "opoint",
+    "pingcap",
+    "pryon",
+    "radar-cnpj",
+    "ragie-ai",
+    "searchstax",
+    "the-index-fyi",
+    "tidb",
+    "turbopuffer",
+    "tvu-networks",
+    "wego",
+    "zilliz",
+    "zincsearch"
+   ],
+   "cursor": [
+    "browserless",
+    "depict",
+    "depictai",
+    "elk-stack",
+    "epicdirectories",
+    "exa-ai",
+    "golden",
+    "moveworks",
+    "ondemand",
+    "opoint",
+    "pexafy",
+    "pipeshub",
+    "ragie-ai",
+    "samaya-ai",
+    "slite",
+    "sociallisteningapi",
+    "sylvia-api",
+    "tako",
+    "timescale",
+    "tinyfish",
+    "turbopuffer"
+   ],
+   "count": [
+    "arangodb",
+    "bing-news",
+    "brave-browser",
+    "brightedge-technologies",
+    "coveo",
+    "datastax",
+    "dexcare",
+    "gist",
+    "google",
+    "litescrape",
+    "macrometa",
+    "marginalia-search",
+    "mastodon-instances",
+    "moveworks",
+    "prorataai",
+    "shodan",
+    "wikimedia"
+   ],
+   "per_page": [
+    "coactive",
+    "couchbase",
+    "coveo",
+    "elastic",
+    "elk-stack",
+    "iconik",
+    "insider",
+    "kannkidas-de",
+    "lily-ai",
+    "pexafy",
+    "phraseanet",
+    "physna",
+    "sourcebot",
+    "tiledb",
+    "typesense",
+    "voyant"
+   ],
+   "size": [
+    "aleph-alpha",
+    "arangodb",
+    "elastic",
+    "elasticsearch",
+    "elk-stack",
+    "getty-images",
+    "mcp360",
+    "nuclia",
+    "open-food-facts",
+    "openverse",
+    "perigon",
+    "pipeshub",
+    "shodan",
+    "songtradr"
+   ],
+   "start": [
+    "aleph-alpha",
+    "arangodb",
+    "bloomreach",
+    "crustapi",
+    "elastic",
+    "elk-stack",
+    "epidemic-sound",
+    "europeana",
+    "google-custom-search",
+    "litescrape",
+    "macrometa",
+    "openserp",
+    "outdoorsy",
+    "tiledb"
+   ],
+   "max_results": [
+    "amazon-opensearch",
+    "dvids-api",
+    "gist",
+    "google",
+    "google-books",
+    "google-youtube",
+    "nuxeo",
+    "prorataai",
+    "voyant",
+    "youtube"
+   ],
+   "skip": [
+    "airweave",
+    "browserless",
+    "coactive",
+    "dexcare",
+    "macrometa",
+    "moveworks",
+    "pingcap",
+    "shodan",
+    "tidb"
+   ],
+   "page_token": [
+    "google",
+    "google-youtube",
+    "lancedb",
+    "moveworks",
+    "perplexity",
+    "pingcap",
+    "pryon",
+    "tidb",
+    "youtube"
+   ],
+   "after": [
+    "elastic",
+    "elk-stack",
+    "mixedbread-ai",
+    "sylvia-api",
+    "unblocked",
+    "weaviate"
+   ],
+   "before": [
+    "algolia",
+    "mixedbread-ai",
+    "rentberry",
+    "sylvia-api",
+    "unblocked"
+   ],
+   "starting_after": [
+    "datastax",
+    "moveworks",
+    "tako"
+   ],
+   "top": [
+    "dexcare",
+    "moveworks"
+   ],
+   "next": [
+    "wikimedia"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "aito-technologies",
+    "aleph-alpha",
+    "algolia",
+    "anyapi",
+    "arangodb",
+    "artlist",
+    "brightedge",
+    "brightedge-technologies",
+    "chroma",
+    "chroniclingamerica",
+    "cognee",
+    "constructorio",
+    "couchbase",
+    "coveo",
+    "coworkingview-api",
+    "cribl",
+    "datamuse",
+    "datastax",
+    "depict",
+    "depictai",
+    "dexcare",
+    "elastic",
+    "elasticsearch",
+    "elk-stack",
+    "epicdirectories",
+    "epidemic-sound",
+    "exa-ai",
+    "finn-tannlege-com",
+    "getty-images",
+    "gist",
+    "golden",
+    "google",
+    "google-books",
+    "google-search-console",
+    "guru",
+    "insider",
+    "jina-ai",
+    "lancedb",
+    "landing",
+    "library-of-congress",
+    "lily-ai",
+    "listennotes",
+    "lucidworks",
+    "machinelibrary-ai",
+    "macrometa",
+    "manticore",
+    "marginalia-search",
+    "mem",
+    "mongodb-atlas",
+    "moveworks",
+    "mrscraper",
+    "new-york-times-company",
+    "nuclia",
+    "nuxeo",
+    "octen-ai",
+    "ondemand",
+    "open-food-facts",
+    "open-library",
+    "openlaws",
+    "opensearch",
+    "openserp",
+    "openverse",
+    "opoint",
+    "outdoorsy",
+    "perigon",
+    "perplexity",
+    "pexafy",
+    "physna",
+    "pinecone",
+    "pingcap",
+    "pipeshub",
+    "preply",
+    "prorataai",
+    "qdrant",
+    "radar-cnpj",
+    "rentberry",
+    "rettfrabonden-com",
+    "scribe",
+    "searchcraft",
+    "searchstax",
+    "shodan",
+    "solr",
+    "songtradr",
+    "superlinked",
+    "sylvia-api",
+    "tako",
+    "the-index-fyi",
+    "the-news-api",
+    "tidb",
+    "tiledb",
+    "timescale",
+    "tinyfish",
+    "trove",
+    "turbopuffer",
+    "tvu-networks",
+    "upstash",
+    "vespa-ai",
+    "voyant",
+    "weaviate",
+    "wikimedia",
+    "zincsearch"
+   ],
+   "camelCase": [
+    "aleph-alpha",
+    "algolia",
+    "alphasense",
+    "amazon-cloudsearch",
+    "amazon-opensearch-service",
+    "arangodb",
+    "artlist",
+    "azure-cosmos-db",
+    "bloomreach",
+    "cloro-dev",
+    "couchbase",
+    "coveo",
+    "crawl4ai",
+    "cribl",
+    "datastax",
+    "dexcare",
+    "elk-stack",
+    "epicdirectories",
+    "epidemic-sound",
+    "europeana",
+    "exa-ai",
+    "getty-images",
+    "gist",
+    "google",
+    "google-books",
+    "google-cloud-talent-solution",
+    "google-search-console",
+    "insider",
+    "library-of-congress",
+    "lily-ai",
+    "lucidworks",
+    "macrometa",
+    "meilisearch",
+    "mongodb-atlas",
+    "moveworks",
+    "nuxeo",
+    "ondemand",
+    "open-library",
+    "opoint",
+    "orama",
+    "physna",
+    "pingcap",
+    "pipeshub",
+    "prorataai",
+    "rentberry",
+    "rettfrabonden-com",
+    "s1-dev",
+    "scylladb",
+    "shodan",
+    "slite",
+    "solr",
+    "songtradr",
+    "tidb",
+    "tinyfish",
+    "trove",
+    "tvu-networks",
+    "typesense",
+    "unblocked",
+    "upstash",
+    "vectorize-io",
+    "vespa-ai",
+    "voyant",
+    "weaviate",
+    "wego",
+    "youtube",
+    "zilliz"
+   ],
+   "snake_case": [
+    "airweave",
+    "aleph-alpha",
+    "bloomreach",
+    "brightedge-technologies",
+    "chroma",
+    "chroniclingamerica",
+    "coactive",
+    "cognee",
+    "constructorio",
+    "depict",
+    "depictai",
+    "elastic",
+    "elk-stack",
+    "getty-images",
+    "iconik",
+    "janus-machine-market",
+    "jina-ai",
+    "kannkidas-de",
+    "lancedb",
+    "listennotes",
+    "machinelibrary-ai",
+    "macrometa",
+    "marqo",
+    "mem",
+    "misoai",
+    "mixedbread-ai",
+    "moveworks",
+    "new-york-times-company",
+    "newscatcher",
+    "octen-ai",
+    "open-food-facts",
+    "openlaws",
+    "opoint",
+    "outdoorsy",
+    "parseflow",
+    "perplexity",
+    "pexafy",
+    "phraseanet",
+    "pinecone",
+    "pingcap",
+    "pryon",
+    "qdrant",
+    "quickwit",
+    "ragie-ai",
+    "rentberry",
+    "samaya-ai",
+    "searchcraft",
+    "searchstax",
+    "superlinked",
+    "sylvia-api",
+    "tako",
+    "tidb",
+    "tiledb",
+    "timescale",
+    "tmdb",
+    "twelvelabs",
+    "vectara",
+    "voyant",
+    "weaviate",
+    "wikimedia",
+    "zincsearch"
+   ],
+   "kebab-case": [
+    "arangodb",
+    "getty-images",
+    "insider",
+    "macrometa",
+    "new-york-times-company",
+    "pingcap"
+   ],
+   "other": [
+    "arangodb",
+    "pingcap",
+    "pryon",
+    "tidb"
+   ],
+   "PascalCase": [
+    "amazon-kendra",
+    "amazon-opensearch"
+   ]
+  },
+  "property": {
+   "lower": [
+    "aito-technologies",
+    "aleph-alpha",
+    "algolia",
+    "anyapi",
+    "arangodb",
+    "bing-news",
+    "brave-browser",
+    "brightedge-technologies",
+    "browserless",
+    "chroma",
+    "coactive",
+    "cognee",
+    "constructorio",
+    "couchbase",
+    "coveo",
+    "crustapi",
+    "currentsapi",
+    "depict",
+    "depictai",
+    "dexcare",
+    "dvids-api",
+    "elastic",
+    "elasticsearch",
+    "elk-stack",
+    "epidemic-sound",
+    "europeana",
+    "exa",
+    "exa-ai",
+    "federal-laboratory-consortium-for-technology-transfer",
+    "geekflare",
+    "getty-images",
+    "gnews",
+    "google-search-console",
+    "google-youtube",
+    "iconik",
+    "kagi",
+    "kannkidas-de",
+    "lancedb",
+    "library-of-congress",
+    "lily-ai",
+    "listennotes",
+    "lucidworks",
+    "machinelibrary-ai",
+    "macrometa",
+    "manticore",
+    "marginalia-search",
+    "marqo",
+    "mcp360",
+    "mem",
+    "midpage",
+    "milvus",
+    "misoai",
+    "mixedbread-ai",
+    "new-york-times-company",
+    "newscatcher",
+    "nuclia",
+    "nuxeo",
+    "octen-ai",
+    "ondemand",
+    "open-food-facts",
+    "open-library",
+    "openlaws",
+    "openserp",
+    "opoint",
+    "orama",
+    "perplexity",
+    "pexafy",
+    "phraseanet",
+    "pinecone",
+    "pipeshub",
+    "qdrant",
+    "quickwit",
+    "rentberry",
+    "rettfrabonden-com",
+    "rsperformance-online",
+    "s1-dev",
+    "scribe",
+    "searchcraft",
+    "serper",
+    "shodan",
+    "slite",
+    "sociallisteningapi",
+    "sourcebot",
+    "superlinked",
+    "sylvia-api",
+    "tako",
+    "tenor",
+    "the-index-fyi",
+    "turbopuffer",
+    "tvu-networks",
+    "twelvelabs",
+    "upstash",
+    "vectara",
+    "vectorize-io",
+    "vespa-ai",
+    "voyant",
+    "youtube",
+    "zincsearch"
+   ],
+   "snake_case": [
+    "aleph-alpha",
+    "algolia",
+    "bloomreach",
+    "brightedge-technologies",
+    "chroma",
+    "coactive",
+    "cognee",
+    "constructorio",
+    "depict",
+    "depictai",
+    "dvids-api",
+    "elastic",
+    "elk-stack",
+    "iconik",
+    "lancedb",
+    "library-of-congress",
+    "lily-ai",
+    "listennotes",
+    "machinelibrary-ai",
+    "macrometa",
+    "manticore",
+    "mem",
+    "midpage",
+    "misoai",
+    "mixedbread-ai",
+    "new-york-times-company",
+    "newscatcher",
+    "nuclia",
+    "octen-ai",
+    "open-food-facts",
+    "open-library",
+    "openlaws",
+    "openserp",
+    "opoint",
+    "perplexity",
+    "pexafy",
+    "phraseanet",
+    "pinecone",
+    "pryon",
+    "qdrant",
+    "quickwit",
+    "rettfrabonden-com",
+    "rsperformance-online",
+    "s1-dev",
+    "scribe",
+    "searchcraft",
+    "shodan",
+    "sociallisteningapi",
+    "superlinked",
+    "sylvia-api",
+    "tako",
+    "tenor",
+    "turbopuffer",
+    "tvu-networks",
+    "twelvelabs",
+    "upstash",
+    "vectara",
+    "vectorize-io",
+    "voyant",
+    "zeroentropy",
+    "zincsearch"
+   ],
+   "camelCase": [
+    "aito-technologies",
+    "aleph-alpha",
+    "algolia",
+    "anyapi",
+    "bing-news",
+    "brightedge-technologies",
+    "browserless",
+    "cognee",
+    "couchbase",
+    "coveo",
+    "crustapi",
+    "dexcare",
+    "epidemic-sound",
+    "europeana",
+    "exa",
+    "exa-ai",
+    "federal-laboratory-consortium-for-technology-transfer",
+    "geekflare",
+    "gnews",
+    "google-search-console",
+    "kannkidas-de",
+    "lucidworks",
+    "macrometa",
+    "marqo",
+    "milvus",
+    "nuxeo",
+    "ondemand",
+    "orama",
+    "pinecone",
+    "pipeshub",
+    "rettfrabonden-com",
+    "serper",
+    "slite",
+    "sourcebot",
+    "tvu-networks",
+    "vectorize-io",
+    "youtube"
+   ],
+   "other": [
+    "algolia",
+    "bing-news",
+    "elastic",
+    "elk-stack",
+    "manticore",
+    "newscatcher",
+    "pinecone",
+    "pipeshub",
+    "scribe",
+    "twelvelabs",
+    "zincsearch"
+   ],
+   "PascalCase": [
+    "amazon-kendra",
+    "amazon-opensearch",
+    "macrometa"
+   ],
+   "kebab-case": [
+    "nuxeo",
+    "vectorize-io"
+   ]
+  }
+ }
+}

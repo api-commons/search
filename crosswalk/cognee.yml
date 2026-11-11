@@ -1,0 +1,16 @@
+provider: cognee
+apis_io: https://apis.io/providers/cognee/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      id: id
+      limit: topK
+      query: text
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/cognee-openapi.json#GET /api/v1/search
+    - openapi/_original/cognee-openapi.json#POST /api/v1/search

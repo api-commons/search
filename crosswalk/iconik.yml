@@ -1,0 +1,26 @@
+provider: iconik
+apis_io: https://apis.io/providers/iconik/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - collections
+    properties:
+      name: title
+      id: id
+      created_at: date_created
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/iconik-openapi.yml#DELETE /assets/v1/collections/{collection_id}/
+    - openapi/_original/iconik-openapi.yml#GET /assets/v1/collections/
+    - openapi/_original/iconik-openapi.yml#GET /assets/v1/collections/{collection_id}/
+    - openapi/_original/iconik-openapi.yml#POST /assets/v1/collections/
+  search_query:
+    path_segment:
+    - search
+    properties:
+      filters: filter
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/iconik-openapi.yml#POST /search/v1/search/

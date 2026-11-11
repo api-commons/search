@@ -1,0 +1,25 @@
+provider: marqo
+apis_io: https://apis.io/providers/marqo/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - indexes
+    properties:
+      type: type
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/marqo-openapi.yml#DELETE /indexes/{index_name}
+    - openapi/_original/marqo-openapi.yml#GET /indexes
+    - openapi/_original/marqo-openapi.yml#POST /indexes/{index_name}
+  search_query:
+    path_segment:
+    - search
+    properties:
+      limit: limit
+      filters: filter
+      query: q
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/marqo-openapi.yml#POST /indexes/{index_name}/search

@@ -1,0 +1,16 @@
+provider: milvus
+apis_io: https://apis.io/providers/milvus/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - query
+    - search
+    properties:
+      limit: limit
+      filters: filter
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/milvus-openapi.yml#POST /v2/vectordb/entities/query
+    - openapi/_original/milvus-openapi.yml#POST /v2/vectordb/entities/search

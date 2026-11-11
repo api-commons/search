@@ -1,0 +1,36 @@
+provider: elastic
+apis_io: https://apis.io/providers/elastic/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - indices
+    - index
+    properties:
+      id: uuid
+      created_at: creation.date
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/elasticsearch.json#GET /_cat/indices
+    - openapi/_original/elasticsearch.json#GET /_cat/indices/{index}
+    - openapi/_original/elasticsearch.json#GET /_resolve/index/{name}
+    - openapi/_original/elasticsearch.json#POST /_resolve/index/{name}
+  search_query:
+    path_segment:
+    - _search
+    - search
+    - query
+    - queries
+    properties:
+      id: id
+      limit: size
+      filters: filter
+      query: term
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/elastic-elasticsearch-openapi.yml#GET /_search
+    - openapi/_original/elastic-elasticsearch-openapi.yml#GET /{index}/_search
+    - openapi/_original/elasticsearch.json#DELETE /_eql/search/{id}
+    - openapi/_original/elasticsearch.json#GET /_application/search_application/{name}/_search
+    - openapi/_original/elasticsearch.json#GET /_eql/search/{id}

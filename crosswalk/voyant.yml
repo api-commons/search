@@ -1,0 +1,31 @@
+provider: voyant
+apis_io: https://apis.io/providers/voyant/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - engines
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/voyant-openapi-original.json#GET /api/crawl/engines
+  search_query:
+    path_segment:
+    - search
+    - queries
+    properties:
+      id: id
+      limit:
+      - limit
+      - top_k
+      name: name
+      query: text
+      score: similarity
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/voyant-openapi-original.json#GET /api/companies/search
+    - openapi/_original/voyant-openapi-original.json#GET /api/competitors/github/search
+    - openapi/_original/voyant-openapi-original.json#GET /api/competitors/{competitor_id}/g2/search
+    - openapi/_original/voyant-openapi-original.json#GET /api/g2/search
+    - openapi/_original/voyant-openapi-original.json#GET /api/geo-aeo/airops/search

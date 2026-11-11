@@ -1,0 +1,16 @@
+provider: dvids-api
+apis_io: https://apis.io/providers/dvids-api/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      id: id
+      name: title
+      query: keywords
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/dvids-api-openapi.yml#GET /search
+    - openapi/_original/dvids-api-openapi.yml#GET /unit/search

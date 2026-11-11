@@ -1,0 +1,13 @@
+provider: federal-laboratory-consortium-for-technology-transfer
+apis_io: https://apis.io/providers/federal-laboratory-consortium-for-technology-transfer/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      limit: limit
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/federal-laboratory-consortium-for-technology-transfer-greenbook-openapi.json#POST /v1/sections/search

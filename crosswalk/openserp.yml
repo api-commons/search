@@ -1,0 +1,24 @@
+provider: openserp
+apis_io: https://apis.io/providers/openserp/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - engines
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/openserp-oss-openapi.yml#GET /mega/engines
+  search_query:
+    path_segment:
+    - search
+    properties:
+      id: id
+      name: title
+      score: score
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/openserp-oss-openapi.yml#GET /mega/search
+    - openapi/_original/openserp-oss-openapi.yml#GET /{engine}/search

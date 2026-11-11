@@ -1,0 +1,29 @@
+provider: zincsearch
+apis_io: https://apis.io/providers/zincsearch/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - index
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/zincsearch-openapi.yml#DELETE /api/index/{index}
+    - openapi/_original/zincsearch-openapi.yml#GET /api/index
+    - openapi/_original/zincsearch-openapi.yml#GET /api/index/{index}
+    - openapi/_original/zincsearch-openapi.yml#POST /api/index
+    - openapi/_original/zincsearch-swagger.json#DELETE /api/index/{index}
+  search_query:
+    path_segment:
+    - _search
+    properties:
+      limit: size
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/zincsearch-openapi.yml#POST /api/{index}/_search
+    - openapi/_original/zincsearch-openapi.yml#POST /es/{index}/_search
+    - openapi/_original/zincsearch-swagger.json#POST /api/{index}/_search
+    - openapi/_original/zincsearch-swagger.json#POST /es/{index}/_search
+    - openapi/_original/zincsearch-swagger.yaml#POST /api/{index}/_search

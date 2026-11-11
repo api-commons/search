@@ -1,0 +1,1565 @@
+[
+ {
+  "slug": "aerospike",
+  "specs": [
+   "openapi/_original/aerospike-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ahrefs",
+  "specs": [
+   "openapi/_original/ahrefs-batch-analysis-openapi.json",
+   "openapi/_original/ahrefs-brand-radar-openapi.json",
+   "openapi/_original/ahrefs-gsc-openapi.json",
+   "openapi/_original/ahrefs-keywords-explorer-openapi.json",
+   "openapi/_original/ahrefs-management-openapi.json",
+   "openapi/_original/ahrefs-openapi-original.json",
+   "openapi/_original/ahrefs-public-openapi.json",
+   "openapi/_original/ahrefs-rank-tracker-openapi.json",
+   "openapi/_original/ahrefs-serp-overview-openapi.json",
+   "openapi/_original/ahrefs-site-audit-openapi.json",
+   "openapi/_original/ahrefs-site-explorer-openapi.json",
+   "openapi/_original/ahrefs-social-media-openapi.json",
+   "openapi/_original/ahrefs-spec-index.json",
+   "openapi/_original/ahrefs-subscription-info-openapi.json",
+   "openapi/_original/ahrefs-web-analytics-openapi.json"
+  ]
+ },
+ {
+  "slug": "airweave",
+  "specs": [
+   "openapi/_original/airweave-openapi.json"
+  ]
+ },
+ {
+  "slug": "aito-technologies",
+  "specs": [
+   "openapi/_original/aito-technologies-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aleph-alpha",
+  "specs": [
+   "openapi/_original/aleph-alpha-pharia-data-openapi.json",
+   "openapi/_original/aleph-alpha-pharia-inference-openapi.json",
+   "openapi/_original/aleph-alpha-pharia-os-openapi.json",
+   "openapi/_original/aleph-alpha-pharia-search-openapi.json",
+   "openapi/_original/aleph-alpha-pharia-studio-openapi.json",
+   "openapi/_original/aleph-alpha-responses-openapi.json"
+  ]
+ },
+ {
+  "slug": "algolia",
+  "specs": [
+   "openapi/_original/algolia-abtesting-openapi.yml",
+   "openapi/_original/algolia-abtesting-v3-openapi.yml",
+   "openapi/_original/algolia-advanced-personalization-openapi.yml",
+   "openapi/_original/algolia-agent-studio-openapi.yml",
+   "openapi/_original/algolia-algoliasearch-openapi.yml",
+   "openapi/_original/algolia-analytics-openapi.yml",
+   "openapi/_original/algolia-composition-openapi.yml",
+   "openapi/_original/algolia-crawler-openapi.yml",
+   "openapi/_original/algolia-ingestion-openapi.yml",
+   "openapi/_original/algolia-insights-openapi.yml",
+   "openapi/_original/algolia-monitoring-openapi.yml",
+   "openapi/_original/algolia-personalization-openapi.yml",
+   "openapi/_original/algolia-query-suggestions-openapi.yml",
+   "openapi/_original/algolia-recommend-openapi.yml",
+   "openapi/_original/algolia-search-openapi.yml"
+  ]
+ },
+ {
+  "slug": "alphasense",
+  "specs": [
+   "openapi/_original/alphasense-agent-api-openapi.yml",
+   "openapi/_original/alphasense-utility-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-cloudsearch",
+  "specs": [
+   "openapi/_original/amazon-cloudsearch-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-kendra",
+  "specs": [
+   "openapi/_original/amazon-kendra-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-opensearch",
+  "specs": [
+   "openapi/_original/amazon-opensearch-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-opensearch-service",
+  "specs": [
+   "openapi/_original/amazon-opensearch-service-openapi.yml"
+  ]
+ },
+ {
+  "slug": "anyapi",
+  "specs": [
+   "openapi/_original/anyapi-gateway-openapi.json",
+   "openapi/_original/anyapi-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "arangodb",
+  "specs": [
+   "openapi/_original/arangodb-core-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "artlist",
+  "specs": [
+   "openapi/_original/artlist-download-openapi-original.yml",
+   "openapi/_original/artlist-search-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "azure-cosmos-db",
+  "specs": [
+   "openapi/_original/azure-cosmos-db-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bing-news",
+  "specs": [
+   "openapi/_original/bing-news-search-openapi.json"
+  ]
+ },
+ {
+  "slug": "bloomreach",
+  "specs": [
+   "openapi/_original/bloomreach-data-hub-workspace-import-openapi.yml",
+   "openapi/_original/bloomreach-discovery-autosuggest-openapi.yml",
+   "openapi/_original/bloomreach-discovery-bestseller-openapi.yml",
+   "openapi/_original/bloomreach-discovery-catalog-management-openapi.yml",
+   "openapi/_original/bloomreach-discovery-content-search-openapi.yml",
+   "openapi/_original/bloomreach-discovery-email-widget-openapi.yml",
+   "openapi/_original/bloomreach-discovery-recommendations-pathways-openapi.yml",
+   "openapi/_original/bloomreach-discovery-search-category-openapi.yml"
+  ]
+ },
+ {
+  "slug": "brave-browser",
+  "specs": [
+   "openapi/_original/brave-browser-openapi.yml"
+  ]
+ },
+ {
+  "slug": "brightedge",
+  "specs": [
+   "openapi/_original/brightedge-openapi.json"
+  ]
+ },
+ {
+  "slug": "brightedge-technologies",
+  "specs": [
+   "openapi/_original/brightedge-technologies-platform-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "browserless",
+  "specs": [
+   "openapi/_original/browserless-openapi.yml"
+  ]
+ },
+ {
+  "slug": "chroma",
+  "specs": [
+   "openapi/_original/chroma-openapi.json"
+  ]
+ },
+ {
+  "slug": "chroniclingamerica",
+  "specs": [
+   "openapi/_original/chroniclingamerica-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cloro-dev",
+  "specs": [
+   "openapi/_original/cloro-dev-openapi.json",
+   "openapi/_original/cloro-dev-openapi.yml"
+  ]
+ },
+ {
+  "slug": "coactive",
+  "specs": [
+   "openapi/_original/coactive-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "cognee",
+  "specs": [
+   "openapi/_original/cognee-openapi.json"
+  ]
+ },
+ {
+  "slug": "constructorio",
+  "specs": [
+   "openapi/_original/constructorio-ai-shopping-agent-openapi-original.json",
+   "openapi/_original/constructorio-ai-shopping-agent-openapi.yml",
+   "openapi/_original/constructorio-autocomplete-openapi-original.json",
+   "openapi/_original/constructorio-autocomplete-openapi.yml",
+   "openapi/_original/constructorio-behavioral-actions-openapi-original.json",
+   "openapi/_original/constructorio-behavioral-actions-openapi.yml",
+   "openapi/_original/constructorio-browse-openapi-original.json",
+   "openapi/_original/constructorio-browse-openapi.yml",
+   "openapi/_original/constructorio-catalog-batching-openapi-original.json",
+   "openapi/_original/constructorio-catalog-batching-openapi.yml",
+   "openapi/_original/constructorio-catalog-management-openapi-original.json",
+   "openapi/_original/constructorio-catalog-management-openapi.yml",
+   "openapi/_original/constructorio-configuration-openapi-original.json",
+   "openapi/_original/constructorio-configuration-openapi.yml",
+   "openapi/_original/constructorio-image-search-openapi-original.json",
+   "openapi/_original/constructorio-image-search-openapi.yml",
+   "openapi/_original/constructorio-offsite-discovery-recommendations-openapi-original.json",
+   "openapi/_original/constructorio-offsite-discovery-recommendations-openapi.yml",
+   "openapi/_original/constructorio-product-details-openapi-original.json",
+   "openapi/_original/constructorio-product-details-openapi.yml",
+   "openapi/_original/constructorio-quizzes-openapi-original.json",
+   "openapi/_original/constructorio-quizzes-openapi.yml",
+   "openapi/_original/constructorio-recommendations-openapi-original.json",
+   "openapi/_original/constructorio-recommendations-openapi.yml",
+   "openapi/_original/constructorio-retail-media-display-ads-openapi-original.json",
+   "openapi/_original/constructorio-retail-media-display-ads-openapi.yml",
+   "openapi/_original/constructorio-retail-media-openapi-original.json",
+   "openapi/_original/constructorio-retail-media-openapi.yml",
+   "openapi/_original/constructorio-search-openapi-original.json",
+   "openapi/_original/constructorio-search-openapi.yml",
+   "openapi/_original/constructorio-searchandising-openapi-original.json",
+   "openapi/_original/constructorio-searchandising-openapi.yml",
+   "openapi/_original/constructorio-user-profile-openapi-original.json",
+   "openapi/_original/constructorio-user-profile-openapi.yml"
+  ]
+ },
+ {
+  "slug": "couchbase",
+  "specs": [
+   "openapi/_original/couchbase-analytics-service-rest-api-openapi.yml",
+   "openapi/_original/couchbase-backup-service-rest-api-openapi.yml",
+   "openapi/_original/couchbase-capella-app-services-admin-api-openapi.yml",
+   "openapi/_original/couchbase-capella-app-services-public-api-openapi.yml",
+   "openapi/_original/couchbase-capella-management-api-openapi.yml",
+   "openapi/_original/couchbase-eventing-service-rest-api-openapi.yml",
+   "openapi/_original/couchbase-query-service-rest-api-openapi.yml",
+   "openapi/_original/couchbase-search-service-rest-api-openapi.yml",
+   "openapi/_original/couchbase-server-rest-api-openapi.yml",
+   "openapi/_original/couchbase-sync-gateway-admin-rest-api-openapi.yml",
+   "openapi/_original/couchbase-sync-gateway-public-rest-api-openapi.yml",
+   "openapi/_original/couchbase-xdcr-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "coveo",
+  "specs": [
+   "openapi/_original/coveo-activity-openapi-original.yml",
+   "openapi/_original/coveo-analytics-admin-openapi-original.yml",
+   "openapi/_original/coveo-authorization-openapi-original.yml",
+   "openapi/_original/coveo-catalog-management-openapi-original.yml",
+   "openapi/_original/coveo-commerce-openapi-original.yml",
+   "openapi/_original/coveo-connectivity-openapi-original.yml",
+   "openapi/_original/coveo-context-openapi-original.yml",
+   "openapi/_original/coveo-customer-service-openapi-original.yml",
+   "openapi/_original/coveo-event-openapi-original.yml",
+   "openapi/_original/coveo-extension-openapi-original.yml",
+   "openapi/_original/coveo-field-openapi-original.yml",
+   "openapi/_original/coveo-knowledge-genai-openapi-original.yml",
+   "openapi/_original/coveo-machine-learning-openapi-original.yml",
+   "openapi/_original/coveo-migration-openapi-original.yml",
+   "openapi/_original/coveo-ml-config-openapi-original.yml",
+   "openapi/_original/coveo-notification-openapi-original.yml",
+   "openapi/_original/coveo-organization-openapi-original.yml",
+   "openapi/_original/coveo-platform-openapi-original.yml",
+   "openapi/_original/coveo-push-openapi-original.yml",
+   "openapi/_original/coveo-schema-service-openapi-original.yml",
+   "openapi/_original/coveo-search-interface-openapi-original.yml",
+   "openapi/_original/coveo-search-openapi-original.yml",
+   "openapi/_original/coveo-search-pages-openapi-original.yml",
+   "openapi/_original/coveo-search-usage-metrics-openapi-original.yml",
+   "openapi/_original/coveo-security-cache-openapi-original.yml",
+   "openapi/_original/coveo-source-logs-openapi-original.yml",
+   "openapi/_original/coveo-source-openapi-original.yml",
+   "openapi/_original/coveo-tailgate-openapi-original.yml",
+   "openapi/_original/coveo-usage-analytics-read-openapi-original.yml",
+   "openapi/_original/coveo-usage-analytics-write-openapi-original.yml",
+   "openapi/_original/coveo-workspace-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "coworkingview-api",
+  "specs": [
+   "openapi/_original/coworkingview-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "crawl4ai",
+  "specs": [
+   "openapi/_original/crawl4ai-platform-gateway-openapi.json"
+  ]
+ },
+ {
+  "slug": "cribl",
+  "specs": [
+   "openapi/_original/cribl-as-code-api-openapi.yml",
+   "openapi/_original/cribl-cloud-api-openapi.yml",
+   "openapi/_original/cribl-edge-api-openapi.yml",
+   "openapi/_original/cribl-lake-api-openapi.yml",
+   "openapi/_original/cribl-search-api-openapi.yml",
+   "openapi/_original/cribl-stream-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "crustapi",
+  "specs": [
+   "openapi/_original/crustapi-openapi-original.json",
+   "openapi/_original/crustapi-openapi.json"
+  ]
+ },
+ {
+  "slug": "currentsapi",
+  "specs": [
+   "openapi/_original/currentsapi-openapi.json"
+  ]
+ },
+ {
+  "slug": "databricks",
+  "specs": [
+   "openapi/_original/databricks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "datamuse",
+  "specs": [
+   "openapi/_original/datamuse-openapi.json"
+  ]
+ },
+ {
+  "slug": "datastax",
+  "specs": [
+   "openapi/_original/datastax-devops-openapi.json"
+  ]
+ },
+ {
+  "slug": "demo-openapi",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "depict",
+  "specs": [
+   "openapi/_original/depict-lite-openapi-original.json",
+   "openapi/_original/depict-openapi.json",
+   "openapi/_original/depict-portal-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "depictai",
+  "specs": [
+   "openapi/_original/depictai-lite-openapi.json",
+   "openapi/_original/depictai-portal-openapi.json",
+   "openapi/_original/depictai-storefront-openapi.json"
+  ]
+ },
+ {
+  "slug": "dexcare",
+  "specs": [
+   "openapi/_original/CareOptionsAPI.json",
+   "openapi/_original/OmniSearchBundled.yaml",
+   "openapi/_original/dexcare-care-options-openapi.yml",
+   "openapi/_original/dexcare-omni-search-openapi.yml",
+   "openapi/_original/dexcare-provider-data-management-openapi.yml",
+   "openapi/_original/dexcare-slots-availability-openapi.yml",
+   "openapi/_original/dexcare-visit-booking-openapi.yml",
+   "openapi/_original/dexcare-visit-service-openapi.yml",
+   "openapi/_original/forq-availabilityBundled.json",
+   "openapi/_original/pdmapi-swagger.yaml",
+   "openapi/_original/v9bundled_public.json",
+   "openapi/_original/visit-booking.json"
+  ]
+ },
+ {
+  "slug": "duckduckgo",
+  "specs": [
+   "openapi/_original/instant-answer-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dvids-api",
+  "specs": [
+   "openapi/_original/dvids-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dynamic-yield",
+  "specs": [
+   "openapi/_original/dynamic-yield-experience-api-readme-slices.json",
+   "openapi/_original/dynamic-yield-experience-apis-for-api-sections-openapi.yml",
+   "openapi/_original/dynamic-yield-experience-apis-for-api-sections-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "elastic",
+  "specs": [
+   "openapi/_original/elastic-cloud-openapi.yml",
+   "openapi/_original/elastic-elasticsearch-openapi.yml",
+   "openapi/_original/elastic-kibana-openapi.yml",
+   "openapi/_original/elasticsearch.json"
+  ]
+ },
+ {
+  "slug": "elasticsearch",
+  "specs": [
+   "openapi/_original/elasticsearch-openapi.yml"
+  ]
+ },
+ {
+  "slug": "elk-stack",
+  "specs": [
+   "openapi/_original/elk-stack-cat-api-openapi.yml",
+   "openapi/_original/elk-stack-cat-api-openapi_2.yml",
+   "openapi/_original/elk-stack-cluster-api-openapi.yml",
+   "openapi/_original/elk-stack-cluster-api-openapi_2.yml",
+   "openapi/_original/elk-stack-document-api-openapi.yml",
+   "openapi/_original/elk-stack-document-api-openapi_2.yml",
+   "openapi/_original/elk-stack-elasticsearch-openapi.json",
+   "openapi/_original/elk-stack-index-api-openapi.yml",
+   "openapi/_original/elk-stack-index-api-openapi_2.yml",
+   "openapi/_original/elk-stack-ingest-api-openapi.yml",
+   "openapi/_original/elk-stack-ingest-api-openapi_2.yml",
+   "openapi/_original/elk-stack-kibana-openapi.yaml",
+   "openapi/_original/elk-stack-openapi.yml",
+   "openapi/_original/elk-stack-openapi_2.yml",
+   "openapi/_original/elk-stack-search-api-openapi.yml",
+   "openapi/_original/elk-stack-search-api-openapi_2.yml",
+   "openapi/_original/elk-stack-snapshot-api-openapi.yml",
+   "openapi/_original/elk-stack-snapshot-api-openapi_2.yml"
+  ]
+ },
+ {
+  "slug": "epicdirectories",
+  "specs": [
+   "openapi/_original/epicdirectories-openapi.json"
+  ]
+ },
+ {
+  "slug": "epidemic-sound",
+  "specs": [
+   "openapi/_original/epidemic-sound-partner-content-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "europeana",
+  "specs": [
+   "openapi/_original/europeana-openapi.yml"
+  ]
+ },
+ {
+  "slug": "exa",
+  "specs": [
+   "openapi/_original/exa-openapi.yml"
+  ]
+ },
+ {
+  "slug": "exa-ai",
+  "specs": [
+   "openapi/_original/exa-agent-api-openapi.yml",
+   "openapi/_original/exa-monitors-api-openapi.yml",
+   "openapi/_original/exa-research-api-openapi.yml",
+   "openapi/_original/exa-search-api-openapi.yml",
+   "openapi/_original/exa-team-api-openapi.yml",
+   "openapi/_original/exa-team-management-api-openapi.yml",
+   "openapi/_original/exa-websets-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "federal-laboratory-consortium-for-technology-transfer",
+  "specs": [
+   "openapi/_original/federal-laboratory-consortium-for-technology-transfer-greenbook-openapi.json"
+  ]
+ },
+ {
+  "slug": "finn-tannlege-com",
+  "specs": [
+   "openapi/_original/finn-tannlege-com-openapi.json",
+   "openapi/_original/finn-tannlege-com-openapi.yml"
+  ]
+ },
+ {
+  "slug": "geekflare",
+  "specs": [
+   "openapi/_original/geekflare-openapi.json"
+  ]
+ },
+ {
+  "slug": "getty-images",
+  "specs": [
+   "openapi/_original/getty-images-openapi.yml",
+   "openapi/_original/getty-images-swagger-v3-openapi.json"
+  ]
+ },
+ {
+  "slug": "gist",
+  "specs": [
+   "openapi/_original/gist-answers-api-openapi.json",
+   "openapi/_original/gist-answers-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gnews",
+  "specs": [
+   "openapi/_original/gnews-openapi.yml"
+  ]
+ },
+ {
+  "slug": "golden",
+  "specs": [
+   "openapi/_original/golden-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "google",
+  "specs": [
+   "openapi/_original/books-api-openapi.yml",
+   "openapi/_original/google-calendar-api-openapi.yml",
+   "openapi/_original/google-docs-api-openapi.yml",
+   "openapi/_original/google-drive-activity-api-openapi.yml",
+   "openapi/_original/google-drive-api-openapi.yml",
+   "openapi/_original/google-drive-labels-api-openapi.yml",
+   "openapi/_original/google-gemini-api-openapi.yml",
+   "openapi/_original/google-gmail-api-openapi.yml",
+   "openapi/_original/google-sheets-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-books",
+  "specs": [
+   "openapi/_original/books.yml"
+  ]
+ },
+ {
+  "slug": "google-cloud-talent-solution",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-custom-search",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-indexing",
+  "specs": [
+   "openapi/_original/google-indexing-discovery-v3.json",
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-knowledge-graph",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-search-console",
+  "specs": [
+   "openapi/_original/google-search-console-api-openapi.yml",
+   "openapi/_original/google-search-console-indexing-api-openapi.yml",
+   "openapi/_original/google-search-console-indexing-v3-discovery.json",
+   "openapi/_original/google-search-console-searchconsole-v1-discovery.json",
+   "openapi/_original/google-search-console-url-testing-tools-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-youtube",
+  "specs": [
+   "openapi/_original/youtube.yml"
+  ]
+ },
+ {
+  "slug": "guru",
+  "specs": [
+   "openapi/_original/guru-openapi.yml"
+  ]
+ },
+ {
+  "slug": "iconik",
+  "specs": [
+   "openapi/_original/iconik-openapi.yml"
+  ]
+ },
+ {
+  "slug": "insider",
+  "specs": [
+   "openapi/_original/insider-analytics-openapi.yml",
+   "openapi/_original/insider-architect-analytics-openapi.yml",
+   "openapi/_original/insider-catalog-openapi.yml",
+   "openapi/_original/insider-contact-openapi.yml",
+   "openapi/_original/insider-eureka-events-openapi.yml",
+   "openapi/_original/insider-eureka-search-openapi.yml",
+   "openapi/_original/insider-gateway-openapi.yml",
+   "openapi/_original/insider-live-activity-openapi.yml",
+   "openapi/_original/insider-mail-openapi.yml",
+   "openapi/_original/insider-mobile-openapi.yml",
+   "openapi/_original/insider-mobile-settings-openapi.yml",
+   "openapi/_original/insider-recommendation-openapi.yml",
+   "openapi/_original/insider-sms-openapi.yml",
+   "openapi/_original/insider-unification-openapi.yml",
+   "openapi/_original/insider-verify-openapi.yml",
+   "openapi/_original/insider-web-push-openapi.yml",
+   "openapi/_original/insider-whatsapp-openapi.yml"
+  ]
+ },
+ {
+  "slug": "janus-machine-market",
+  "specs": [
+   "openapi/_original/janus-machine-market-pr-review-github-ingress-openapi.json",
+   "openapi/_original/janus-machine-market-pr-review-github-ingress-openapi.yml",
+   "openapi/_original/janus-machine-market-search-github-ingress-openapi.json",
+   "openapi/_original/janus-machine-market-search-github-ingress-openapi.yml"
+  ]
+ },
+ {
+  "slug": "jina-ai",
+  "specs": [
+   "openapi/_original/jina-ai-embeddings-openapi.yml",
+   "openapi/_original/jina-ai-reader-openapi.yml",
+   "openapi/_original/jina-ai-reranker-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kagi",
+  "specs": [
+   "openapi/_original/kagi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kakao",
+  "specs": [
+   "openapi/_original/kakao-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kannkidas-de",
+  "specs": [
+   "openapi/_original/kannkidas-de-openapi.json",
+   "openapi/_original/kannkidas-de-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lancedb",
+  "specs": [
+   "openapi/_original/lance-namespace-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "landing",
+  "specs": [
+   "openapi/_original/landing-public-openapi.json"
+  ]
+ },
+ {
+  "slug": "library-of-congress",
+  "specs": [
+   "openapi/_original/library-of-congress-chronicling-america-api-openapi.yml",
+   "openapi/_original/library-of-congress-congress-gov-api-openapi.yml",
+   "openapi/_original/library-of-congress-loc-gov-json-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lily-ai",
+  "specs": [
+   "openapi/_original/lily-ai-lilyapp-api-openapi.json",
+   "openapi/_original/lily-ai-lilyapp-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "listennotes",
+  "specs": [
+   "openapi/_original/listennotes-openapi.json",
+   "openapi/_original/listennotes-openapi.yaml",
+   "openapi/_original/listennotes-openapi.yml"
+  ]
+ },
+ {
+  "slug": "litescrape",
+  "specs": [
+   "openapi/_original/litescrape-agents-openapi.json",
+   "openapi/_original/litescrape-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lucidworks",
+  "specs": [
+   "openapi/_original/lucidworks-ai-platform-openapi.yml",
+   "openapi/_original/lucidworks-chunking-openapi.yml",
+   "openapi/_original/lucidworks-embeddings-openapi.yml",
+   "openapi/_original/lucidworks-models-openapi.yml",
+   "openapi/_original/lucidworks-openapi.json",
+   "openapi/_original/lucidworks-rules-openapi.yml",
+   "openapi/_original/lucidworks-signals-openapi.yml"
+  ]
+ },
+ {
+  "slug": "machinelibrary-ai",
+  "specs": [
+   "openapi/_original/machinelibrary-ai-openapi.json"
+  ]
+ },
+ {
+  "slug": "macrometa",
+  "specs": [
+   "openapi/_original/macrometa-gdn-openapi-original.json",
+   "openapi/_original/macrometa-photoniq-eds-openapi-original.json",
+   "openapi/_original/macrometa-photoniq-est-openapi-original.json",
+   "openapi/_original/macrometa-photoniq-faas-openapi-original.json",
+   "openapi/_original/macrometa-photoniq-fps-openapi-original.json",
+   "openapi/_original/macrometa-photoniq-hss-openapi-original.json",
+   "openapi/_original/macrometa-photoniq-prerender-openapi-original.json",
+   "openapi/_original/macrometa-photoniq-vwrs-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "manticore",
+  "specs": [
+   "openapi/_original/manticore-openapi.json",
+   "openapi/_original/manticore-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "marginalia-search",
+  "specs": [
+   "openapi/_original/marginalia-search-openapi.yml"
+  ]
+ },
+ {
+  "slug": "marqo",
+  "specs": [
+   "openapi/_original/marqo-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mastodon-instances",
+  "specs": [
+   "openapi/_original/mastodon-instances-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mcp360",
+  "specs": [
+   "openapi/_original/mcp360-amazon-search-openapi.json",
+   "openapi/_original/mcp360-apple-appstore-openapi.json",
+   "openapi/_original/mcp360-baidu-search-openapi.json",
+   "openapi/_original/mcp360-bing-search-openapi.json",
+   "openapi/_original/mcp360-cryptocurrency-openapi.json",
+   "openapi/_original/mcp360-currency-converter-openapi.json",
+   "openapi/_original/mcp360-dns-lookup-openapi.json",
+   "openapi/_original/mcp360-duckduckgo-search-openapi.json",
+   "openapi/_original/mcp360-ebay-search-openapi.json",
+   "openapi/_original/mcp360-email-verification-openapi.json",
+   "openapi/_original/mcp360-google-flights-openapi.json",
+   "openapi/_original/mcp360-google-forums-openapi.json",
+   "openapi/_original/mcp360-google-hotels-openapi.json",
+   "openapi/_original/mcp360-google-images-openapi.json",
+   "openapi/_original/mcp360-google-jobs-openapi.json",
+   "openapi/_original/mcp360-google-maps-openapi.json",
+   "openapi/_original/mcp360-google-news-openapi.json",
+   "openapi/_original/mcp360-google-play-openapi.json",
+   "openapi/_original/mcp360-google-rank-tracking-openapi.json",
+   "openapi/_original/mcp360-google-scholar-openapi.json",
+   "openapi/_original/mcp360-google-search-openapi.json",
+   "openapi/_original/mcp360-google-shopping-openapi.json",
+   "openapi/_original/mcp360-google-trends-openapi.json",
+   "openapi/_original/mcp360-imginny-openapi.json",
+   "openapi/_original/mcp360-ip-info-openapi.json",
+   "openapi/_original/mcp360-keyword-research-openapi.json",
+   "openapi/_original/mcp360-llm-prompt-tracker-openapi.json",
+   "openapi/_original/mcp360-mcp360-openapi.json",
+   "openapi/_original/mcp360-naver-search-openapi.json",
+   "openapi/_original/mcp360-onpage-seo-openapi.json",
+   "openapi/_original/mcp360-url-lookup-openapi.json",
+   "openapi/_original/mcp360-walmart-search-openapi.json",
+   "openapi/_original/mcp360-weather-openapi.json",
+   "openapi/_original/mcp360-web-scraping-openapi.json",
+   "openapi/_original/mcp360-whois-openapi.json",
+   "openapi/_original/mcp360-yahoo-search-openapi.json",
+   "openapi/_original/mcp360-yandex-search-openapi.json",
+   "openapi/_original/mcp360-youtube-openapi.json"
+  ]
+ },
+ {
+  "slug": "meilisearch",
+  "specs": [
+   "openapi/_original/meilisearch-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mem",
+  "specs": [
+   "openapi/_original/mem-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "mendable",
+  "specs": [
+   "openapi/_original/mendable-openapi.yml"
+  ]
+ },
+ {
+  "slug": "midpage",
+  "specs": [
+   "openapi/_original/midpage-openapi.yml"
+  ]
+ },
+ {
+  "slug": "milvus",
+  "specs": [
+   "openapi/_original/milvus-openapi.yml"
+  ]
+ },
+ {
+  "slug": "misoai",
+  "specs": [
+   "openapi/_original/misoai-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "mixedbread-ai",
+  "specs": [
+   "openapi/_original/mixedbread-admin-api-openapi.yml",
+   "openapi/_original/mixedbread-api-keys-api-openapi.yml",
+   "openapi/_original/mixedbread-billing-api-openapi.yml",
+   "openapi/_original/mixedbread-completions-api-openapi.yml",
+   "openapi/_original/mixedbread-data-sources-api-openapi.yml",
+   "openapi/_original/mixedbread-embeddings-api-openapi.yml",
+   "openapi/_original/mixedbread-extractions-api-openapi.yml",
+   "openapi/_original/mixedbread-files-api-openapi.yml",
+   "openapi/_original/mixedbread-parsing-api-openapi.yml",
+   "openapi/_original/mixedbread-reranking-api-openapi.yml",
+   "openapi/_original/mixedbread-schemas-api-openapi.yml",
+   "openapi/_original/mixedbread-stores-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mongodb-atlas",
+  "specs": [
+   "openapi/_original/mongodb-atlas-openapi.yml"
+  ]
+ },
+ {
+  "slug": "moveworks",
+  "specs": [
+   "openapi/_original/moveworks-beta-conversations-api-openapi.yaml",
+   "openapi/_original/moveworks-content-gateway-openapi.yaml",
+   "openapi/_original/moveworks-conversations-api-openapi.yaml",
+   "openapi/_original/moveworks-data-api-openapi.yaml",
+   "openapi/_original/moveworks-events-api-openapi.yaml",
+   "openapi/_original/moveworks-forms-gateway-openapi.yaml",
+   "openapi/_original/moveworks-identity-gateway-openapi.yaml",
+   "openapi/_original/moveworks-knowledge-gateway-openapi.yaml",
+   "openapi/_original/moveworks-webhook-listeners-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "mrscraper",
+  "specs": [
+   "openapi/_original/api.mrscraper.com-docs-doc.json",
+   "openapi/_original/mrscraper-scraper-service-gateway-openapi.yml"
+  ]
+ },
+ {
+  "slug": "myscale",
+  "specs": [
+   "openapi/_original/myscale-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mytomorrows",
+  "specs": [
+   "openapi/_original/mytomorrows-enterprise-search-openapi.json"
+  ]
+ },
+ {
+  "slug": "new-york-times-company",
+  "specs": [
+   "openapi/_original/archive-api-openapi.yml",
+   "openapi/_original/article-search-v2-openapi.yml",
+   "openapi/_original/books-api-openapi.yml",
+   "openapi/_original/community-api-v3-openapi.yml",
+   "openapi/_original/geo-api-v2-openapi.yml",
+   "openapi/_original/most-popular-api-v2-openapi.yml",
+   "openapi/_original/movie-reviews-v2-openapi.yml",
+   "openapi/_original/semantic-api-openapi.yml",
+   "openapi/_original/times-tags-v3-openapi.yml",
+   "openapi/_original/timeswire-v3-openapi.yml",
+   "openapi/_original/top-stories-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "news-api",
+  "specs": [
+   "openapi/_original/news-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "newsapi",
+  "specs": [
+   "openapi/_original/newsapi-newsapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "newscatcher",
+  "specs": [
+   "openapi/_original/newscatcher-local-news-api-openapi.yml",
+   "openapi/_original/newscatcher-news-api-openapi.yml",
+   "openapi/_original/newscatcher-web-search-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nuclia",
+  "specs": [
+   "openapi/_original/nuclia-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nutrientsdb",
+  "specs": [
+   "openapi/_original/nutrientsdb-sample-api-openapi.yml",
+   "openapi/_original/nutrientsdb-sample-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "nuxeo",
+  "specs": [
+   "openapi/_original/nuxeo-rest-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "octen-ai",
+  "specs": [
+   "openapi/_original/octen-ai-openapi.json",
+   "openapi/_original/octen-ai-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ondemand",
+  "specs": [
+   "openapi/_original/ondemand-openapi.json"
+  ]
+ },
+ {
+  "slug": "open-food-facts",
+  "specs": [
+   "openapi/_original/open-food-facts-api-v2-openapi.yml",
+   "openapi/_original/open-food-facts-api-v3-openapi.yml",
+   "openapi/_original/open-food-facts-facets-knowledge-panels-openapi.json",
+   "openapi/_original/open-food-facts-folksonomy-openapi.json",
+   "openapi/_original/open-food-facts-nutripatrol-openapi.json",
+   "openapi/_original/open-food-facts-open-prices-openapi.yml",
+   "openapi/_original/open-food-facts-openapi.yml",
+   "openapi/_original/open-food-facts-search-a-licious-openapi.json"
+  ]
+ },
+ {
+  "slug": "open-library",
+  "specs": [
+   "openapi/_original/open-library-openapi.yml"
+  ]
+ },
+ {
+  "slug": "openlaws",
+  "specs": [
+   "openapi/_original/openlaws-openapi.json",
+   "openapi/_original/openlaws-openapi.yml"
+  ]
+ },
+ {
+  "slug": "openmenu",
+  "specs": [
+   "openapi/_original/openmenu-openapi.yml"
+  ]
+ },
+ {
+  "slug": "opensearch",
+  "specs": [
+   "openapi/_original/opensearch-security-openapi.yml"
+  ]
+ },
+ {
+  "slug": "openserp",
+  "specs": [
+   "openapi/_original/openserp-oss-openapi.yml"
+  ]
+ },
+ {
+  "slug": "openverse",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "opoint",
+  "specs": [
+   "openapi/_original/opoint-openapi-original.yml",
+   "openapi/_original/opoint-openapi.yml"
+  ]
+ },
+ {
+  "slug": "orama",
+  "specs": [
+   "openapi/_original/orama-openapi.yml"
+  ]
+ },
+ {
+  "slug": "outdoorsy",
+  "specs": [
+   "openapi/_original/outdoorsy-openapi-original.json",
+   "openapi/_original/outdoorsy-search-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "paradedb",
+  "specs": [
+   "openapi/_original/paradedb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "parseflow",
+  "specs": [
+   "openapi/_original/parseflow-openapi.json"
+  ]
+ },
+ {
+  "slug": "perigon",
+  "specs": [
+   "openapi/_original/perigon-openapi.json",
+   "openapi/_original/perigon-openapi.yml"
+  ]
+ },
+ {
+  "slug": "perplexity",
+  "specs": [
+   "openapi/_original/perplexity-decisions-openapi-original.json",
+   "openapi/_original/perplexity-openapi.json"
+  ]
+ },
+ {
+  "slug": "pexafy",
+  "specs": [
+   "openapi/_original/pexafy-openapi-v1.3.0.json",
+   "openapi/_original/pexafy-openapi.json"
+  ]
+ },
+ {
+  "slug": "phraseanet",
+  "specs": [
+   "openapi/_original/phraseanet-openapi.yml"
+  ]
+ },
+ {
+  "slug": "physna",
+  "specs": [
+   "openapi/_original/physna-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "pinecone",
+  "specs": [
+   "openapi/_original/pinecone-admin-openapi.yaml",
+   "openapi/_original/pinecone-assistant-control-openapi.yaml",
+   "openapi/_original/pinecone-assistant-data-openapi.yaml",
+   "openapi/_original/pinecone-db-control-openapi.yaml",
+   "openapi/_original/pinecone-db-data-openapi.yaml",
+   "openapi/_original/pinecone-inference-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "pingcap",
+  "specs": [
+   "openapi/_original/pingcap-ossinsight-public-api-openapi-original.yaml",
+   "openapi/_original/pingcap-tidb-cloud-billing-v1beta1-openapi-original.json",
+   "openapi/_original/pingcap-tidb-cloud-data-service-v1beta1-openapi-original.json",
+   "openapi/_original/pingcap-tidb-cloud-dedicated-v1beta1-openapi-original.json",
+   "openapi/_original/pingcap-tidb-cloud-iam-v1beta1-openapi-original.json",
+   "openapi/_original/pingcap-tidb-cloud-starter-essential-v1beta1-openapi-original.json",
+   "openapi/_original/pingcap-tidb-cloud-v1beta-openapi-original.json",
+   "openapi/_original/pingcap-tidb-cloud-zero-v1alpha1-openapi-original.json",
+   "openapi/_original/pingcap-tidb-dm-openapi-original.yaml",
+   "openapi/_original/tidb-chat2data-api-openapi.yml",
+   "openapi/_original/tidb-cloud-msp-v1beta1-openapi-original.json",
+   "openapi/_original/tidb-cloud-premium-v1beta2-openapi-original.json",
+   "openapi/_original/tidb-data-summaries-api-openapi.yml",
+   "openapi/_original/tidb-ddl-api-openapi.yml",
+   "openapi/_original/tidb-diagnostics-api-openapi.yml",
+   "openapi/_original/tidb-mvcc-api-openapi.yml",
+   "openapi/_original/tidb-schema-api-openapi.yml",
+   "openapi/_original/tidb-sessions-api-openapi.yml",
+   "openapi/_original/tidb-settings-api-openapi.yml",
+   "openapi/_original/tidb-sql-refinement-api-openapi.yml",
+   "openapi/_original/tidb-statistics-api-openapi.yml",
+   "openapi/_original/tidb-status-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pipeshub",
+  "specs": [
+   "openapi/_original/pipeshub-openapi.yaml",
+   "openapi/_original/pipeshub-openapi.yml"
+  ]
+ },
+ {
+  "slug": "preply",
+  "specs": [
+   "openapi/_original/preply-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "prorataai",
+  "specs": [
+   "openapi/_original/prorataai-openapi.json"
+  ]
+ },
+ {
+  "slug": "pryon",
+  "specs": [
+   "openapi/_original/pryon-admin-openapi.json",
+   "openapi/_original/pryon-chat-completion-only-generative-openapi.json",
+   "openapi/_original/pryon-chat-completion-openapi.json",
+   "openapi/_original/pryon-domains-swagger-may2025-openapi.json",
+   "openapi/_original/pryon-exchange-event-may2025-openapi.json",
+   "openapi/_original/pryon-exchange-may2025-openapi.json",
+   "openapi/_original/pryon-extra-chat-completion-openapi.json",
+   "openapi/_original/pryon-feedback-august2025-openapi.json",
+   "openapi/_original/pryon-feedback-may2025-openapi.json",
+   "openapi/_original/pryon-gen-answer-summary-openapi.json",
+   "openapi/_original/pryon-generative-feedback-may2025-openapi.json",
+   "openapi/_original/pryon-generative-listmodels-openapi.json",
+   "openapi/_original/pryon-generative-openapi.json",
+   "openapi/_original/pryon-generative-query-guardrails-openapi.json",
+   "openapi/_original/pryon-generative-query-rewrite-openapi.json",
+   "openapi/_original/pryon-generative-services-may2025-openapi.json",
+   "openapi/_original/pryon-generative-swagger-openapi.json",
+   "openapi/_original/pryon-getcontentimage-swagger-openapi.json",
+   "openapi/_original/pryon-knowledge-collections-may2025-openapi.json",
+   "openapi/_original/pryon-retrieval-may2025-openapi.json",
+   "openapi/_original/pryon-universal-connector-may2025-openapi.json",
+   "openapi/_original/pryon-user-defined-metadata-may2025-openapi.json"
+  ]
+ },
+ {
+  "slug": "qdrant",
+  "specs": [
+   "openapi/_original/qdrant-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "quickwit",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "radar-cnpj",
+  "specs": [
+   "openapi/_original/radar-cnpj-openapi.json"
+  ]
+ },
+ {
+  "slug": "ragie-ai",
+  "specs": [
+   "openapi/_original/ragie-ai-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rentberry",
+  "specs": [
+   "openapi/_original/rentberry-openapi.json",
+   "openapi/_original/rentberry-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rettfrabonden-com",
+  "specs": [
+   "openapi/_original/rettfrabonden-com-agent-surface-openapi.json",
+   "openapi/_original/rettfrabonden-com-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rsperformance-online",
+  "specs": [
+   "openapi/_original/rsperformance-online-ai-gateway-openapi-canonical-host-v1.2.2.json",
+   "openapi/_original/rsperformance-online-ai-gateway-openapi.json",
+   "openapi/_original/rsperformance-online-ai-gateway-openapi.yml"
+  ]
+ },
+ {
+  "slug": "s1-dev",
+  "specs": [
+   "openapi/_original/s1-dev-openapi.yml",
+   "openapi/_original/search1api-openapi.json"
+  ]
+ },
+ {
+  "slug": "samaya-ai",
+  "specs": [
+   "openapi/_original/samaya-ai-public-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "scribe",
+  "specs": [
+   "openapi/_original/scribe-search-retrieval-openapi.yml"
+  ]
+ },
+ {
+  "slug": "scylladb",
+  "specs": [
+   "openapi/_original/scylladb-cloud-management-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "searchcraft",
+  "specs": [
+   "openapi/_original/searchcraft-openapi.yml"
+  ]
+ },
+ {
+  "slug": "searchstax",
+  "specs": [
+   "openapi/_original/searchstax-provisioning-openapi.yml"
+  ]
+ },
+ {
+  "slug": "serper",
+  "specs": [
+   "openapi/_original/serper-google-search-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "serpwow",
+  "specs": [
+   "openapi/_original/serpwow-openapi.yml"
+  ]
+ },
+ {
+  "slug": "shodan",
+  "specs": [
+   "openapi/_original/shodan-cvedb-openapi.yml",
+   "openapi/_original/shodan-internetdb-openapi.yml",
+   "openapi/_original/shodan-rest-openapi.yml",
+   "openapi/_original/shodan-stream-openapi.yml",
+   "openapi/_original/shodan-trends-openapi.yml"
+  ]
+ },
+ {
+  "slug": "slite",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "sociallisteningapi",
+  "specs": [
+   "openapi/_original/sociallisteningapi-openapi.json",
+   "openapi/_original/sociallisteningapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "solr",
+  "specs": [
+   "openapi/_original/solr-openapi.yml"
+  ]
+ },
+ {
+  "slug": "songtradr",
+  "specs": [
+   "openapi/_original/songtradr-api-openapi-original.json",
+   "openapi/_original/songtradr-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sourcebot",
+  "specs": [
+   "openapi/_original/sourcebot-public-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "superlinked",
+  "specs": [
+   "openapi/_original/superlinked-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sylvia-api",
+  "specs": [
+   "openapi/_original/sylvia-api-openapi-2026-08-04.json",
+   "openapi/_original/sylvia-api-openapi-2026-08-18.json",
+   "openapi/_original/sylvia-api-openapi-2026-08-20.json"
+  ]
+ },
+ {
+  "slug": "tako",
+  "specs": [
+   "openapi/_original/tako-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "tavily",
+  "specs": [
+   "openapi/_original/tavily-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tenor",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "the-index-fyi",
+  "specs": [
+   "openapi/_original/the-index-fyi-openapi.json",
+   "openapi/_original/the-index-fyi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "the-news-api",
+  "specs": [
+   "openapi/_original/the-news-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tidb",
+  "specs": [
+   "openapi/_original/tidb-cloud-api-openapi.yml",
+   "openapi/_original/tidb-cloud-billing-v1beta1-openapi-original.json",
+   "openapi/_original/tidb-cloud-chat2query-openapi.yml",
+   "openapi/_original/tidb-cloud-data-service-openapi.yml",
+   "openapi/_original/tidb-cloud-dataservice-v1beta1-openapi-original.json",
+   "openapi/_original/tidb-cloud-dedicated-v1beta1-openapi-original.json",
+   "openapi/_original/tidb-cloud-iam-v1beta1-openapi-original.json",
+   "openapi/_original/tidb-cloud-msp-v1beta1-openapi-original.json",
+   "openapi/_original/tidb-cloud-premium-v1beta2-openapi-original.json",
+   "openapi/_original/tidb-cloud-starter-essential-v1beta1-openapi-original.json",
+   "openapi/_original/tidb-cloud-v1beta-openapi-original.json",
+   "openapi/_original/tidb-http-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tiledb",
+  "specs": [
+   "openapi/_original/tiledb-cloud-v1-openapi.yaml",
+   "openapi/_original/tiledb-cloud-v1-openapi_2.yaml",
+   "openapi/_original/tiledb-cloud-v2-openapi.yaml",
+   "openapi/_original/tiledb-cloud-v2-openapi_2.yaml"
+  ]
+ },
+ {
+  "slug": "timescale",
+  "specs": [
+   "openapi/_original/timescale-ghost-openapi-original.yml",
+   "openapi/_original/timescale-tiger-cloud-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "tinyfish",
+  "specs": [
+   "openapi/_original/tinyfish-browser-openapi.json",
+   "openapi/_original/tinyfish-fetch-openapi.json",
+   "openapi/_original/tinyfish-main-openapi.json",
+   "openapi/_original/tinyfish-search-openapi.json"
+  ]
+ },
+ {
+  "slug": "tmdb",
+  "specs": [
+   "openapi/_original/the-movie-database-account-api-openapi.yml",
+   "openapi/_original/the-movie-database-authentication-api-openapi.yml",
+   "openapi/_original/the-movie-database-certification-api-openapi.yml",
+   "openapi/_original/the-movie-database-collection-api-openapi.yml",
+   "openapi/_original/the-movie-database-company-api-openapi.yml",
+   "openapi/_original/the-movie-database-configuration-api-openapi.yml",
+   "openapi/_original/the-movie-database-credit-api-openapi.yml",
+   "openapi/_original/the-movie-database-discover-api-openapi.yml",
+   "openapi/_original/the-movie-database-find-api-openapi.yml",
+   "openapi/_original/the-movie-database-genre-api-openapi.yml",
+   "openapi/_original/the-movie-database-guest-session-api-openapi.yml",
+   "openapi/_original/the-movie-database-keyword-api-openapi.yml",
+   "openapi/_original/the-movie-database-list-api-openapi.yml",
+   "openapi/_original/the-movie-database-movie-api-openapi.yml",
+   "openapi/_original/the-movie-database-network-api-openapi.yml",
+   "openapi/_original/the-movie-database-person-api-openapi.yml",
+   "openapi/_original/the-movie-database-review-api-openapi.yml",
+   "openapi/_original/the-movie-database-search-api-openapi.yml",
+   "openapi/_original/the-movie-database-trending-api-openapi.yml",
+   "openapi/_original/the-movie-database-tv-api-openapi.yml",
+   "openapi/_original/the-movie-database-watch-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "trieve",
+  "specs": [
+   "openapi/_original/trieve-openapi.yml"
+  ]
+ },
+ {
+  "slug": "trove",
+  "specs": [
+   "openapi/_original/trove-api-v3.yaml",
+   "openapi/_original/trove-openapi.yml"
+  ]
+ },
+ {
+  "slug": "turbopuffer",
+  "specs": [
+   "openapi/_original/turbopuffer-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tvu-networks",
+  "specs": [
+   "openapi/_original/tvu-networks-authentication-openapi.yml",
+   "openapi/_original/tvu-networks-channel-api-openapi.yml",
+   "openapi/_original/tvu-networks-commentator-api-openapi.yml",
+   "openapi/_original/tvu-networks-export-openapi.yml",
+   "openapi/_original/tvu-networks-grid-api-openapi.yml",
+   "openapi/_original/tvu-networks-input-and-output-module-api-openapi.yml",
+   "openapi/_original/tvu-networks-media-info-openapi.yml",
+   "openapi/_original/tvu-networks-media-service-for-producer-openapi.yml",
+   "openapi/_original/tvu-networks-mediahub-api-openapi.yml",
+   "openapi/_original/tvu-networks-mediamind-story-creation-openapi.yml",
+   "openapi/_original/tvu-networks-mos-gateway-api-openapi.yml",
+   "openapi/_original/tvu-networks-object-api-openapi.yml",
+   "openapi/_original/tvu-networks-partyline-api-openapi.yml",
+   "openapi/_original/tvu-networks-producer-api-openapi.yml",
+   "openapi/_original/tvu-networks-public-openapi.yml",
+   "openapi/_original/tvu-networks-scteservice-api-openapi.yml",
+   "openapi/_original/tvu-networks-shortcut-api-openapi.yml",
+   "openapi/_original/tvu-networks-uncategorized-openapi.yml",
+   "openapi/_original/tvu-networks-usageservice-api-openapi.yml",
+   "openapi/_original/tvu-networks-workflow-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "twelvelabs",
+  "specs": [
+   "openapi/_original/twelvelabs-openapi.yml"
+  ]
+ },
+ {
+  "slug": "typesense",
+  "specs": [
+   "openapi/_original/typesense-analytics-api-openapi.yml",
+   "openapi/_original/typesense-cloud-management-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "unblocked",
+  "specs": [
+   "openapi/_original/unblocked-public-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "upstash",
+  "specs": [
+   "openapi/_original/upstash-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vectara",
+  "specs": [
+   "openapi/_original/vectara-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vectorize-io",
+  "specs": [
+   "openapi/_original/vectorize-io-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vespa-ai",
+  "specs": [
+   "openapi/_original/vespa-ai-openapi.yml",
+   "openapi/_original/vespa-document-api-openapi.yml",
+   "openapi/_original/vespa-query-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "voyage-ai",
+  "specs": [
+   "openapi/_original/voyage-ai-openapi.yml"
+  ]
+ },
+ {
+  "slug": "voyant",
+  "specs": [
+   "openapi/_original/voyant-gypsum-openapi.json",
+   "openapi/_original/voyant-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "weaviate",
+  "specs": [
+   "openapi/_original/weaviate-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wego",
+  "specs": [
+   "openapi/_original/wego-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "wikimedia",
+  "specs": [
+   "openapi/_original/wikimedia-enterprise-api.yaml",
+   "openapi/_original/wikimedia-rest-api.json"
+  ]
+ },
+ {
+  "slug": "worldnewsapi",
+  "specs": [
+   "openapi/_original/worldnewsapi-openapi-original.json",
+   "openapi/_original/worldnewsapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "youtube",
+  "specs": [
+   "openapi/_original/youtube-analytics-openapi-original.yml",
+   "openapi/_original/youtube-analytics-openapi.yml",
+   "openapi/_original/youtube-data-api-openapi.yml",
+   "openapi/_original/youtube-data-openapi-original.yml",
+   "openapi/_original/youtube-live-streaming-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zeroentropy",
+  "specs": [
+   "openapi/_original/zeroentropy-openapi.json"
+  ]
+ },
+ {
+  "slug": "zilliz",
+  "specs": [
+   "openapi/_original/zilliz-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zincsearch",
+  "specs": [
+   "openapi/_original/zincsearch-openapi.yml",
+   "openapi/_original/zincsearch-swagger.json",
+   "openapi/_original/zincsearch-swagger.yaml"
+  ]
+ }
+]

@@ -1,0 +1,13 @@
+provider: constructorio
+apis_io: https://apis.io/providers/constructorio/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/constructorio-search-openapi-original.json#GET /v1/search/{search_query}
+    - openapi/_original/constructorio-search-openapi.yml#GET /v1/search/{search_query}

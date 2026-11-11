@@ -1,0 +1,12 @@
+provider: landing
+apis_io: https://apis.io/providers/landing/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/landing-public-openapi.json#GET /api/public/search

@@ -1,0 +1,16 @@
+provider: litescrape
+apis_io: https://apis.io/providers/litescrape/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/litescrape-agents-openapi.json#GET /api/bing/search
+    - openapi/_original/litescrape-agents-openapi.json#GET /api/duckduckgo/search
+    - openapi/_original/litescrape-agents-openapi.json#GET /api/google/search
+    - openapi/_original/litescrape-agents-openapi.json#GET /api/tripadvisor/search
+    - openapi/_original/litescrape-agents-openapi.json#GET /api/yelp/search

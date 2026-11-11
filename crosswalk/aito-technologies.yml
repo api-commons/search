@@ -1,0 +1,15 @@
+provider: aito-technologies
+apis_io: https://apis.io/providers/aito-technologies/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - _search
+    properties:
+      limit: limit
+      filters: where
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/aito-technologies-openapi.yml#POST /api/v1/_search
+    - openapi/_original/aito-technologies-openapi.yml#POST /api/v2/_search

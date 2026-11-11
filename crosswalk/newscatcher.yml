@@ -1,0 +1,18 @@
+provider: newscatcher
+apis_io: https://apis.io/providers/newscatcher/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      id: id
+      name: title
+      query: q
+      score: score
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/newscatcher-local-news-api-openapi.yml#POST /api/search
+    - openapi/_original/newscatcher-news-api-openapi.yml#GET /api/search
+    - openapi/_original/newscatcher-news-api-openapi.yml#POST /api/search

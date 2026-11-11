@@ -1,0 +1,24 @@
+provider: coveo
+apis_io: https://apis.io/providers/coveo/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - query
+    - search
+    - retrieve
+    properties:
+      filters:
+      - filters
+      - filter
+      query:
+      - text
+      - queryText
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/coveo-commerce-openapi-original.yml#DELETE /rest/organizations/{organizationId}/commerce/v2/configurations/query
+    - openapi/_original/coveo-commerce-openapi-original.yml#GET /rest/organizations/{organizationId}/commerce/v2/configurations/query
+    - openapi/_original/coveo-commerce-openapi-original.yml#POST /rest/organizations/{organizationId}/commerce/v2/configurations/query
+    - openapi/_original/coveo-commerce-openapi-original.yml#POST /rest/organizations/{organizationId}/commerce/v2/search
+    - openapi/_original/coveo-commerce-openapi-original.yml#PUT /rest/organizations/{organizationId}/commerce/v2/configurations/query

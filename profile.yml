@@ -1,0 +1,307 @@
+context: search
+name: Search
+generated: '2026-11-10'
+version: 0.1.0-draft.20261110
+status: draft
+cohort:
+  tags:
+  - Search
+  - Vector Search
+  - Enterprise Search
+  - Site Search
+  - Search Engine
+  - Semantic Search
+  - Vector Database
+  providers_with_harvested_openapi: 187
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded:
+  search_index:
+    constructorio: /collections are merchandising product collections
+    depict: /collections are merchandising product collections
+duplicates:
+  depict:
+  - depictai
+  prorataai:
+  - gist
+  pingcap:
+  - tidb
+shared_specs: {}
+concepts:
+  search_index:
+    segments_seen:
+      indexes: 11
+      index: 11
+      indices: 3
+      collections: 3
+      engines: 2
+      corpora: 1
+    providers_exposing: 28
+    providers_with_readable_schema: 21
+    operations:
+    - operation: GET collection
+      providers: 24
+      share: 0.857
+      tier: core
+    - operation: GET item
+      providers: 18
+      share: 0.643
+      tier: core
+    - operation: DELETE item
+      providers: 17
+      share: 0.607
+      tier: core
+    - operation: POST collection
+      providers: 17
+      share: 0.607
+      tier: core
+    - operation: UPDATE item
+      providers: 9
+      share: 0.321
+      tier: extended
+    - operation: POST item
+      providers: 4
+      share: 0.143
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 3
+      share: 0.107
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 15
+      share: 0.714
+      type: string
+      spellings:
+      - name
+      - title
+      - Name
+      - index_name
+    - name: id
+      tier: core
+      providers: 11
+      share: 0.524
+      type: string
+      spellings:
+      - id
+      - uuid
+      - objectID
+      - _id
+    - name: created_at
+      tier: extended
+      providers: 7
+      share: 0.333
+      type: string
+      spellings:
+      - created_at
+      - creation.date
+      - createdAt
+      - date_created
+    - name: type
+      tier: extended
+      providers: 5
+      share: 0.238
+      type: string
+      spellings:
+      - type
+    long_tail_count: 258
+    long_tail_sample:
+    - status
+    - updated_at
+    - description
+    - document_count
+    - settings
+    - aliases
+    - bulk_avg_size_in_bytes
+    - bulk_avg_time
+    - bulk_total_operations
+    - bulk_total_size_in_bytes
+    - bulk_total_time
+    - completion_size
+    - creation_date_string
+    - data_streams
+    - dataset_size
+    - docs_deleted
+    - fielddata_evictions
+    - fielddata_memory_size
+    - flush_total
+    - flush_total_time
+    - get_current
+    - get_exists_time
+    - get_exists_total
+    - get_missing_time
+    - get_missing_total
+    - get_time
+    - get_total
+    - indexing_delete_current
+    - indexing_delete_time
+    - indexing_delete_total
+    - indexing_index_current
+    - indexing_index_failed
+    - indexing_index_time
+    - indexing_index_total
+    - memory_total
+    - merges_current
+    - merges_current_docs
+    - merges_current_size
+    - merges_total
+    - merges_total_docs
+  search_query:
+    segments_seen:
+      search: 89
+      query: 26
+      queries: 9
+      _search: 5
+      retrieve: 2
+      multi-search: 1
+      retrieval: 1
+    providers_exposing: 106
+    providers_with_readable_schema: 96
+    operations:
+    - operation: POST collection
+      providers: 69
+      share: 0.651
+      tier: core
+    - operation: GET collection
+      providers: 52
+      share: 0.491
+      tier: extended
+    - operation: GET item
+      providers: 9
+      share: 0.085
+      tier: long-tail
+    - operation: DELETE item
+      providers: 7
+      share: 0.066
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 3
+      share: 0.028
+      tier: long-tail
+    - operation: POST item
+      providers: 3
+      share: 0.028
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 2
+      share: 0.019
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.009
+      tier: long-tail
+    properties:
+    - name: id
+      tier: extended
+      providers: 35
+      share: 0.365
+      type: string
+      spellings:
+      - id
+      - _id
+      - document_id
+      - objectID
+      - object_id
+    - name: limit
+      tier: extended
+      providers: 34
+      share: 0.354
+      type: integer
+      spellings:
+      - limit
+      - size
+      - numResults
+      - top_k
+      - topK
+      - hitsPerPage
+      - k
+    - name: name
+      tier: extended
+      providers: 28
+      share: 0.292
+      type: string
+      spellings:
+      - title
+      - name
+      - label
+      - display_name
+      - indexName
+    - name: filters
+      tier: extended
+      providers: 23
+      share: 0.24
+      type: object
+      spellings:
+      - filters
+      - filter
+      - where
+      - Filters
+      - facet_filters
+      - fq
+    - name: query
+      tier: extended
+      providers: 20
+      share: 0.208
+      type: string
+      spellings:
+      - text
+      - q
+      - term
+      - QueryText
+      - queryText
+      - keywords
+    - name: score
+      tier: extended
+      providers: 20
+      share: 0.208
+      type: number
+      spellings:
+      - score
+      - relevance
+      - _score
+      - similarity
+    long_tail_count: 1376
+    long_tail_sample:
+    - hits
+    - offset
+    - type
+    - description
+    - sort
+    - source
+    - metadata
+    - status
+    - created_at
+    - facets
+    - updated_at
+    - context
+    - fields
+    - from
+    - language
+    - page_size
+    - snippet
+    - aggregations
+    - category
+    - highlight
+    - image
+    - link
+    - sort_by
+    - timestamp
+    - aggs
+    - error
+    - max_results
+    - params
+    - rank
+    - timeout
+    - user_id
+    - version
+    - author
+    - content
+    - country
+    - date
+    - exclude_domains
+    - explain
+    - images
+    - include_domains

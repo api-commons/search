@@ -1,0 +1,12 @@
+provider: zeroentropy
+apis_io: https://apis.io/providers/zeroentropy/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - queries
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/zeroentropy-openapi.json#POST /usage/queries

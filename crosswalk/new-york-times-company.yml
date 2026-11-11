@@ -1,0 +1,15 @@
+provider: new-york-times-company
+apis_io: https://apis.io/providers/new-york-times-company/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    - query
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/geo-api-v2-openapi.yml#GET /query.json
+    - openapi/_original/movie-reviews-v2-openapi.yml#GET /reviews/search.json
+    - openapi/_original/semantic-api-openapi.yml#GET /search.json

@@ -1,0 +1,15 @@
+provider: rsperformance-online
+apis_io: https://apis.io/providers/rsperformance-online/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      limit: limit
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/rsperformance-online-ai-gateway-openapi-canonical-host-v1.2.2.json#POST /api/search
+    - openapi/_original/rsperformance-online-ai-gateway-openapi.json#POST /api/search
+    - openapi/_original/rsperformance-online-ai-gateway-openapi.yml#POST /api/search

@@ -1,0 +1,17 @@
+provider: orama
+apis_io: https://apis.io/providers/orama/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      id: id
+      limit: limit
+      filters: where
+      query: term
+      score: score
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/orama-openapi.yml#POST /v1/indexes/{indexId}/search

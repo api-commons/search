@@ -1,0 +1,17 @@
+provider: tako
+apis_io: https://apis.io/providers/tako/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      id: id
+      name:
+      - name
+      - label
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/tako-openapi-original.yml#GET /beta/graph/search
+    - openapi/_original/tako-openapi-original.yml#POST /v3/search

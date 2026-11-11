@@ -1,0 +1,15 @@
+provider: lancedb
+apis_io: https://apis.io/providers/lancedb/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - query
+    properties:
+      id: id
+      limit: k
+      filters: filter
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/lance-namespace-openapi.yaml#POST /v1/table/{id}/query

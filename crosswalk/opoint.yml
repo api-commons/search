@@ -1,0 +1,21 @@
+provider: opoint
+apis_io: https://apis.io/providers/opoint/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - queries
+    - search
+    properties:
+      id: id
+      name:
+      - name
+      - display_name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/opoint-openapi-original.yml#DELETE /analytics/topics/{id}/queries/{id_item}/
+    - openapi/_original/opoint-openapi-original.yml#DELETE /analytics/variable-values/{id}/queries/{id_item}/
+    - openapi/_original/opoint-openapi-original.yml#GET /analytics/topics/{id}/queries/
+    - openapi/_original/opoint-openapi-original.yml#GET /analytics/topics/{id}/queries/{id_item}/
+    - openapi/_original/opoint-openapi-original.yml#GET /analytics/variable-values/{id}/queries/{id_item}/

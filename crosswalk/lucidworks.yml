@@ -1,0 +1,13 @@
+provider: lucidworks
+apis_io: https://apis.io/providers/lucidworks/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - query
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/lucidworks-signals-openapi.yml#GET /signals/query
+    - openapi/_original/lucidworks-signals-openapi.yml#POST /signals/query

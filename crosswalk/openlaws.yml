@@ -1,0 +1,20 @@
+provider: openlaws
+apis_io: https://apis.io/providers/openlaws/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      name:
+      - label
+      - name
+      - display_name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/openlaws-openapi.json#GET /api/v1/jurisdictions/{jurisdiction_key}/laws/search
+    - openapi/_original/openlaws-openapi.json#GET /api/v1/jurisdictions/{jurisdiction_key}/laws/{law_key}/search
+    - openapi/_original/openlaws-openapi.json#GET /api/v1/jurisdictions/{jurisdiction_key}/opinions/search
+    - openapi/_original/openlaws-openapi.yml#GET /api/v1/jurisdictions/{jurisdiction_key}/laws/search
+    - openapi/_original/openlaws-openapi.yml#GET /api/v1/jurisdictions/{jurisdiction_key}/laws/{law_key}/search

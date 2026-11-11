@@ -1,0 +1,23 @@
+provider: arangodb
+apis_io: https://apis.io/providers/arangodb/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - index
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/arangodb-core-openapi-original.json#DELETE /_db/{database-name}/_api/index/{index-id}
+    - openapi/_original/arangodb-core-openapi-original.json#GET /_db/{database-name}/_api/index
+    - openapi/_original/arangodb-core-openapi-original.json#GET /_db/{database-name}/_api/index/{index-id}
+    - openapi/_original/arangodb-core-openapi-original.json#POST /_db/{database-name}/_api/index
+  search_query:
+    path_segment:
+    - query
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/arangodb-core-openapi-original.json#DELETE /_db/{database-name}/_api/query/{query-id}
+    - openapi/_original/arangodb-core-openapi-original.json#POST /_db/{database-name}/_api/query

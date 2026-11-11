@@ -1,0 +1,19 @@
+provider: bloomreach
+apis_io: https://apis.io/providers/bloomreach/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - indexes
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/bloomreach-discovery-catalog-management-openapi.yml#POST /accounts/{account_name}/catalogs/{catalog_name}/environments/{environment_name}/indexes
+  search_query:
+    path_segment:
+    - search
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/bloomreach-discovery-recommendations-pathways-openapi.yml#GET /visual/search/{widget_id}

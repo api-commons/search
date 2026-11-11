@@ -1,0 +1,65 @@
+context: search
+name: Search
+intro: >-
+  The common search vocabulary -- the indexes that hold searchable content, the documents and
+  vectors in them, the queries run against them and the synonyms that tune them -- distilled
+  from the APIs that already exist.
+tags: [Search, Vector Search, Enterprise Search, Site Search, Search Engine, Semantic Search, Vector Database]
+
+envelope: [_links, _pagination, _results, data, success, errors, warnings, count, total, page, meta, links,
+           value, results, next, previous, has_more, message, status_code, ids, next_page, previous_page,
+           page_info, cursor, total_count, per_page, total_pages, current_page, object, url, took, timed_out, _shards]
+
+common_fields:
+  id: [uuid, guid, object_id, record_id, _id, objectID, uid, document_id]
+  created_at: [created, created_date, date_created, create_time, creation_date, created_on, createdAt]
+  updated_at: [updated, updated_date, modified_at, last_modified, date_modified, update_time, modified_date, modified]
+  metadata: [meta_data, custom_fields, custom, attributes, properties, payload]
+  status: [state, health, index_status]
+  name: [title, display_name, label, index_name, uid]
+
+concepts:
+  search_index:
+    path: /indexes
+    segments: [indexes, index, indices, collections@search|vector|v1, namespaces@vectors|index, engines, search_engines, corpora, datastores]
+    aliases:
+      document_count: [docs_count, number_of_documents, num_documents, record_count, entries, vector_count, total_vector_count]
+      dimension: [dimensions, vector_size, dims]
+      metric: [distance, similarity, distance_metric]
+      settings: [config, configuration, schema, mappings, fields]
+  # search_document and vector were measured and dropped: 5 and 1 providers expose them as
+  # resources (and /upsert was an action at unrelated providers).
+  search_query:
+    path: /search
+    segments: [search, query, queries, find@indexes, "_search", multi-search, multisearch, retrieve, retrieval]
+    aliases:
+      query: [q, query_text, text, term, keywords]
+      hits: [results_list, documents, matches, items, records]
+      total_hits: [total, nb_hits, nbHits, estimated_total_hits, found, count_hits]
+      filters: [filter, where, facet_filters, fq]
+      limit: [top_k, topk, size, k, hits_per_page, num_results]
+      score: [_score, relevance, similarity]
+  # synonym was measured and dropped: 2 providers.
+
+exclude:
+  search_index:
+    constructorio: /collections are merchandising product collections
+    depict: /collections are merchandising product collections
+duplicates:
+  depict: [depictai]
+  prorataai: [gist]
+  pingcap: [tidb]
+
+findings:
+  - "106 providers expose a search endpoint, and their queries and results agree on nothing --
+    not the query parameter, not the hit list, not the total. Search is the most common
+    capability in the catalog with the least common shape."
+  - "An index agrees only on name and id; document counts, vector dimensions and similarity
+    metrics are each named by every engine its own way."
+  - "Documents, vectors and synonyms are almost never resources of their own: they are written
+    and read through the index (bulk endpoints, upserts) rather than addressed one by one."
+decisions:
+  - "Indexes cover indices, collections and namespaces beneath a search or vector path, and
+    engines and corpora; merchandising collections are excluded."
+  - "A search query is `/search`: a result shape, like the maps concepts, not a resource."
+  - "Duplicates merged: Depict, Gist into ProRata, TiDB into PingCAP."

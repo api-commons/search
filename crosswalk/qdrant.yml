@@ -1,0 +1,20 @@
+provider: qdrant
+apis_io: https://apis.io/providers/qdrant/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    - query
+    properties:
+      id: id
+      limit: limit
+      filters: filter
+      score: score
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/qdrant-openapi-original.json#POST /collections/{collection_name}/points/query
+    - openapi/_original/qdrant-openapi-original.json#POST /collections/{collection_name}/points/query/batch
+    - openapi/_original/qdrant-openapi-original.json#POST /collections/{collection_name}/points/search
+    - openapi/_original/qdrant-openapi-original.json#POST /collections/{collection_name}/points/search/batch

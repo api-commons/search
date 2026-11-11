@@ -1,0 +1,165 @@
+openapi: 3.1.0
+info:
+  title: Search (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Search interface, distilled from the harvested OpenAPI of 187 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /indexes:
+    get:
+      operationId: listSearchIndexes
+      summary: List indexes
+      tags:
+      - Search Indexes
+      x-commons-tier: core
+      x-commons-share: 0.857
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/SearchIndex'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createSearchIndex
+      summary: Create a search index
+      tags:
+      - Search Indexes
+      x-commons-tier: core
+      x-commons-share: 0.607
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /indexes/{search_index_id}:
+    parameters:
+    - $ref: '#/components/parameters/search_index_id'
+    get:
+      operationId: getSearchIndex
+      summary: Get a search index
+      tags:
+      - Search Indexes
+      x-commons-tier: core
+      x-commons-share: 0.643
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    delete:
+      operationId: deleteSearchIndex
+      summary: Delete a search index
+      tags:
+      - Search Indexes
+      x-commons-tier: core
+      x-commons-share: 0.607
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateSearchIndex
+      summary: Update a search index
+      tags:
+      - Search Indexes
+      x-commons-tier: extended
+      x-commons-share: 0.321
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /search:
+    post:
+      operationId: createSearchQuery
+      summary: Create a search query
+      tags:
+      - Search Queries
+      x-commons-tier: core
+      x-commons-share: 0.651
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id002
+                $ref: '#/components/schemas/SearchQuery'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+    get:
+      operationId: listSearchQueries
+      summary: List search
+      tags:
+      - Search Queries
+      x-commons-tier: extended
+      x-commons-share: 0.491
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id002
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+components:
+  schemas:
+    SearchIndex:
+      $ref: ./schema/search_index.json
+    SearchQuery:
+      $ref: ./schema/search_query.json
+  parameters:
+    search_index_id:
+      name: search_index_id
+      in: path
+      required: true
+      schema:
+        type: string
+    search_query_id:
+      name: search_query_id
+      in: path
+      required: true
+      schema:
+        type: string

@@ -1,0 +1,13 @@
+provider: getty-images
+apis_io: https://apis.io/providers/getty-images/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      id: id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/getty-images-swagger-v3-openapi.json#GET /v3/image-match/search

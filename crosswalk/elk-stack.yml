@@ -1,0 +1,44 @@
+provider: elk-stack
+apis_io: https://apis.io/providers/elk-stack/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - index
+    - indices
+    properties:
+      name: name
+      id: uuid
+      created_at: creation.date
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/elk-stack-cat-api-openapi.yml#GET /_cat/indices
+    - openapi/_original/elk-stack-cat-api-openapi_2.yml#GET /_cat/indices
+    - openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_cat/indices
+    - openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_cat/indices/{index}
+    - openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_resolve/index/{name}
+  search_query:
+    path_segment:
+    - _search
+    - search
+    - queries
+    - query
+    properties:
+      id:
+      - id
+      - _id
+      limit: size
+      name: title
+      filters: filter
+      query:
+      - term
+      - text
+      score: _score
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/elk-stack-elasticsearch-openapi.json#DELETE /_eql/search/{id}
+    - openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_application/search_application/{name}/_search
+    - openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_eql/search/{id}
+    - openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_query/queries
+    - openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_query/queries/{id}

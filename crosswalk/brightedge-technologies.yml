@@ -1,0 +1,17 @@
+provider: brightedge-technologies
+apis_io: https://apis.io/providers/brightedge-technologies/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - query
+    properties:
+      filters: filters
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/brightedge-technologies-platform-openapi-original.json#POST /3.0/objects/query/{account_id}
+    - openapi/_original/brightedge-technologies-platform-openapi-original.json#POST /3.0/query/{account_id}
+    - openapi/_original/brightedge-technologies-platform-openapi-original.json#POST /5.0/objects/aicatalyst/query
+    - openapi/_original/brightedge-technologies-platform-openapi-original.json#POST /5.0/objects/aicatalyst/v2/query
+    - openapi/_original/brightedge-technologies-platform-openapi-original.json#POST /5.0/objects/query/{account_id}

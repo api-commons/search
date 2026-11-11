@@ -1,0 +1,14 @@
+provider: insider
+apis_io: https://apis.io/providers/insider/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    - query
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/insider-eureka-search-openapi.yml#GET /api/web/search
+    - openapi/_original/insider-eureka-search-openapi.yml#GET /api/web/suggestions/query

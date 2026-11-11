@@ -1,0 +1,13 @@
+provider: rettfrabonden-com
+apis_io: https://apis.io/providers/rettfrabonden-com/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/rettfrabonden-com-agent-surface-openapi.json#GET /api/marketplace/search
+    - openapi/_original/rettfrabonden-com-openapi.yml#GET /api/marketplace/search

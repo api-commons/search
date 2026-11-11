@@ -1,0 +1,16 @@
+provider: turbopuffer
+apis_io: https://apis.io/providers/turbopuffer/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - query
+    properties:
+      limit:
+      - top_k
+      - limit
+      filters: filters
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/turbopuffer-openapi.yml#POST /v2/namespaces/{namespace}/query

@@ -1,0 +1,19 @@
+provider: parseflow
+apis_io: https://apis.io/providers/parseflow/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - index
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/parseflow-openapi.json#POST /v2/index
+  search_query:
+    path_segment:
+    - search
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/parseflow-openapi.json#GET /v2/search

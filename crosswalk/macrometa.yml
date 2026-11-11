@@ -1,0 +1,33 @@
+provider: macrometa
+apis_io: https://apis.io/providers/macrometa/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - index
+    properties:
+      name: name
+      id: id
+      type: type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/macrometa-gdn-openapi-original.json#GET /_fabric/{fabric}/_api/index
+    - openapi/_original/macrometa-photoniq-hss-openapi-original.json#DELETE /api/hss/v1/index/{index_name}
+    - openapi/_original/macrometa-photoniq-hss-openapi-original.json#GET /api/hss/v1/index
+    - openapi/_original/macrometa-photoniq-hss-openapi-original.json#GET /api/hss/v1/index/{index_name}
+    - openapi/_original/macrometa-photoniq-hss-openapi-original.json#POST /api/hss/v1/index
+  search_query:
+    path_segment:
+    - query
+    - search
+    properties:
+      limit: limit
+      filters: filters
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/macrometa-gdn-openapi-original.json#POST /_fabric/{fabric}/_api/function/generate/query
+    - openapi/_original/macrometa-gdn-openapi-original.json#POST /_fabric/{fabric}/_api/metrics/query
+    - openapi/_original/macrometa-gdn-openapi-original.json#POST /_fabric/{fabric}/_api/query
+    - openapi/_original/macrometa-gdn-openapi-original.json#POST /_fabric/{fabric}/_api/search
+    - openapi/_original/macrometa-gdn-openapi-original.json#POST /_fabric/{fabric}/_api/streamapps/query/{appName}

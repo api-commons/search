@@ -1,0 +1,16 @@
+provider: brave-browser
+apis_io: https://apis.io/providers/brave-browser/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/brave-browser-openapi.yml#GET /images/search
+    - openapi/_original/brave-browser-openapi.yml#GET /news/search
+    - openapi/_original/brave-browser-openapi.yml#GET /spellcheck/search
+    - openapi/_original/brave-browser-openapi.yml#GET /suggest/search
+    - openapi/_original/brave-browser-openapi.yml#GET /summarizer/search

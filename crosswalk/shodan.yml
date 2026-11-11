@@ -1,0 +1,16 @@
+provider: shodan
+apis_io: https://apis.io/providers/shodan/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    - query
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/shodan-rest-openapi.yml#GET /shodan/host/search
+    - openapi/_original/shodan-rest-openapi.yml#GET /shodan/query
+    - openapi/_original/shodan-rest-openapi.yml#GET /shodan/query/search
+    - openapi/_original/shodan-trends-openapi.yml#GET /api/v1/search

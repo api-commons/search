@@ -1,0 +1,15 @@
+provider: epidemic-sound
+apis_io: https://apis.io/providers/epidemic-sound/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      id: id
+      name: title
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/epidemic-sound-partner-content-api-openapi.yml#GET /v0/sound-effects/search
+    - openapi/_original/epidemic-sound-partner-content-api-openapi.yml#GET /v0/tracks/search

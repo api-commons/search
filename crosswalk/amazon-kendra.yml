@@ -1,0 +1,27 @@
+provider: amazon-kendra
+apis_io: https://apis.io/providers/amazon-kendra/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - indexes
+    properties:
+      name: Name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/amazon-kendra-openapi.yml#DELETE /indexes/{IndexId}
+    - openapi/_original/amazon-kendra-openapi.yml#GET /indexes
+    - openapi/_original/amazon-kendra-openapi.yml#GET /indexes/{IndexId}
+    - openapi/_original/amazon-kendra-openapi.yml#POST /indexes
+    - openapi/_original/amazon-kendra-openapi.yml#PUT /indexes/{IndexId}
+  search_query:
+    path_segment:
+    - query
+    - retrieve
+    properties:
+      query: QueryText
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/amazon-kendra-openapi.yml#POST /indexes/{IndexId}/query
+    - openapi/_original/amazon-kendra-openapi.yml#POST /indexes/{IndexId}/retrieve

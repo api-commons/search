@@ -1,0 +1,34 @@
+provider: pinecone
+apis_io: https://apis.io/providers/pinecone/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - indexes
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/pinecone-db-control-openapi.yaml#DELETE /indexes/{index_name}
+    - openapi/_original/pinecone-db-control-openapi.yaml#GET /indexes
+    - openapi/_original/pinecone-db-control-openapi.yaml#GET /indexes/{index_name}
+    - openapi/_original/pinecone-db-control-openapi.yaml#PATCH /indexes/{index_name}
+    - openapi/_original/pinecone-db-control-openapi.yaml#POST /indexes
+  search_query:
+    path_segment:
+    - query
+    - search
+    properties:
+      id:
+      - id
+      - _id
+      limit: topK
+      filters: filter
+      score:
+      - score
+      - _score
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/pinecone-db-data-openapi.yaml#POST /query
+    - openapi/_original/pinecone-db-data-openapi.yaml#POST /records/namespaces/{namespace}/search

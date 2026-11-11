@@ -1,0 +1,16 @@
+provider: sociallisteningapi
+apis_io: https://apis.io/providers/sociallisteningapi/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/discourse/search
+    - openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/facebook/search
+    - openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/google/search
+    - openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/hackernews/search
+    - openapi/_original/sociallisteningapi-openapi.json#GET /api/v1/instagram/search

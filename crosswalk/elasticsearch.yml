@@ -1,0 +1,21 @@
+provider: elasticsearch
+apis_io: https://apis.io/providers/elasticsearch/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - indices
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/elasticsearch-openapi.yml#GET /_cat/indices
+  search_query:
+    path_segment:
+    - _search
+    properties:
+      limit: size
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/elasticsearch-openapi.yml#GET /{index}/_search
+    - openapi/_original/elasticsearch-openapi.yml#POST /{index}/_search

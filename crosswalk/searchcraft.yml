@@ -1,0 +1,30 @@
+provider: searchcraft
+apis_io: https://apis.io/providers/searchcraft/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_index:
+    path_segment:
+    - index
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/searchcraft-openapi.yml#DELETE /index/{index}
+    - openapi/_original/searchcraft-openapi.yml#GET /index
+    - openapi/_original/searchcraft-openapi.yml#GET /index/{index}
+    - openapi/_original/searchcraft-openapi.yml#PATCH /index/{index}
+    - openapi/_original/searchcraft-openapi.yml#POST /index
+  search_query:
+    path_segment:
+    - search
+    - query
+    properties:
+      id: document_id
+      limit: limit
+      score: score
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/searchcraft-openapi.yml#DELETE /index/{index}/documents/query
+    - openapi/_original/searchcraft-openapi.yml#POST /federation/{federation_name}/search
+    - openapi/_original/searchcraft-openapi.yml#POST /index/{index}/search

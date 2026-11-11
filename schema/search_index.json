@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/search/main/schema/search_index.json",
+  "title": "Search Index",
+  "description": "The common search_index in Search, distilled from 21 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.714,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "name",
+        "title",
+        "Name",
+        "index_name"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.524,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "id",
+        "uuid",
+        "objectID",
+        "_id"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "created_at",
+        "creation.date",
+        "createdAt",
+        "date_created"
+      ],
+      "format": "date-time"
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.238,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "type"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "search",
+    "concept": "search_index",
+    "providers": 21,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

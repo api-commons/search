@@ -1,0 +1,14 @@
+provider: s1-dev
+apis_io: https://apis.io/providers/s1-dev/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      name: title
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/s1-dev-openapi.yml#POST /search
+    - openapi/_original/search1api-openapi.json#POST /search

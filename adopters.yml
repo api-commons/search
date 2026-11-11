@@ -1,0 +1,585 @@
+context: search
+generated: '2026-11-10'
+adopters:
+- provider: aito-technologies
+  apis_io: https://apis.io/providers/aito-technologies/
+  crosswalk: crosswalk/aito-technologies.yml
+  concepts:
+  - search_query
+- provider: aleph-alpha
+  apis_io: https://apis.io/providers/aleph-alpha/
+  crosswalk: crosswalk/aleph-alpha.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: algolia
+  apis_io: https://apis.io/providers/algolia/
+  crosswalk: crosswalk/algolia.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: amazon-kendra
+  apis_io: https://apis.io/providers/amazon-kendra/
+  crosswalk: crosswalk/amazon-kendra.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: amazon-opensearch
+  apis_io: https://apis.io/providers/amazon-opensearch/
+  crosswalk: crosswalk/amazon-opensearch.yml
+  concepts:
+  - search_query
+- provider: anyapi
+  apis_io: https://apis.io/providers/anyapi/
+  crosswalk: crosswalk/anyapi.yml
+  concepts:
+  - search_query
+- provider: arangodb
+  apis_io: https://apis.io/providers/arangodb/
+  crosswalk: crosswalk/arangodb.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: bing-news
+  apis_io: https://apis.io/providers/bing-news/
+  crosswalk: crosswalk/bing-news.yml
+  concepts:
+  - search_query
+- provider: bloomreach
+  apis_io: https://apis.io/providers/bloomreach/
+  crosswalk: crosswalk/bloomreach.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: brave-browser
+  apis_io: https://apis.io/providers/brave-browser/
+  crosswalk: crosswalk/brave-browser.yml
+  concepts:
+  - search_query
+- provider: brightedge-technologies
+  apis_io: https://apis.io/providers/brightedge-technologies/
+  crosswalk: crosswalk/brightedge-technologies.yml
+  concepts:
+  - search_query
+- provider: browserless
+  apis_io: https://apis.io/providers/browserless/
+  crosswalk: crosswalk/browserless.yml
+  concepts:
+  - search_query
+- provider: chroma
+  apis_io: https://apis.io/providers/chroma/
+  crosswalk: crosswalk/chroma.yml
+  concepts:
+  - search_query
+- provider: coactive
+  apis_io: https://apis.io/providers/coactive/
+  crosswalk: crosswalk/coactive.yml
+  concepts:
+  - search_query
+- provider: cognee
+  apis_io: https://apis.io/providers/cognee/
+  crosswalk: crosswalk/cognee.yml
+  concepts:
+  - search_query
+- provider: constructorio
+  apis_io: https://apis.io/providers/constructorio/
+  crosswalk: crosswalk/constructorio.yml
+  concepts:
+  - search_query
+- provider: couchbase
+  apis_io: https://apis.io/providers/couchbase/
+  crosswalk: crosswalk/couchbase.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: coveo
+  apis_io: https://apis.io/providers/coveo/
+  crosswalk: crosswalk/coveo.yml
+  concepts:
+  - search_query
+- provider: crustapi
+  apis_io: https://apis.io/providers/crustapi/
+  crosswalk: crosswalk/crustapi.yml
+  concepts:
+  - search_query
+- provider: currentsapi
+  apis_io: https://apis.io/providers/currentsapi/
+  crosswalk: crosswalk/currentsapi.yml
+  concepts:
+  - search_query
+- provider: depict
+  apis_io: https://apis.io/providers/depict/
+  crosswalk: crosswalk/depict.yml
+  concepts:
+  - search_query
+- provider: dexcare
+  apis_io: https://apis.io/providers/dexcare/
+  crosswalk: crosswalk/dexcare.yml
+  concepts:
+  - search_query
+- provider: dvids-api
+  apis_io: https://apis.io/providers/dvids-api/
+  crosswalk: crosswalk/dvids-api.yml
+  concepts:
+  - search_query
+- provider: elastic
+  apis_io: https://apis.io/providers/elastic/
+  crosswalk: crosswalk/elastic.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: elasticsearch
+  apis_io: https://apis.io/providers/elasticsearch/
+  crosswalk: crosswalk/elasticsearch.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: elk-stack
+  apis_io: https://apis.io/providers/elk-stack/
+  crosswalk: crosswalk/elk-stack.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: epidemic-sound
+  apis_io: https://apis.io/providers/epidemic-sound/
+  crosswalk: crosswalk/epidemic-sound.yml
+  concepts:
+  - search_query
+- provider: europeana
+  apis_io: https://apis.io/providers/europeana/
+  crosswalk: crosswalk/europeana.yml
+  concepts:
+  - search_query
+- provider: exa
+  apis_io: https://apis.io/providers/exa/
+  crosswalk: crosswalk/exa.yml
+  concepts:
+  - search_query
+- provider: exa-ai
+  apis_io: https://apis.io/providers/exa-ai/
+  crosswalk: crosswalk/exa-ai.yml
+  concepts:
+  - search_query
+- provider: federal-laboratory-consortium-for-technology-transfer
+  apis_io: https://apis.io/providers/federal-laboratory-consortium-for-technology-transfer/
+  crosswalk: crosswalk/federal-laboratory-consortium-for-technology-transfer.yml
+  concepts:
+  - search_query
+- provider: geekflare
+  apis_io: https://apis.io/providers/geekflare/
+  crosswalk: crosswalk/geekflare.yml
+  concepts:
+  - search_query
+- provider: getty-images
+  apis_io: https://apis.io/providers/getty-images/
+  crosswalk: crosswalk/getty-images.yml
+  concepts:
+  - search_query
+- provider: gnews
+  apis_io: https://apis.io/providers/gnews/
+  crosswalk: crosswalk/gnews.yml
+  concepts:
+  - search_query
+- provider: google-search-console
+  apis_io: https://apis.io/providers/google-search-console/
+  crosswalk: crosswalk/google-search-console.yml
+  concepts:
+  - search_query
+- provider: google-youtube
+  apis_io: https://apis.io/providers/google-youtube/
+  crosswalk: crosswalk/google-youtube.yml
+  concepts:
+  - search_query
+- provider: guru
+  apis_io: https://apis.io/providers/guru/
+  crosswalk: crosswalk/guru.yml
+  concepts:
+  - search_query
+- provider: iconik
+  apis_io: https://apis.io/providers/iconik/
+  crosswalk: crosswalk/iconik.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: insider
+  apis_io: https://apis.io/providers/insider/
+  crosswalk: crosswalk/insider.yml
+  concepts:
+  - search_query
+- provider: kagi
+  apis_io: https://apis.io/providers/kagi/
+  crosswalk: crosswalk/kagi.yml
+  concepts:
+  - search_query
+- provider: kannkidas-de
+  apis_io: https://apis.io/providers/kannkidas-de/
+  crosswalk: crosswalk/kannkidas-de.yml
+  concepts:
+  - search_query
+- provider: lancedb
+  apis_io: https://apis.io/providers/lancedb/
+  crosswalk: crosswalk/lancedb.yml
+  concepts:
+  - search_query
+- provider: landing
+  apis_io: https://apis.io/providers/landing/
+  crosswalk: crosswalk/landing.yml
+  concepts:
+  - search_query
+- provider: library-of-congress
+  apis_io: https://apis.io/providers/library-of-congress/
+  crosswalk: crosswalk/library-of-congress.yml
+  concepts:
+  - search_query
+- provider: lily-ai
+  apis_io: https://apis.io/providers/lily-ai/
+  crosswalk: crosswalk/lily-ai.yml
+  concepts:
+  - search_query
+- provider: listennotes
+  apis_io: https://apis.io/providers/listennotes/
+  crosswalk: crosswalk/listennotes.yml
+  concepts:
+  - search_query
+- provider: litescrape
+  apis_io: https://apis.io/providers/litescrape/
+  crosswalk: crosswalk/litescrape.yml
+  concepts:
+  - search_query
+- provider: lucidworks
+  apis_io: https://apis.io/providers/lucidworks/
+  crosswalk: crosswalk/lucidworks.yml
+  concepts:
+  - search_query
+- provider: machinelibrary-ai
+  apis_io: https://apis.io/providers/machinelibrary-ai/
+  crosswalk: crosswalk/machinelibrary-ai.yml
+  concepts:
+  - search_query
+- provider: macrometa
+  apis_io: https://apis.io/providers/macrometa/
+  crosswalk: crosswalk/macrometa.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: manticore
+  apis_io: https://apis.io/providers/manticore/
+  crosswalk: crosswalk/manticore.yml
+  concepts:
+  - search_query
+- provider: marginalia-search
+  apis_io: https://apis.io/providers/marginalia-search/
+  crosswalk: crosswalk/marginalia-search.yml
+  concepts:
+  - search_query
+- provider: marqo
+  apis_io: https://apis.io/providers/marqo/
+  crosswalk: crosswalk/marqo.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: mastodon-instances
+  apis_io: https://apis.io/providers/mastodon-instances/
+  crosswalk: crosswalk/mastodon-instances.yml
+  concepts:
+  - search_query
+- provider: mcp360
+  apis_io: https://apis.io/providers/mcp360/
+  crosswalk: crosswalk/mcp360.yml
+  concepts:
+  - search_query
+- provider: meilisearch
+  apis_io: https://apis.io/providers/meilisearch/
+  crosswalk: crosswalk/meilisearch.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: mem
+  apis_io: https://apis.io/providers/mem/
+  crosswalk: crosswalk/mem.yml
+  concepts:
+  - search_query
+- provider: midpage
+  apis_io: https://apis.io/providers/midpage/
+  crosswalk: crosswalk/midpage.yml
+  concepts:
+  - search_query
+- provider: milvus
+  apis_io: https://apis.io/providers/milvus/
+  crosswalk: crosswalk/milvus.yml
+  concepts:
+  - search_query
+- provider: misoai
+  apis_io: https://apis.io/providers/misoai/
+  crosswalk: crosswalk/misoai.yml
+  concepts:
+  - search_query
+- provider: mixedbread-ai
+  apis_io: https://apis.io/providers/mixedbread-ai/
+  crosswalk: crosswalk/mixedbread-ai.yml
+  concepts:
+  - search_query
+- provider: new-york-times-company
+  apis_io: https://apis.io/providers/new-york-times-company/
+  crosswalk: crosswalk/new-york-times-company.yml
+  concepts:
+  - search_query
+- provider: newscatcher
+  apis_io: https://apis.io/providers/newscatcher/
+  crosswalk: crosswalk/newscatcher.yml
+  concepts:
+  - search_query
+- provider: nuclia
+  apis_io: https://apis.io/providers/nuclia/
+  crosswalk: crosswalk/nuclia.yml
+  concepts:
+  - search_query
+- provider: nuxeo
+  apis_io: https://apis.io/providers/nuxeo/
+  crosswalk: crosswalk/nuxeo.yml
+  concepts:
+  - search_query
+- provider: octen-ai
+  apis_io: https://apis.io/providers/octen-ai/
+  crosswalk: crosswalk/octen-ai.yml
+  concepts:
+  - search_query
+- provider: ondemand
+  apis_io: https://apis.io/providers/ondemand/
+  crosswalk: crosswalk/ondemand.yml
+  concepts:
+  - search_query
+- provider: open-food-facts
+  apis_io: https://apis.io/providers/open-food-facts/
+  crosswalk: crosswalk/open-food-facts.yml
+  concepts:
+  - search_query
+- provider: open-library
+  apis_io: https://apis.io/providers/open-library/
+  crosswalk: crosswalk/open-library.yml
+  concepts:
+  - search_query
+- provider: openlaws
+  apis_io: https://apis.io/providers/openlaws/
+  crosswalk: crosswalk/openlaws.yml
+  concepts:
+  - search_query
+- provider: openserp
+  apis_io: https://apis.io/providers/openserp/
+  crosswalk: crosswalk/openserp.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: opoint
+  apis_io: https://apis.io/providers/opoint/
+  crosswalk: crosswalk/opoint.yml
+  concepts:
+  - search_query
+- provider: orama
+  apis_io: https://apis.io/providers/orama/
+  crosswalk: crosswalk/orama.yml
+  concepts:
+  - search_query
+- provider: parseflow
+  apis_io: https://apis.io/providers/parseflow/
+  crosswalk: crosswalk/parseflow.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: perplexity
+  apis_io: https://apis.io/providers/perplexity/
+  crosswalk: crosswalk/perplexity.yml
+  concepts:
+  - search_query
+- provider: pexafy
+  apis_io: https://apis.io/providers/pexafy/
+  crosswalk: crosswalk/pexafy.yml
+  concepts:
+  - search_index
+- provider: phraseanet
+  apis_io: https://apis.io/providers/phraseanet/
+  crosswalk: crosswalk/phraseanet.yml
+  concepts:
+  - search_query
+- provider: pinecone
+  apis_io: https://apis.io/providers/pinecone/
+  crosswalk: crosswalk/pinecone.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: pipeshub
+  apis_io: https://apis.io/providers/pipeshub/
+  crosswalk: crosswalk/pipeshub.yml
+  concepts:
+  - search_query
+- provider: pryon
+  apis_io: https://apis.io/providers/pryon/
+  crosswalk: crosswalk/pryon.yml
+  concepts:
+  - search_index
+- provider: qdrant
+  apis_io: https://apis.io/providers/qdrant/
+  crosswalk: crosswalk/qdrant.yml
+  concepts:
+  - search_query
+- provider: quickwit
+  apis_io: https://apis.io/providers/quickwit/
+  crosswalk: crosswalk/quickwit.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: rentberry
+  apis_io: https://apis.io/providers/rentberry/
+  crosswalk: crosswalk/rentberry.yml
+  concepts:
+  - search_query
+- provider: rettfrabonden-com
+  apis_io: https://apis.io/providers/rettfrabonden-com/
+  crosswalk: crosswalk/rettfrabonden-com.yml
+  concepts:
+  - search_query
+- provider: rsperformance-online
+  apis_io: https://apis.io/providers/rsperformance-online/
+  crosswalk: crosswalk/rsperformance-online.yml
+  concepts:
+  - search_query
+- provider: s1-dev
+  apis_io: https://apis.io/providers/s1-dev/
+  crosswalk: crosswalk/s1-dev.yml
+  concepts:
+  - search_query
+- provider: scribe
+  apis_io: https://apis.io/providers/scribe/
+  crosswalk: crosswalk/scribe.yml
+  concepts:
+  - search_query
+- provider: searchcraft
+  apis_io: https://apis.io/providers/searchcraft/
+  crosswalk: crosswalk/searchcraft.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: serper
+  apis_io: https://apis.io/providers/serper/
+  crosswalk: crosswalk/serper.yml
+  concepts:
+  - search_query
+- provider: serpwow
+  apis_io: https://apis.io/providers/serpwow/
+  crosswalk: crosswalk/serpwow.yml
+  concepts:
+  - search_query
+- provider: shodan
+  apis_io: https://apis.io/providers/shodan/
+  crosswalk: crosswalk/shodan.yml
+  concepts:
+  - search_query
+- provider: slite
+  apis_io: https://apis.io/providers/slite/
+  crosswalk: crosswalk/slite.yml
+  concepts:
+  - search_index
+- provider: sociallisteningapi
+  apis_io: https://apis.io/providers/sociallisteningapi/
+  crosswalk: crosswalk/sociallisteningapi.yml
+  concepts:
+  - search_query
+- provider: sourcebot
+  apis_io: https://apis.io/providers/sourcebot/
+  crosswalk: crosswalk/sourcebot.yml
+  concepts:
+  - search_query
+- provider: superlinked
+  apis_io: https://apis.io/providers/superlinked/
+  crosswalk: crosswalk/superlinked.yml
+  concepts:
+  - search_query
+- provider: sylvia-api
+  apis_io: https://apis.io/providers/sylvia-api/
+  crosswalk: crosswalk/sylvia-api.yml
+  concepts:
+  - search_query
+- provider: tako
+  apis_io: https://apis.io/providers/tako/
+  crosswalk: crosswalk/tako.yml
+  concepts:
+  - search_query
+- provider: tavily
+  apis_io: https://apis.io/providers/tavily/
+  crosswalk: crosswalk/tavily.yml
+  concepts:
+  - search_query
+- provider: tenor
+  apis_io: https://apis.io/providers/tenor/
+  crosswalk: crosswalk/tenor.yml
+  concepts:
+  - search_query
+- provider: the-index-fyi
+  apis_io: https://apis.io/providers/the-index-fyi/
+  crosswalk: crosswalk/the-index-fyi.yml
+  concepts:
+  - search_index
+- provider: turbopuffer
+  apis_io: https://apis.io/providers/turbopuffer/
+  crosswalk: crosswalk/turbopuffer.yml
+  concepts:
+  - search_query
+- provider: tvu-networks
+  apis_io: https://apis.io/providers/tvu-networks/
+  crosswalk: crosswalk/tvu-networks.yml
+  concepts:
+  - search_query
+- provider: twelvelabs
+  apis_io: https://apis.io/providers/twelvelabs/
+  crosswalk: crosswalk/twelvelabs.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: upstash
+  apis_io: https://apis.io/providers/upstash/
+  crosswalk: crosswalk/upstash.yml
+  concepts:
+  - search_index
+- provider: vectara
+  apis_io: https://apis.io/providers/vectara/
+  crosswalk: crosswalk/vectara.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: vectorize-io
+  apis_io: https://apis.io/providers/vectorize-io/
+  crosswalk: crosswalk/vectorize-io.yml
+  concepts:
+  - search_query
+- provider: vespa-ai
+  apis_io: https://apis.io/providers/vespa-ai/
+  crosswalk: crosswalk/vespa-ai.yml
+  concepts:
+  - search_query
+- provider: voyant
+  apis_io: https://apis.io/providers/voyant/
+  crosswalk: crosswalk/voyant.yml
+  concepts:
+  - search_index
+  - search_query
+- provider: weaviate
+  apis_io: https://apis.io/providers/weaviate/
+  crosswalk: crosswalk/weaviate.yml
+  concepts:
+  - search_index
+- provider: youtube
+  apis_io: https://apis.io/providers/youtube/
+  crosswalk: crosswalk/youtube.yml
+  concepts:
+  - search_query
+- provider: zeroentropy
+  apis_io: https://apis.io/providers/zeroentropy/
+  crosswalk: crosswalk/zeroentropy.yml
+  concepts:
+  - search_query
+- provider: zincsearch
+  apis_io: https://apis.io/providers/zincsearch/
+  crosswalk: crosswalk/zincsearch.yml
+  concepts:
+  - search_index
+  - search_query

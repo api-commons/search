@@ -1,0 +1,17 @@
+provider: mixedbread-ai
+apis_io: https://apis.io/providers/mixedbread-ai/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      limit: top_k
+      filters: filters
+      query: text
+      score: score
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/mixedbread-stores-api-openapi.yml#POST /v1/stores/search
+    - openapi/_original/mixedbread-stores-api-openapi.yml#POST /v1/vector_stores/search

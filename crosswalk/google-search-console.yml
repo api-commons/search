@@ -1,0 +1,12 @@
+provider: google-search-console
+apis_io: https://apis.io/providers/google-search-console/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - query
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/google-search-console-api-openapi.yml#POST /webmasters/v3/sites/{siteUrl}/searchAnalytics/query

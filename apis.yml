@@ -1,0 +1,48 @@
+aid: common-search
+name: Search
+type: Common
+description: 'The common Search vocabulary, distilled from the harvested OpenAPI of 187 providers in APIs.io: shared
+  operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each provider''s
+  own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Search
+- Vector Search
+- Enterprise Search
+- Site Search
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/search/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-search:search
+  name: Common Search Interface
+  description: The Search interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/search
+  tags:
+  - Search
+  - Vector Search
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/search/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/search/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/search/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: search_index
+    url: https://raw.githubusercontent.com/api-commons/search/main/schema/search_index.json
+  - type: JSONSchema
+    name: search_query
+    url: https://raw.githubusercontent.com/api-commons/search/main/schema/search_query.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/search/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

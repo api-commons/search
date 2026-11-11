@@ -1,0 +1,18 @@
+provider: chroma
+apis_io: https://apis.io/providers/chroma/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - query
+    - search
+    properties:
+      limit: limit
+      filters:
+      - where
+      - filter
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/chroma-openapi.json#POST /api/v2/tenants/{tenant}/databases/{database}/collections/{collection_id}/query
+    - openapi/_original/chroma-openapi.json#POST /api/v2/tenants/{tenant}/databases/{database}/collections/{collection_id}/search

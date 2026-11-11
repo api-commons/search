@@ -1,0 +1,15 @@
+provider: coactive
+apis_io: https://apis.io/providers/coactive/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - queries
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/coactive-openapi-original.json#DELETE /api/v1/queries/{query_id}
+    - openapi/_original/coactive-openapi-original.json#GET /api/v1/queries
+    - openapi/_original/coactive-openapi-original.json#GET /api/v1/queries/{query_id}
+    - openapi/_original/coactive-openapi-original.json#POST /api/v1/queries

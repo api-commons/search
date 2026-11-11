@@ -1,0 +1,13 @@
+provider: lily-ai
+apis_io: https://apis.io/providers/lily-ai/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/lily-ai-lilyapp-api-openapi.json#GET /search
+    - openapi/_original/lily-ai-lilyapp-api-openapi.yml#GET /search

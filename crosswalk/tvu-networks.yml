@@ -1,0 +1,19 @@
+provider: tvu-networks
+apis_io: https://apis.io/providers/tvu-networks/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - query
+    properties:
+      id:
+      - id
+      - object_id
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/tvu-networks-object-api-openapi.yml#POST /api/objectd/v1/query
+    - openapi/_original/tvu-networks-producer-api-openapi.yml#POST /program/playlist/query
+    - openapi/_original/tvu-networks-public-openapi.yml#POST /data/query
+    - openapi/_original/tvu-networks-public-openapi.yml#POST /log/query

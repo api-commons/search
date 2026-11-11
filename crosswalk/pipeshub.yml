@@ -1,0 +1,21 @@
+provider: pipeshub
+apis_io: https://apis.io/providers/pipeshub/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      id: _id
+      limit: limit
+      name: title
+      filters: filters
+      score: relevance
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/pipeshub-openapi.yaml#DELETE /search
+    - openapi/_original/pipeshub-openapi.yaml#DELETE /search/{searchId}
+    - openapi/_original/pipeshub-openapi.yaml#GET /conversations/show/archives/search
+    - openapi/_original/pipeshub-openapi.yaml#GET /search
+    - openapi/_original/pipeshub-openapi.yaml#GET /search/{searchId}

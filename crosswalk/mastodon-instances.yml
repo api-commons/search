@@ -1,0 +1,12 @@
+provider: mastodon-instances
+apis_io: https://apis.io/providers/mastodon-instances/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mastodon-instances-openapi.yml#GET /instances/search

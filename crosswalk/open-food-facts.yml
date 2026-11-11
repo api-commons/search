@@ -1,0 +1,20 @@
+provider: open-food-facts
+apis_io: https://apis.io/providers/open-food-facts/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      id: id
+      name:
+      - title
+      - name
+      query: q
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/open-food-facts-api-v2-openapi.yml#GET /api/v2/search
+    - openapi/_original/open-food-facts-openapi.yml#GET /api/v2/search
+    - openapi/_original/open-food-facts-search-a-licious-openapi.json#GET /search
+    - openapi/_original/open-food-facts-search-a-licious-openapi.json#POST /search

@@ -1,0 +1,14 @@
+provider: listennotes
+apis_io: https://apis.io/providers/listennotes/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      id: id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/listennotes-openapi.json#GET /search
+    - openapi/_original/listennotes-openapi.yml#GET /search

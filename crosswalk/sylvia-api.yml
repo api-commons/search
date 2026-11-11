@@ -1,0 +1,19 @@
+provider: sylvia-api
+apis_io: https://apis.io/providers/sylvia-api/
+context: search
+generated: '2026-11-10'
+concepts:
+  search_query:
+    path_segment:
+    - search
+    properties:
+      id: id
+      name: title
+      score: score
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/sylvia-api-openapi-2026-08-04.json#GET /comments/search
+    - openapi/_original/sylvia-api-openapi-2026-08-04.json#GET /posts/search
+    - openapi/_original/sylvia-api-openapi-2026-08-18.json#GET /reddit/search
+    - openapi/_original/sylvia-api-openapi-2026-08-18.json#GET /reddit/subreddits/search
+    - openapi/_original/sylvia-api-openapi-2026-08-20.json#GET /reddit/search
